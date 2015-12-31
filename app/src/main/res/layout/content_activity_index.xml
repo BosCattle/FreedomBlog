@@ -1,20 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.jiangtao.freedomblog.ActivityIndex"
     tools:showIn="@layout/app_bar_activity_index">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/container_index"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/index_ll"
+        android:background="@color/LightGrey" />
+
+    <LinearLayout
+        android:id="@+id/index_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/index_fragment_index"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/index_actionbar"
+            android:onClick="onClick"
+            android:src="@drawable/index_image_skin" />
+
+        <ImageView
+            android:id="@+id/index_fragment_attention"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/index_actionbar"
+            android:onClick="onClick"
+            android:src="@drawable/index_attention_skin" />
+
+        <ImageView
+            android:id="@+id/index_fragment_pupopmenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/index_actionbar"
+            android:onClick="onClick"
+            android:src="@drawable/index_write_skin" />
+
+        <ImageView
+            android:id="@+id/index_fragment_prompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/index_actionbar"
+            android:onClick="onClick"
+            android:src="@drawable/index_prompt_skin" />
+
+        <ImageView
+            android:id="@+id/index_fragment_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/index_actionbar"
+            android:onClick="onClick"
+            android:src="@drawable/index_person_skin" />
+    </LinearLayout>
 </RelativeLayout>

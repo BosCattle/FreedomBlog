@@ -2,7 +2,9 @@ package org.jiangtao.utils_resource;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 
+import org.jiangtao.freedomblog.ActivityLogin;
 import org.jiangtao.freedomblog.SettingsActivity;
 
 /**
@@ -18,5 +20,15 @@ public class TurnActivity {
     public static void turnSettingsActivity(Context mContext) {
         Intent startSettings = new Intent(mContext, SettingsActivity.class);
         mContext.startActivity(startSettings);
+    }
+
+    /**
+     * 跳转到登陆界面
+     *
+     * @param mContext
+     */
+    public static void turnLoginActivity(AppCompatActivity mContext) {
+        Intent startSettings = new Intent(mContext, ActivityLogin.class);
+        mContext.startActivityForResult(startSettings, StaticResources.requestCodeLogin);
     }
 }

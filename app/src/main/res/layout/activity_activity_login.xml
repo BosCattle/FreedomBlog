@@ -10,6 +10,20 @@
         android:id="@+id/login_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/iv_welcome" />
+        />
+
+    <include
+        android:id="@+id/sublayout_login_edittext"
+        layout="@layout/sublayout_login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_imageview" />
+
+    <include
+        layout="@layout/sublayout_login_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sublayout_login_other"
+        android:layout_below="@+id/sublayout_login_edittext"/>
 
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.content.res.Configuration;
  * Created by MrJiang on 2015/12/30.
  */
 public class BlogApplication extends Application{
+    public static boolean isLogin;
 
     @Override
     public void onCreate() {

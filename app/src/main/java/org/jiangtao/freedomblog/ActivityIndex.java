@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import org.jiangtao.fragment.AttentionFragment;
 import org.jiangtao.fragment.IndexFragment;
@@ -22,6 +23,11 @@ public class ActivityIndex extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         View.OnClickListener {
     private Fragment[] mFragments;
+    private RelativeLayout mRelativeLayoutIndex;
+    private RelativeLayout mRelativeLayoutAttention;
+    private RelativeLayout mRelativeLayoutPupop;
+    private RelativeLayout mRelativeLayoutPrompt;
+    private RelativeLayout mRelativeLayoutPerson;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +35,15 @@ public class ActivityIndex extends AppCompatActivity
         setContentView(R.layout.activity_activity_index);
         drawerSetting();
         initializationFragment();
+        initializtionContrls();
+    }
+
+    private void initializtionContrls() {
+        mRelativeLayoutIndex = (RelativeLayout) findViewById(R.id.index_fragment_choice_index);
+        mRelativeLayoutAttention = (RelativeLayout) findViewById(R.id.index_fragment_choice_attention);
+        mRelativeLayoutPrompt = (RelativeLayout) findViewById(R.id.index_fragment_choice_prompt);
+        mRelativeLayoutPerson = (RelativeLayout) findViewById(R.id.index_fragment_choice_person);
+        mRelativeLayoutPupop = (RelativeLayout) findViewById(R.id.index_fragment_choice_pupopmenu);
     }
 
     private void initializationFragment() {
@@ -36,7 +51,7 @@ public class ActivityIndex extends AppCompatActivity
         Fragment indexFragment = new IndexFragment();
         Fragment attentionFragment = new AttentionFragment();
         Fragment promptFragment = new PromptFragment();
-        Fragment personFragment = new PersonFragment();
+        Fragment personFragment = new PersonFragment(this);
         mFragments[0] = indexFragment;
         mFragments[1] = attentionFragment;
         mFragments[2] = promptFragment;
@@ -124,23 +139,27 @@ public class ActivityIndex extends AppCompatActivity
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.index_fragment_index: {
+            case R.id.index_fragment_choice_index: {
                 underTurnFragment(false, 0);
                 break;
             }
-            case R.id.index_fragment_attention: {
+            case R.id.index_fragment_choice_attention: {
                 underTurnFragment(false, 1);
                 break;
             }
-            case R.id.index_fragment_pupopmenu: {
-
+            case R.id.index_fragment_choice_pupopmenu: {
+                mRelativeLayoutIndex.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutAttention.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPupop.setBackgroundColor(getResources().getColor(R.color.purple));
+                mRelativeLayoutPrompt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPerson.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 break;
             }
-            case R.id.index_fragment_prompt: {
+            case R.id.index_fragment_choice_prompt: {
                 underTurnFragment(false, 2);
                 break;
             }
-            case R.id.index_fragment_person: {
+            case R.id.index_fragment_choice_person: {
                 underTurnFragment(false, 3);
                 break;
             }
@@ -170,6 +189,11 @@ public class ActivityIndex extends AppCompatActivity
     public void turnFragment(int location) {
         switch (location) {
             case 0: {
+                mRelativeLayoutIndex.setBackgroundColor(getResources().getColor(R.color.purple));
+                mRelativeLayoutAttention.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPupop.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPrompt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPerson.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 getSupportFragmentManager().beginTransaction()
                         .show(mFragments[0])
                         .hide(mFragments[1])
@@ -179,6 +203,11 @@ public class ActivityIndex extends AppCompatActivity
                 break;
             }
             case 1: {
+                mRelativeLayoutIndex.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutAttention.setBackgroundColor(getResources().getColor(R.color.purple));
+                mRelativeLayoutPupop.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPrompt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPerson.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 getSupportFragmentManager().beginTransaction()
                         .show(mFragments[1])
                         .hide(mFragments[0])
@@ -188,6 +217,11 @@ public class ActivityIndex extends AppCompatActivity
                 break;
             }
             case 2: {
+                mRelativeLayoutIndex.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutAttention.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPupop.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPrompt.setBackgroundColor(getResources().getColor(R.color.purple));
+                mRelativeLayoutPerson.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 getSupportFragmentManager().beginTransaction()
                         .show(mFragments[2])
                         .hide(mFragments[1])
@@ -197,6 +231,11 @@ public class ActivityIndex extends AppCompatActivity
                 break;
             }
             case 3: {
+                mRelativeLayoutIndex.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutAttention.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPupop.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPrompt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                mRelativeLayoutPerson.setBackgroundColor(getResources().getColor(R.color.purple));
                 getSupportFragmentManager().beginTransaction()
                         .show(mFragments[3])
                         .hide(mFragments[1])

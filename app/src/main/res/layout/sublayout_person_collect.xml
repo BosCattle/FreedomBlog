@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sublayout_person_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/index_image_shape">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_collections_blue_24dp"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:text="@string/group_collect"
+        android:textSize="@dimen/user_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_blue_grey_800_24dp"
+        android:text="@string/group_num"
+        android:textSize="@dimen/user_name"
+        android:drawablePadding="@dimen/activity_horizontal_margin"/>
+
+</RelativeLayout>

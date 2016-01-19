@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/index_image_shape"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_person_outline_black_24dp"
+        android:gravity="center"
+        android:text="@string/group_attention"
+        android:id="@+id/sublayout_textview_attention"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_book_blue_24dp"
+        android:gravity="center"
+        android:text="@string/group_book"
+        android:id="@+id/sublayout_textview_article"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_people_outline_black_24dp"
+        android:gravity="center"
+        android:text="@string/group_fans"
+        android:id="@+id/sublayout_textview_fans"
+        android:clickable="true"/>
+
+</LinearLayout>

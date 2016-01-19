@@ -13,7 +13,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,8 +28,12 @@
         <activity
             android:name=".ActivityLogin"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ActivityRegister" />
-        <activity android:name=".ActivityRetrieve" />
+        <activity
+            android:name=".ActivityRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityRetrieve"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service
             android:name="org.jiangtao.service.PreLoadService"
@@ -56,6 +59,9 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".PersonAttentionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

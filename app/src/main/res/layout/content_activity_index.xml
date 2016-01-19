@@ -30,54 +30,146 @@
         android:orientation="horizontal"
         android:weightSum="5">
 
-        <ImageView
-            android:id="@+id/index_fragment_index"
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/purple"
+            android:id="@+id/index_fragment_choice_index"
             android:clickable="true"
-            android:contentDescription="@string/index_actionbar"
-            android:onClick="onClick"
-            android:src="@drawable/index_image_skin" />
+            android:onClick="onClick">
 
-        <ImageView
-            android:id="@+id/index_fragment_attention"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:contentDescription="@string/index_actionbar"
-            android:onClick="onClick"
-            android:src="@drawable/index_attention_skin" />
+            <ImageView
+                android:id="@+id/index_fragment_index_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_home_white_36dp" />
 
-        <ImageView
-            android:id="@+id/index_fragment_pupopmenu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:contentDescription="@string/index_actionbar"
-            android:onClick="onClick"
-            android:src="@drawable/index_write_skin" />
+            <TextView
+                android:id="@+id/index_fragment_index_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_fragment_index_imageview"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/index_actionbar"
+                android:drawablePadding="0dp"
+                android:onClick="onClick"
+                android:text="@string/index_index"
+                android:textColor="@color/white"
+                android:textSize="@dimen/index_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/index_fragment_prompt"
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:id="@+id/index_fragment_choice_attention"
             android:clickable="true"
-            android:contentDescription="@string/index_actionbar"
-            android:onClick="onClick"
-            android:src="@drawable/index_prompt_skin" />
+            android:onClick="onClick">
 
-        <ImageView
-            android:id="@+id/index_fragment_person"
+            <ImageView
+                android:id="@+id/index_fragment_attention_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_people_white_36dp" />
+
+            <TextView
+                android:id="@+id/index_fragment_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_fragment_attention_imageview"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/index_actionbar"
+                android:onClick="onClick"
+                android:text="@string/index_attention"
+                android:textColor="@color/white"
+                android:textSize="@dimen/index_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:id="@+id/index_fragment_choice_pupopmenu"
+            android:clickable="true"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/index_fragment_pupopmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/index_actionbar"
+                android:src="@drawable/ic_favorite_red_a700_36dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:id="@+id/index_fragment_choice_prompt"
+            android:onClick="onClick"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/index_fragment_prompt_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_mode_comment_white_36dp" />
+
+            <TextView
+                android:id="@+id/index_fragment_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_fragment_prompt_imageview"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="@string/index_actionbar"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/index_comment"
+                android:textSize="@dimen/index_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/index_fragment_choice_person"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:contentDescription="@string/index_actionbar"
             android:onClick="onClick"
-            android:src="@drawable/index_person_skin" />
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/index_fragment_person_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_person_white_36dp" />
+
+            <TextView
+                android:id="@+id/index_fragment_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_fragment_person_imageview"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/index_actionbar"
+                android:text="@string/index_me"
+                android:textSize="@dimen/index_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -11,4 +11,5 @@
     <dimen name="head_image_height">90dp</dimen>
     <dimen name="user_name">20sp</dimen>
     <dimen name="index_text_size">10sp</dimen>
+    <dimen name="recyclerview_horizontal_space">20dp</dimen>
 </resources>

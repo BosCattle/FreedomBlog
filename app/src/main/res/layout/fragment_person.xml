@@ -50,47 +50,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/sub_fragment_person_image" />
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="@dimen/recyclerview_horizontal_space"
+        android:layout_below="@+id/sublayout_fragment_person_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sublayout_fragment_person_group"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:divider="@color/LightGrey"
-        android:dividerPadding="1dp"
-        android:orientation="vertical"
-        android:showDividers="beginning|end|middle">
-
-        <include
-            layout="@layout/sublayout_person_love"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:id="@+id/sublayout_person_love"/>
-
-        <include
-            layout="@layout/sublayout_person_comment"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:id="@+id/sublayout_person_comment"/>
-
-        <include
-            layout="@layout/sublayout_person_collect"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_weight="1"
-            android:id="@+id/sublayout_person_collect"/>
-
-        <include
-            layout="@layout/sublayout_person_share"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:id="@+id/sublayout_person_share"/>
-    </LinearLayout>
+        android:paddingBottom="@dimen/recyclerview_horizontal_space"
+        android:paddingLeft="@dimen/recyclerview_horizontal_space"
+        android:id="@+id/recyclerview_person"
+        />
 
 
 </RelativeLayout>

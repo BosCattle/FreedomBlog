@@ -1,67 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.jiangtao.freedomblog">
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <application
+      android:name="org.jiangtao.application.BlogApplication"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity
+        android:name=".ActivityWelcome"
+        android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".ActivityIndex"
+        android:label="@string/index_actionbar"
+        android:launchMode="singleInstance"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".ActivityGuide"
+        android:label="@string/title_activity_activity_guide"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".ActivityLogin"/>
+    <activity
+        android:name=".ActivityRegister"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".ActivityRetrieve"
+        android:theme="@style/AppTheme.NoActionBar"/>
 
-    <application
-        android:name="org.jiangtao.application.BlogApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".ActivityWelcome"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ActivityIndex"
-            android:label="@string/index_actionbar"
-            android:launchMode="singleInstance"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ActivityGuide"
-            android:label="@string/title_activity_activity_guide"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ActivityLogin"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ActivityRegister"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ActivityRetrieve"
-            android:theme="@style/AppTheme.NoActionBar" />
+    <service
+        android:name="org.jiangtao.service.PreLoadService"
+        android:exported="false"/>
 
-        <service
-            android:name="org.jiangtao.service.PreLoadService"
-            android:exported="false" />
-
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity
-            android:name=".UserSettingsActivity"
-            android:label="@string/title_activity_user_settings"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".UserIndexActivity"
-            android:label="@string/title_activity_user_index"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Sortctivity"
-            android:label="@string/title_activity_sortctivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".AboutActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_about"
-            android:theme="@style/FullscreenTheme" />
-        <activity
-            android:name=".PersonAttentionActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-    </application>
+    <activity
+        android:name=".SettingsActivity"
+        android:label="@string/title_activity_settings"/>
+    <activity
+        android:name=".UserSettingsActivity"
+        android:label="@string/title_activity_user_settings"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".UserIndexActivity"
+        android:label="@string/title_activity_user_index"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".Sortctivity"
+        android:label="@string/title_activity_sortctivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".AboutActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:label="@string/title_activity_about"
+        android:theme="@style/FullscreenTheme"/>
+    <activity
+        android:name=".PersonAttentionActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
+  </application>
 
 </manifest>

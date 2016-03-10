@@ -4,12 +4,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import butterknife.Bind;
 import org.jiangtao.listener.LoginClickListener;
 
-
+/**
+ * 登录界面
+ * author:Kevin
+ * description:登录界面
+ *
+ */
 public class ActivityLogin extends AppCompatActivity {
     private static final String TAG = ActivityLogin.class.getSimpleName();
-    private TextView mRegisterBlogTextView;
+    @Bind(R.id.register_blog) TextView mRegisterBlogTextView;
     private LoginClickListener mLoginClickListener;
 
     @Override

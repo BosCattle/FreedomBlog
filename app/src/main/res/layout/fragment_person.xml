@@ -1,64 +1,80 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.jiangtao.fragment.PersonFragment">
+    tools:context="org.jiangtao.fragment.PersonFragment"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/person_relative"
+      >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/account_avatar_size"
+        android:layout_height="@dimen/account_avatar_size"
+        android:layout_alignParentLeft="true"
+        fresco:placeholderImage="@drawable/head"
+        fresco:roundAsCircle="true"
+        />
 
+    <ImageView
+        android:id="@+id/image_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/ic_arrow"
+        />
 
-    <RelativeLayout
-        android:id="@+id/sub_fragment_person_image"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_toLeftOf="@id/image_arrow"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toStartOf="@id/image_arrow"
+        android:orientation="vertical"
         >
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="@dimen/head_image_width"
-            android:layout_height="@dimen/head_image_height"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
-            android:src="@drawable/ic_person_outline_white_24dp"
-            app:civ_border_color="@color/colorPrimaryDark"
-            app:civ_border_width="2dp" />
+      <TextView
+          android:id="@+id/text_account_username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:lines="1"
+          android:singleLine="true"
+          android:text="@string/placehold_short"
+          android:textSize="@dimen/text_size_large"
+          />
 
-        <TextView
-            android:id="@+id/head_image_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/profile_image"
-            android:gravity="center"
-            android:text="@string/person_islogin"
-            android:textSize="@dimen/user_name"
-            android:textStyle="bold"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
-    </RelativeLayout>
+      <TextView
+          android:id="@+id/text_account_sign"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/inline_padding"
+          android:lines="1"
+          android:singleLine="true"
+          android:text="@string/placehold_long"
+          android:textSize="@dimen/text_size_medium"
+          />
+    </LinearLayout>
 
-    <include
-        android:id="@+id/sublayout_fragment_person_group"
-        layout="@layout/sublayout_fragment_person_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/sub_fragment_person_image" />
-
-    <android.support.v7.widget.RecyclerView
-        android:paddingTop="@dimen/recyclerview_horizontal_space"
-        android:layout_below="@+id/sublayout_fragment_person_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/recyclerview_horizontal_space"
-        android:paddingLeft="@dimen/recyclerview_horizontal_space"
-        android:id="@+id/recyclerview_person"
-        />
+  </RelativeLayout>
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/recyclerview_person"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/person_relative"
+      android:paddingBottom="@dimen/recyclerview_horizontal_space"
+      android:paddingLeft="@dimen/recyclerview_horizontal_space"
+      android:paddingTop="@dimen/recyclerview_horizontal_space"
+      />
 
 
 </RelativeLayout>

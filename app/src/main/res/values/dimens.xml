@@ -1,15 +1,27 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="nav_header_vertical_spacing">16dp</dimen>
-    <dimen name="nav_header_height">160dp</dimen>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="appbar_padding_top">8dp</dimen>
-    <dimen name="head_image_width">90dp</dimen>
-    <dimen name="head_image_height">90dp</dimen>
-    <dimen name="user_name">20sp</dimen>
-    <dimen name="index_text_size">10sp</dimen>
-    <dimen name="recyclerview_horizontal_space">20dp</dimen>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="nav_header_vertical_spacing">16dp</dimen>
+  <dimen name="nav_header_height">160dp</dimen>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin1">32dp</dimen>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="appbar_padding_top">8dp</dimen>
+  <dimen name="head_image_width">90dp</dimen>
+  <dimen name="head_image_height">90dp</dimen>
+  <dimen name="user_name">20sp</dimen>
+  <dimen name="index_text_size">10sp</dimen>
+  <dimen name="recyclerview_horizontal_space">20dp</dimen>
+  <!--index-->
+  <dimen name="collections_margin_left">16dp</dimen>
+  <dimen name="collections_margin_top">10dp</dimen>
+  <dimen name="collections_margin_right">10dp</dimen>
+  <dimen name="collections_text_title_size">18sp</dimen>
+  <dimen name="collections_text_content_size">16sp</dimen>
+  <!-- person fragment-->
+  <dimen name="account_avatar_size">80dp</dimen>
+  <dimen name="text_size_large">20sp</dimen>
+  <dimen name="inline_padding">16dp</dimen>
+  <dimen name="text_size_medium">18sp</dimen>
 </resources>

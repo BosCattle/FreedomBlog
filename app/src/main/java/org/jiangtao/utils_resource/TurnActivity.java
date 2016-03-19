@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
+import org.jiangtao.freedomblog.ActivityIndex;
 import org.jiangtao.freedomblog.ActivityLogin;
 import org.jiangtao.freedomblog.SettingsActivity;
 
@@ -30,5 +31,13 @@ public class TurnActivity {
     public static void turnLoginActivity(AppCompatActivity mContext) {
         Intent startSettings = new Intent(mContext, ActivityLogin.class);
         mContext.startActivityForResult(startSettings, StaticResources.requestCodeLogin);
+    }
+
+    /**
+     * 跳转到主界面
+     */
+    public static void startIndexActivity(AppCompatActivity activity) {
+        Intent intent = new Intent(activity, ActivityIndex.class);
+        activity.startActivity(intent);
     }
 }

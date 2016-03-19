@@ -19,7 +19,8 @@
             android:digits="@string/input_type"
             android:hint="@string/sub_edittext_username"
             android:maxLength="48"
-            android:saveEnabled="false" />
+            android:saveEnabled="false"
+            android:textColor="@color/white"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -27,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sub_edittext_username"
-
         app:errorEnabled="true">
 
         <EditText
@@ -37,7 +37,8 @@
             android:hint="@string/sub_edittext_password"
             android:inputType="textPassword"
             android:maxLength="48"
-            android:saveEnabled="false" />
+            android:saveEnabled="false"
+            android:textColor="@color/white"/>
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -45,10 +46,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_login"
         android:text="@string/button_login"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:textColor="@color/white"
         android:layout_below="@+id/sub_edittext_password"
-        android:background="@color/colorPrimary"/>
+        android:background="@drawable/shape_login"
+        android:layout_marginTop="@dimen/pading_top"
+        android:textSize="18sp"
+        />
 
 </RelativeLayout>

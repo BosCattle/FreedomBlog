@@ -15,6 +15,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
+import java.sql.Date;
+import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
 import org.jiangtao.service.AccountService;
 import org.jiangtao.utils_resource.AccountManager;
@@ -117,14 +119,18 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
           @Override public void onResponse(Response<Account> response) {
             if (response.isSuccess()) {
               Account account = response.body();
-              if (account != null)
-              {
+              if (account != null) {
                 if (account.token != null) {
                   AccountManager.getInstance().saveAccount(account, getApplicationContext());
                   AccountManager.getInstance().saveToken(getApplicationContext(), account.token);
+                  java.util.Date date = new java.util.Date();
+                  Date date1 = new Date(date.getTime());
+                  Log.d("--->", date1.toString() + "你好");
+                  AccountManager.getInstance()
+                      .saveTime(BlogApplication.getInstance().getApplicationContext(), date1);
                   TurnActivity.startIndexActivity(ActivityRegister.this);
                 }
-              }else {
+              } else {
                 Snackbar.make(mRelativelayout, "手机号已经存在", Snackbar.LENGTH_SHORT).show();
               }
               Log.d("----->", account.toString());

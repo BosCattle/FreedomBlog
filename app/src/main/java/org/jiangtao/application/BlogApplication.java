@@ -13,13 +13,7 @@ import org.jiangtao.utils_resource.StaticResources;
  * Date: 2016/3/15 23:43 <br>
  */
 public class BlogApplication extends StarterKitApp {
-  public static boolean isLogin;
   private static BlogApplication mApp = new BlogApplication();
-
-  public  BlogApplication() {
-
-  }
-
 
   public static BlogApplication getInstance() {
     if (mApp == null) {
@@ -33,7 +27,7 @@ public class BlogApplication extends StarterKitApp {
   @Override public void onCreate() {
     super.onCreate();
     Fresco.initialize(this);
-    SMSSDK.initSDK(this, StaticResources.MOB_SMS_KEY,StaticResources.MOB_SMS_SECRET);
+    SMSSDK.initSDK(this, StaticResources.MOB_SMS_KEY, StaticResources.MOB_SMS_SECRET);
   }
 
   @Override public void onLowMemory() {

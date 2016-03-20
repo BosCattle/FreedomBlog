@@ -13,6 +13,7 @@
   <string name="index_attention">关注</string>
   <string name="index_me">我的</string>
   <string name="index_comment">记录</string>
+  <string name="index_fragment_pupopmenu">发布</string>
   <!-- 侧滑栏string-->
   <string name="nav_index">主页</string>
   <string name="nav_sort">分类</string>
@@ -54,4 +55,5 @@
   <string name="input_type">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@1234567890.</string>
   <string name="title_activity_about">关于</string>
   <string name="validate_type">0123456789</string>
+  <string name="forget_password">忘记密码</string>
 </resources>

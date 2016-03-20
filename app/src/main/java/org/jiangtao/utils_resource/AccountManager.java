@@ -3,7 +3,6 @@ package org.jiangtao.utils_resource;
 import android.content.Context;
 import android.content.SharedPreferences;
 import com.google.gson.Gson;
-import java.sql.Date;
 import org.jiangtao.model.Account;
 import org.json.JSONException;
 
@@ -44,8 +43,6 @@ public class AccountManager {
 
   /**
    * 获取用户信息
-   *
-   * @throws JSONException
    */
   public Account getAccount(Context context) {
     SharedPreferences shared = context.getSharedPreferences("accounts", Context.MODE_PRIVATE);
@@ -76,7 +73,7 @@ public class AccountManager {
    * 每次启动applications
    * 保存当前日期
    */
-  public void saveTime(Context context, Date date) {
+  public void saveTime(Context context, java.util.Date date) {
     SharedPreferences shared = context.getSharedPreferences("intervals", Context.MODE_PRIVATE);
     SharedPreferences.Editor editor = shared.edit();
     Gson gson = new Gson();
@@ -87,18 +84,21 @@ public class AccountManager {
 
   /**
    * 获取上次保存的数据
+   * 错误
    */
-  public Date getTime(Context context) {
+  public java.util.Date getTime(Context context) {
     SharedPreferences shared = context.getSharedPreferences("intervals", Context.MODE_PRIVATE);
     Gson gson = new Gson();
-    return gson.fromJson(shared.getString("time", null), Date.class);
+    String object = shared.getString("time", "null");
+    java.util.Date date = gson.fromJson(object, java.util.Date.class);
+    return date;
   }
 
   /**
    * 获取两次登录的时间差
    * 用于判断token是否有效
    */
-  public int daysBetween(Date smdate, Date bdate) {
+  public int daysBetween(java.util.Date smdate, java.util.Date bdate) {
     return (int) ((smdate.getTime() / 86400000L) - (bdate.getTime() / 86400000L));
   }
 }

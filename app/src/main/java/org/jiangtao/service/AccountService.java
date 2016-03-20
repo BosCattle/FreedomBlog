@@ -7,11 +7,19 @@ import retrofit.http.FormUrlEncoded;
 import retrofit.http.POST;
 
 /**
- * Created by MrJiang on 2016/3/19.
+ * 账户服务
  */
 public interface AccountService {
+  /**
+   * 注册
+   */
+  @FormUrlEncoded @POST("/auth/register") Call<Account> register(@Field("phone") String phone,
+      @Field("password") String password);
 
-  @FormUrlEncoded @POST("/auth/register") Call<Account> register
-      (@Field("phone") String phone,
+  /**
+   * 登录
+   */
+  @FormUrlEncoded @POST("/auth/login") Call<Account>
+  login(@Field("phone") String phone,
       @Field("password") String password);
 }

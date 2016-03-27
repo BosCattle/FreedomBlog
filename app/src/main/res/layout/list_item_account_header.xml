@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/avatar"
+      android:layout_width="@dimen/account_avatar_size"
+      android:layout_height="@dimen/account_avatar_size"
+      android:background="@drawable/placeholder_avatar"
+      fresco:placeholderImage="@drawable/ic_avatar_default"
+      fresco:roundAsCircle="true"
+      fresco:placeholderImageScaleType="centerCrop"
+
+      />
+
+  <ImageView
+      android:id="@+id/image_arrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:contentDescription="@string/content_description"
+      android:src="@drawable/ic_arrow"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:layout_marginRight="@dimen/activity_horizontal_margin"
+      android:layout_toEndOf="@id/avatar"
+      android:layout_toLeftOf="@id/image_arrow"
+      android:layout_toRightOf="@id/avatar"
+      android:layout_toStartOf="@id/image_arrow"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/text_account_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="@string/placehold_short"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_large"
+        />
+  </LinearLayout>
+
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

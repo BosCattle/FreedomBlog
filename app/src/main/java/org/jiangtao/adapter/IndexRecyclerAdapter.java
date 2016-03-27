@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import org.jiangtao.freedomblog.R;
 import org.jiangtao.model.Article;
-import org.jiangtao.viewholder.IndexViewHolder;
+import org.jiangtao.holder.IndexViewHolder;
 
 /**
  * Method:IndexRecyclerAdapter <br>

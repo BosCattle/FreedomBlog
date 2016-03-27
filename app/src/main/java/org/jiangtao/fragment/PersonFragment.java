@@ -1,31 +1,63 @@
 package org.jiangtao.fragment;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.ViewGroup;
+import butterknife.Bind;
+import com.carlosdelachica.easyrecycleradapters.adapter.EasyViewHolder;
+import com.smartydroid.android.starter.kit.app.StarterFragment;
+import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
+import java.util.ArrayList;
+import org.jiangtao.adapter.AccountAdapter;
 import org.jiangtao.freedomblog.R;
+import org.jiangtao.utils.build.AccountBuildUtils;
+import org.jiangtao.view.SettingItems;
 
 /**
  * 个人界面
  */
-public class PersonFragment extends Fragment {
+public class PersonFragment extends StarterFragment implements EasyViewHolder.OnItemClickListener {
+
+  public static final int ITEM_VIEW_HEADER = 100;
+  public static final int ITEM_VIEW_COMMENT = 200;
+  public static final int ITEM_VIEW_SETTING = 300;
+  public static final int ITEM_VIEW_PUBLISH = 400;
+  public static final int ITEM_VIEW_COLLECTION = 500;
+
+  @Bind(R.id.recycler_person) RecyclerView mPersonRecycler;
+
   private static final String TAG = PersonFragment.class.getSimpleName();
-  private View mView;
+  private AccountAdapter mAccountAdapter;
+  private ArrayList<SettingItems> mSettingItems = new ArrayList<>();
 
-  public PersonFragment() {
+  @Override protected int getFragmentLayout() {
+    return R.layout.fragment_person;
   }
 
-  @SuppressLint("ValidFragment") public PersonFragment(Context context) {
-
+  @Override public void onViewCreated(View view, Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+    setUpView();
+    setUpAdapter();
   }
 
-  @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
-      Bundle savedInstanceState) {
-    mView = inflater.inflate(R.layout.fragment_person, container, false);
-    return mView;
+  private void setUpAdapter() {
+    mAccountAdapter = new AccountAdapter(getContext(), mSettingItems);
+    mAccountAdapter.setOnClickListener(this);
+    mPersonRecycler.setHasFixedSize(true);
+    mPersonRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+    mPersonRecycler.addItemDecoration(
+        new HorizontalDividerItemDecoration.Builder(getContext()).size(1)
+            .showLastDivider()
+            .build());
+    mPersonRecycler.setAdapter(mAccountAdapter);
+  }
+
+  private void setUpView() {
+    mSettingItems = AccountBuildUtils.buildParentViews(getContext());
+  }
+
+  @Override public void onItemClick(int position, View view) {
+
   }
 }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+  <ImageView
+      android:id="@android:id/icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:contentDescription="@string/content_description"
+      android:src="@drawable/ic_arrow"
+      />
+
+  <TextView
+      android:id="@android:id/text1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:layout_marginStart="@dimen/activity_horizontal_margin"
+      android:layout_toEndOf="@android:id/icon"
+      android:layout_toRightOf="@android:id/icon"
+      android:contentDescription="@string/content_description"
+      android:lines="1"
+      android:singleLine="true"
+      android:text="@string/placehold_short"
+      android:textSize="@dimen/text_size_medium"
+      />
+
+  <ImageView
+      android:id="@android:id/icon1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:contentDescription="@string/content_description"
+      android:src="@drawable/ic_arrow"
+      />
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

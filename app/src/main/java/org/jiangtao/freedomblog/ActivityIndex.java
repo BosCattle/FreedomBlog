@@ -2,16 +2,21 @@ package org.jiangtao.freedomblog;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TabHost;
+import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import org.jiangtao.fragment.AttentionFragment;
@@ -19,51 +24,71 @@ import org.jiangtao.fragment.IndexFragment;
 import org.jiangtao.fragment.PersonFragment;
 import org.jiangtao.fragment.PromptFragment;
 import org.jiangtao.fragment.SendFragment;
-import org.jiangtao.utils_resource.TurnActivity;
+import org.jiangtao.utils.TurnActivity;
 
 public class ActivityIndex extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
-  @Bind(R.id.index_fragment_index_imageview) ImageView mImageIndex;
-  @Bind(R.id.index_fragment_attention_imageview) ImageView mImageBible;
-  @Bind(R.id.index_fragment_pupopmenu) ImageView mImageCircle;
-  @Bind(R.id.index_fragment_prompt_imageview) ImageView mImageInfo;
-  @Bind(R.id.index_fragment_person_imageview) ImageView mImageMine;
-  private Fragment[] mFragments;
+  public static final String TAB_HOME = "tag_home_identifier";
+  public static final String TAB_MESSAGE = "tag_message_identifier";
+  public static final String TAB_EDUCATION = "tag_education_identifier";
+  public static final String TAB_CLASS_CIRCLE = "tag_classes_identifier";
+  public static final String TAB_ACCOUNT = "tag_account_identifier";
+
+  @Bind(R.id.mian_tabhost) FragmentTabHost mTabHost;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_activity_index);
     drawerSetting();
-    initializationFragment();
     ButterKnife.bind(this);
+    setTabHost();
   }
 
-  private void initializationFragment() {
-    mFragments = new Fragment[5];
-    Fragment indexFragment = new IndexFragment();
-    Fragment attentionFragment = new AttentionFragment();
-    Fragment promptFragment = new PromptFragment();
-    Fragment personFragment = new PersonFragment(this);
-    Fragment sendFragment = new SendFragment();
-    mFragments[0] = indexFragment;
-    mFragments[1] = attentionFragment;
-    mFragments[2] = promptFragment;
-    mFragments[3] = personFragment;
-    mFragments[4] = sendFragment;
+  private void setTabHost() {
+    mTabHost.setup(this, getSupportFragmentManager(), android.R.id.tabcontent);
+    mTabHost.addTab(createTabSpec(TAB_HOME, R.string.index_index, R.drawable.selector_tab_home),
+        IndexFragment.class, null);
+    mTabHost.addTab(
+        createTabSpec(TAB_MESSAGE, R.string.index_comment, R.drawable.selector_tab_messge),
+        PromptFragment.class, null);
+    mTabHost.addTab(
+        createTabSpec(TAB_EDUCATION, R.string.index_fragment_pupopmenu, R.drawable.selector_tab_education),
+        SendFragment.class, null);
+    mTabHost.addTab(createTabSpec(TAB_CLASS_CIRCLE, R.string.index_attention,
+        R.drawable.selector_tab_class_circle), AttentionFragment.class, null);
+    mTabHost.addTab(
+        createTabSpec(TAB_ACCOUNT, R.string.index_me, R.drawable.selector_tab_account),
+        PersonFragment.class, null);
+  }
 
-    getSupportFragmentManager().beginTransaction()
-        .add(R.id.container_index, mFragments[0])
-        .add(R.id.container_index, mFragments[1])
-        .add(R.id.container_index, mFragments[2])
-        .add(R.id.container_index, mFragments[3])
-        .add(R.id.container_index, mFragments[4])
-        .show(mFragments[0])
-        .hide(mFragments[1])
-        .hide(mFragments[2])
-        .hide(mFragments[3])
-        .hide(mFragments[4])
-        .commit();
+  private TabHost.TabSpec createTabSpec(String tag, int stringRes, int drawableResId) {
+    TabHost.TabSpec spec = mTabHost.newTabSpec(tag);
+    spec.setIndicator(createTabIndicator(stringRes, drawableResId));
+    spec.setContent(new TabHost.TabContentFactory() {
+      public View createTabContent(String tag) {
+        return findViewById(android.R.id.tabcontent);
+      }
+    });
+    return spec;
+  }
+
+  /**
+   * android.R.id.icon1 固定
+   * 设置底部布局
+   */
+  private View createTabIndicator(int res, int drawableResId) {
+    LinearLayout tabIndicator = (LinearLayout) LayoutInflater.from(this)
+        .inflate(R.layout.tab_indicator, mTabHost.getTabWidget(), false);
+    ImageView icon = (ImageView) tabIndicator.findViewById(android.R.id.icon1);
+    icon.setImageResource(drawableResId);
+    TextView text = ButterKnife.findById(tabIndicator, android.R.id.text1);
+    text.setText(res);
+    LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) tabIndicator.getLayoutParams();
+    tabIndicator.setEnabled(true);
+    params.weight = 1.0F;
+    tabIndicator.setGravity(Gravity.CENTER);
+    return tabIndicator;
   }
 
   /**
@@ -135,120 +160,6 @@ public class ActivityIndex extends AppCompatActivity
    */
   @Override public void onClick(View v) {
     switch (v.getId()) {
-      case R.id.index_fragment_choice_index: {
-        underTurnFragment(false, 0);
-        break;
-      }
-      case R.id.index_fragment_choice_attention: {
-        underTurnFragment(false, 1);
-        break;
-      }
-      case R.id.index_fragment_choice_pupopmenu: {
-        underTurnFragment(false, 4);
-        break;
-      }
-      case R.id.index_fragment_choice_prompt: {
-        underTurnFragment(false, 2);
-        break;
-      }
-      case R.id.index_fragment_choice_person: {
-        underTurnFragment(false, 3);
-        break;
-      }
-    }
-  }
-
-  /**
-   * 切换fragment
-   */
-  public void underTurnFragment(boolean ischeck, int location) {
-    if (!ischeck) {
-      turnFragment(location);
-    } else {
-      //判断登陆情况，如果登陆，直接进入，否则提示登陆，并且让用户选择
-
-    }
-  }
-
-  /**
-   * 根据位置切换fragment
-   */
-  public void turnFragment(int location) {
-    switch (location) {
-      case 0: {
-        mImageIndex.setImageResource(R.drawable.home_green);
-        mImageBible.setImageResource(R.drawable.bible);
-        mImageCircle.setImageResource(R.drawable.circle);
-        mImageInfo.setImageResource(R.drawable.message);
-        mImageMine.setImageResource(R.drawable.mine);
-        getSupportFragmentManager().beginTransaction()
-            .show(mFragments[0])
-            .hide(mFragments[1])
-            .hide(mFragments[2])
-            .hide(mFragments[3])
-            .hide(mFragments[4])
-            .commit();
-        break;
-      }
-      case 1: {
-        mImageIndex.setImageResource(R.drawable.home);
-        mImageBible.setImageResource(R.drawable.bible_green);
-        mImageCircle.setImageResource(R.drawable.circle);
-        mImageInfo.setImageResource(R.drawable.message);
-        mImageMine.setImageResource(R.drawable.mine);
-        getSupportFragmentManager().beginTransaction()
-            .show(mFragments[1])
-            .hide(mFragments[0])
-            .hide(mFragments[2])
-            .hide(mFragments[3])
-            .hide(mFragments[4])
-            .commit();
-        break;
-      }
-      case 2: {
-        mImageIndex.setImageResource(R.drawable.home);
-        mImageBible.setImageResource(R.drawable.bible);
-        mImageCircle.setImageResource(R.drawable.circle);
-        mImageInfo.setImageResource(R.drawable.message_green);
-        mImageMine.setImageResource(R.drawable.mine);
-        getSupportFragmentManager().beginTransaction()
-            .show(mFragments[2])
-            .hide(mFragments[1])
-            .hide(mFragments[0])
-            .hide(mFragments[3])
-            .hide(mFragments[4])
-            .commit();
-        break;
-      }
-      case 3: {
-        mImageIndex.setImageResource(R.drawable.home);
-        mImageBible.setImageResource(R.drawable.bible);
-        mImageCircle.setImageResource(R.drawable.circle);
-        mImageInfo.setImageResource(R.drawable.message);
-        mImageMine.setImageResource(R.drawable.mine_green);
-        getSupportFragmentManager().beginTransaction()
-            .show(mFragments[3])
-            .hide(mFragments[1])
-            .hide(mFragments[2])
-            .hide(mFragments[0])
-            .hide(mFragments[4])
-            .commit();
-        break;
-      }
-      case 4: {
-        mImageIndex.setImageResource(R.drawable.home);
-        mImageBible.setImageResource(R.drawable.bible);
-        mImageCircle.setImageResource(R.drawable.circle_green);
-        mImageInfo.setImageResource(R.drawable.message);
-        mImageMine.setImageResource(R.drawable.mine);
-        getSupportFragmentManager().beginTransaction()
-            .show(mFragments[4])
-            .hide(mFragments[1])
-            .hide(mFragments[2])
-            .hide(mFragments[0])
-            .hide(mFragments[3])
-            .commit();
-      }
     }
   }
 }

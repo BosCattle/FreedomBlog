@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import org.jiangtao.utils_resource.TurnActivity;
+import org.jiangtao.utils.TurnActivity;
 
 /**
  * author:Kevin

@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import org.jiangtao.model.Account;
-import org.jiangtao.utils_resource.AccountManager;
-import org.jiangtao.utils_resource.TurnActivity;
+import org.jiangtao.utils.AccountManager;
+import org.jiangtao.utils.TurnActivity;
 
 public class ActivityWelcome extends AppCompatActivity {
   

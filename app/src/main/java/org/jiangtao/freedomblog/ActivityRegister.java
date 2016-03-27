@@ -19,12 +19,12 @@ import java.sql.Date;
 import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
 import org.jiangtao.service.AccountService;
-import org.jiangtao.utils_resource.AccountManager;
-import org.jiangtao.utils_resource.ApiService;
-import org.jiangtao.utils_resource.TurnActivity;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.Response;
+import org.jiangtao.utils.AccountManager;
+import org.jiangtao.utils.ApiService;
+import org.jiangtao.utils.TurnActivity;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Class:ActivityRegister <br>
@@ -116,8 +116,8 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
         Call<Account> call = mAccountService.register(phoneText, passwordText);
         Callback<Account> callback = new Callback<Account>() {
 
-          @Override public void onResponse(Response<Account> response) {
-            if (response.isSuccess()) {
+          @Override public void onResponse(Call<Account> call, Response<Account> response) {
+            if (response.isSuccessful()) {
               Account account = response.body();
               if (account != null) {
                 if (account.token != null) {
@@ -137,7 +137,7 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
             }
           }
 
-          @Override public void onFailure(Throwable t) {
+          @Override public void onFailure(Call<Account> call, Throwable t) {
             Log.d("----->", t.toString());
             Snackbar.make(mRelativelayout, "手机号已经存在", Snackbar.LENGTH_SHORT).show();
           }

@@ -13,12 +13,12 @@ import butterknife.ButterKnife;
 import java.util.Date;
 import org.jiangtao.model.Account;
 import org.jiangtao.service.AccountService;
-import org.jiangtao.utils_resource.AccountManager;
-import org.jiangtao.utils_resource.ApiService;
-import org.jiangtao.utils_resource.TurnActivity;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.Response;
+import org.jiangtao.utils.AccountManager;
+import org.jiangtao.utils.ApiService;
+import org.jiangtao.utils.TurnActivity;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * 登录界面
@@ -76,19 +76,19 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
     mPhone = mPhoneEdit.getText().toString();
     mPassWord = mPassWordEdit.getText().toString();
     Callback<Account> callback = new Callback<Account>() {
-      @Override public void onResponse(Response<Account> response) {
-        if (response.isSuccess()) {
+      @Override public void onResponse(Call<Account> call, Response<Account> response) {
+        if (response.isSuccessful()) {
           Account account = response.body();
           if (account != null) {
             AccountManager.getInstance().saveAccount(account, ActivityLogin.this);
             AccountManager.getInstance().saveToken(ActivityLogin.this, account.token);
-            AccountManager.getInstance().saveTime(ActivityLogin.this,new Date());
+            AccountManager.getInstance().saveTime(ActivityLogin.this, new Date());
             TurnActivity.startIndexActivity(ActivityLogin.this);
           }
         }
       }
 
-      @Override public void onFailure(Throwable t) {
+      @Override public void onFailure(Call<Account> call, Throwable t) {
         Snackbar.make(mRelativelayout, "有一些小故障哦", Snackbar.LENGTH_SHORT).show();
       }
     };

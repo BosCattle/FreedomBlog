@@ -20,7 +20,7 @@ import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
 import org.jiangtao.service.AccountService;
 import org.jiangtao.utils.AccountManager;
-import org.jiangtao.utils.ApiService;
+import org.jiangtao.service.ApiService;
 import org.jiangtao.utils.TurnActivity;
 import retrofit2.Call;
 import retrofit2.Callback;

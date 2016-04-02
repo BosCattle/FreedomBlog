@@ -10,7 +10,6 @@ public class StarterNetwork {
   private static final String sBaseUrl = StaticResources.BASE_URL;
   private Retrofit mRetrofit;
 
-  // Make this class a thread safe singleton
   private static class SingletonHolder {
     private static final StarterNetwork INSTANCE = new StarterNetwork();
   }

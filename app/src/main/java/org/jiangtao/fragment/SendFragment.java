@@ -1,28 +1,43 @@
 package org.jiangtao.fragment;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import butterknife.ButterKnife;
-import org.jiangtao.freedomblog.R;
+import android.widget.Button;
+import android.widget.ImageView;
 import butterknife.Bind;
-import org.xwalk.core.XWalkView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import com.smartydroid.android.starter.kit.app.StarterFragment;
+import org.jiangtao.freedomblog.R;
+import org.jiangtao.utils.TurnActivity;
 
 /**
- * 发布界面
- * why
+ * 开启发布界面
  */
-public class SendFragment extends Fragment {
+public class SendFragment extends StarterFragment {
 
-  @Bind(R.id.x_walk_view) XWalkView mXWalkView;
+  @Bind(R.id.image_show) ImageView mImageShow;
+  @Bind(R.id.btn_publish) Button mBtnPublish;
+
+  @Override protected int getFragmentLayout() {
+    return R.layout.fragment_send;
+  }
 
   @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
-    View mView = inflater.inflate(R.layout.fragment_send, container, false);
-    ButterKnife.bind(this, mView);
-    mXWalkView.load("https://www.baidu.com/?tn=92655425_hao_pg", null);
-    return mView;
+    View rootView = super.onCreateView(inflater, container, savedInstanceState);
+    ButterKnife.bind(this, rootView);
+    return rootView;
+  }
+
+  @Override public void onDestroyView() {
+    super.onDestroyView();
+    ButterKnife.unbind(this);
+  }
+
+  @OnClick(R.id.btn_publish) public void onClick(View v) {
+    TurnActivity.startPublishActivity(getActivity());
   }
 }

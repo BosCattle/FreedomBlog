@@ -3,18 +3,18 @@ package org.jiangtao.freedomblog;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import com.smartydroid.android.starter.kit.app.StarterActivity;
 import java.util.Date;
 import org.jiangtao.model.Account;
 import org.jiangtao.service.AccountService;
 import org.jiangtao.utils.AccountManager;
-import org.jiangtao.utils.ApiService;
+import org.jiangtao.service.ApiService;
 import org.jiangtao.utils.TurnActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -25,7 +25,7 @@ import retrofit2.Response;
  * author:Kevin
  * description:登录界面
  */
-public class ActivityLogin extends AppCompatActivity implements View.OnClickListener {
+public class ActivityLogin extends StarterActivity implements View.OnClickListener {
   private static final String TAG = ActivityLogin.class.getSimpleName();
   @Bind(R.id.register_blog) TextView mRegisterBlogTextView;
   @Bind(R.id.button_login) TextView mLoginButton;
@@ -73,11 +73,13 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
   }
 
   private void submitLogin() {
+    showHud("正在登陆...");
     mPhone = mPhoneEdit.getText().toString();
     mPassWord = mPassWordEdit.getText().toString();
     Callback<Account> callback = new Callback<Account>() {
       @Override public void onResponse(Call<Account> call, Response<Account> response) {
         if (response.isSuccessful()) {
+          dismissHud();
           Account account = response.body();
           if (account != null) {
             AccountManager.getInstance().saveAccount(account, ActivityLogin.this);
@@ -89,6 +91,7 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
       }
 
       @Override public void onFailure(Call<Account> call, Throwable t) {
+        dismissHud();
         Snackbar.make(mRelativelayout, "有一些小故障哦", Snackbar.LENGTH_SHORT).show();
       }
     };

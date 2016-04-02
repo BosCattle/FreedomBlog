@@ -6,9 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import java.util.ArrayList;
 import org.jiangtao.freedomblog.R;
-import org.jiangtao.model.Prompt;
 
 /**
  * Class:PromptFragment <br>
@@ -20,7 +18,6 @@ public class PromptFragment extends Fragment {
 
   private RecyclerView recyclerView;
   private View mView;
-  private ArrayList<Prompt> mPromptLists = new ArrayList<>();
 
   public PromptFragment() {
   }

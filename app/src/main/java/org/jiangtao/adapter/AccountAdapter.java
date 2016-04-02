@@ -12,6 +12,7 @@ import org.jiangtao.holder.AccountItemCellViewHolder;
 import org.jiangtao.holder.CellViewHolder;
 import org.jiangtao.holder.EmptyCellViewHolder;
 import org.jiangtao.holder.HeaderCellViewHolder;
+import org.jiangtao.holder.SendCellViewHolder;
 import org.jiangtao.view.SettingItems;
 
 /**
@@ -53,6 +54,10 @@ public class AccountAdapter extends RecyclerView.Adapter<CellViewHolder> {
         break;
       case SettingItems.VIEW_TYPE_ITEM:
         cellViewHolder = new AccountItemCellViewHolder(context, parent);
+        break;
+
+      case SettingItems.VIEW_TYPE_ATTRIBUTE:
+        cellViewHolder = new SendCellViewHolder(context, parent);
         break;
     }
     bindListeners(cellViewHolder);

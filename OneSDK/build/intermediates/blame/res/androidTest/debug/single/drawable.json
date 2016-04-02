@@ -148,12 +148,12 @@
         "source": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_listview_divider.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_weitao_msg_bg.xml",
-        "source": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_weitao_msg_bg.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_cloud_msg_forget_password.xml",
         "source": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_cloud_msg_forget_password.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_weitao_msg_bg.xml",
+        "source": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_weitao_msg_bg.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\OneSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_send_tab_icon.xml",

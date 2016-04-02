@@ -72,4 +72,7 @@ dependencies {
   compile project(':OneSDK')
   compile 'org.xwalk:xwalk_core_library:17.46.448.10'
   compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+  compile('com.github.afollestad.material-dialogs:core:0.8.5.7@aar') {
+    transitive = true
+  }
 }

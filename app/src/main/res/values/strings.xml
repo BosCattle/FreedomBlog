@@ -55,4 +55,11 @@
   <string name="title_activity_about">关于</string>
   <string name="validate_type">0123456789</string>
   <string name="forget_password">忘记密码</string>
+
+  <!-- sendFragment发布内容界面-->
+  <string name="edit_title">请输入标题</string>
+  <string name="btn_publish">开始写作</string>
+  <!-- publishActivity-->
+  <string name="label_publish">写作</string>
+  <string name="action_publish">发布</string>
 </resources>

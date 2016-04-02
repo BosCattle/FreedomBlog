@@ -6,11 +6,21 @@
     tools:context="org.jiangtao.fragment.SendFragment"
     >
 
-  <org.xwalk.core.XWalkView
-      android:id="@+id/x_walk_view"
+  <ImageView
+      android:id="@+id/image_show"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       />
 
 
+  <Button
+      android:id="@+id/btn_publish"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/image_show"
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:text="@string/btn_publish"
+      android:textColor="@color/black"
+      />
 </RelativeLayout>

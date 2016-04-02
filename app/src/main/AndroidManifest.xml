@@ -21,13 +21,14 @@
       android:allowBackup="true"
       android:hardwareAccelerated="true"
       android:icon="@mipmap/ic_launcher"
-      android:theme="@style/AppTheme"
-      android:largeHeap="true">
+      android:largeHeap="true"
+      android:theme="@style/AppTheme">
     <activity
         android:name=".ActivityWelcome"
         android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
+
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
@@ -52,7 +53,6 @@
     <activity
         android:name=".ActivityRetrieve"
         android:theme="@style/AppTheme.NoActionBar"/>
-
     <activity
         android:name=".SettingsActivity"
         android:label="@string/title_activity_settings">
@@ -81,14 +81,20 @@
         android:name=".PersonAttentionActivity"
         android:theme="@style/AppTheme.NoActionBar"/>
 
-
-    <!-- 有关第三方-->
+    <!-- 有关第三方 -->
     <activity
         android:name="com.mob.tools.MobUIShell"
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:theme="@android:style/Theme.Translucent.NoTitleBar"
         android:windowSoftInputMode="stateHidden|adjustResize"/>
 
+    <activity
+        android:name=".PublishActivity"
+        android:label="@string/label_publish">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ActivityIndex"/>
+    </activity>
   </application>
 
 </manifest>

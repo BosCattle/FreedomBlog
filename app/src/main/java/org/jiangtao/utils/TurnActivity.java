@@ -1,5 +1,6 @@
 package org.jiangtao.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import org.jiangtao.freedomblog.ActivityIndex;
 import org.jiangtao.freedomblog.ActivityLogin;
 import org.jiangtao.freedomblog.ActivityRegister;
 import org.jiangtao.freedomblog.ActivityRetrieve;
+import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
 
 /**
@@ -53,6 +55,14 @@ public class TurnActivity {
    */
   public static void startRegisterActivity(AppCompatActivity activity) {
     Intent intent = new Intent(activity, ActivityRegister.class);
+    activity.startActivity(intent);
+  }
+
+  /**
+   * 跳转到发布界面
+   */
+  public static void startPublishActivity(Activity activity) {
+    Intent intent = new Intent(activity, PublishActivity.class);
     activity.startActivity(intent);
   }
 }

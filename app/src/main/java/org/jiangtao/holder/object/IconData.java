@@ -10,6 +10,10 @@ public class IconData {
   public String title;
   public String subtitle;
 
+  public IconData(int iconRes) {
+    this.iconRes = iconRes;
+  }
+
   public IconData(String title) {
     this.title = title;
   }

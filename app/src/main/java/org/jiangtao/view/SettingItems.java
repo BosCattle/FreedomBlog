@@ -8,9 +8,9 @@ public class SettingItems {
 
   public static final int VIEW_TYPE_EMPTY = 0;
   public static final int VIEW_TYPE_HEADER = 1;
-  public static final int VIEW_TYPE_SHADOW_CUSTON = 2;
   public static final int VIEW_TYPE_ITEM = 3;
   public static final int VIEW_TYPE_ACCOUNT_HEADER = 4;
+  public static final int VIEW_TYPE_ATTRIBUTE = 5;
 
   public boolean enabled;
   public int itemViewType;
@@ -50,6 +50,11 @@ public class SettingItems {
       return this;
     }
 
+    public Builder type(int type) {
+      this.mType = type;
+      return this;
+    }
+
     public Builder itemViewType(int itemViewType) {
       this.itemViewType = itemViewType;
       return this;
@@ -57,11 +62,6 @@ public class SettingItems {
 
     public Builder text(String text) {
       this.mText = text;
-      return this;
-    }
-
-    public Builder type(int type) {
-      this.mType = type;
       return this;
     }
 

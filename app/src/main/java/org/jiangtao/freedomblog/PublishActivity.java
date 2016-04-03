@@ -1,5 +1,6 @@
 package org.jiangtao.freedomblog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,8 +16,11 @@ import butterknife.ButterKnife;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.carlosdelachica.easyrecycleradapters.adapter.EasyViewHolder;
+import com.qiniu.android.http.ResponseInfo;
+import com.qiniu.android.storage.UpCompletionHandler;
 import com.smartydroid.android.starter.kit.app.StarterActivity;
 import com.yqritc.recyclerviewflexibledivider.VerticalDividerItemDecoration;
+import java.io.File;
 import java.util.ArrayList;
 import jp.wasabeef.richeditor.RichEditor;
 import org.jiangtao.adapter.AccountAdapter;
@@ -25,9 +29,14 @@ import org.jiangtao.model.Articles;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.service.ArticleService;
 import org.jiangtao.utils.AccountManager;
+import org.jiangtao.utils.ImageUtils;
+import org.jiangtao.utils.InitUploadManager;
+import org.jiangtao.utils.QiNiuTokenUtils;
 import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.build.SendFragmentUtils;
 import org.jiangtao.view.SettingItems;
+import org.json.JSONException;
+import org.json.JSONObject;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,6 +48,7 @@ public class PublishActivity extends StarterActivity
     implements EasyViewHolder.OnItemClickListener, RichEditor.OnTextChangeListener {
 
   private static final String TAG = PublishActivity.class.getSimpleName();
+  private static final int OPEN_GALLERY_CODE = 11;
   @Bind(R.id.recycler_icon) RecyclerView mIconRecycler;
   @Bind(R.id.edit_title) EditText mTitleEditText;
   @Bind(R.id.editor) RichEditor mEditor;
@@ -48,6 +58,7 @@ public class PublishActivity extends StarterActivity
   private StringBuffer mBuffer = new StringBuffer();
   private String mBodyText;
   private ArticleService mArticleService;
+  private String mToken;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -103,8 +114,11 @@ public class PublishActivity extends StarterActivity
         mEditor.setBlockquote();
         break;
       case 6:
-        mEditor.insertImage("http://www.1honeywan.com/dachshund/image/7.21/7.21_3_thumb.JPG",
-            "dachshund");
+        //打开相册
+        mToken = QiNiuTokenUtils.getInstance().getToken(this);
+        Intent intent = new Intent(Intent.ACTION_PICK,
+            android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, OPEN_GALLERY_CODE);
         break;
       case 7:
         inputWebsite();
@@ -263,5 +277,44 @@ public class PublishActivity extends StarterActivity
       SnackBarUtil.showText(this, "文章标题不能为空哦..");
     }
     return false;
+  }
+
+  /**
+   * 打开相册后选择相片
+   */
+  @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (resultCode == RESULT_OK) {
+      switch (requestCode) {
+        case OPEN_GALLERY_CODE:
+          String path = ImageUtils.getImagePath(data, this);
+          configSimpleQiNiu(path, mToken);
+          break;
+      }
+    }
+  }
+
+  /**
+   * 上传,获取七牛key
+   */
+  // TODO: 4/4/2016 上传时仍然有可能出现直接闪退的情况 
+  // TODO: 4/4/2016 造成原因: no token,token 响应不及时 
+  private void configSimpleQiNiu(String path, String token) {
+    File data = new File(path);
+    Log.d(TAG, "configSimpleQiNiu: " + token);
+    InitUploadManager.getInstance()
+        .getmUploadManager()
+        .put(data, null, token, new UpCompletionHandler() {
+          @Override public void complete(String key, ResponseInfo info, JSONObject res) {
+            Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
+            try {
+              mEditor.insertImage(QiNiuTokenUtils.getInstance().spliceUrl(res.getString("key")),
+                  "图片");
+              mBodyText = mBodyText + "<br/>";
+            } catch (JSONException e) {
+              e.printStackTrace();
+            }
+          }
+        }, null);
   }
 }

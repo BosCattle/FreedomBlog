@@ -18,6 +18,10 @@ public class ApiService {
     return retrofit().create(ArticleService.class);
   }
 
+  public static QiNiuService createQiNiuService() {
+    return retrofit().create(QiNiuService.class);
+  }
+
   private static Retrofit retrofit() {
     return StarterNetwork.get().retrofit();
   }

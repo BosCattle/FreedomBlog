@@ -176,31 +176,44 @@ public class PublishActivity extends StarterActivity
             .append("</title></head>");
         mBuffer.append("<body>").append(mBodyText).append("</body></html>\n");
         Log.d(TAG, "onOptionsItemSelected: " + mBuffer);
-        submitArticle(mBuffer);
+        String buffer = new String(mBuffer);
+        submitArticle(buffer);
       }
     }
     return super.onOptionsItemSelected(item);
   }
 
-  public void submitArticle(StringBuffer buffer) {
+  public void submitArticle(String buffer) {
     showHud("正在上传,请耐心等待..");
     Account account = AccountManager.getInstance().getAccount(this);
-    Call<Articles> call = mArticleService.insertArticle(account.id + "", buffer.toString());
+    Call<Articles> call = mArticleService.insertArticle(account.id + "", buffer);
     call.enqueue(new Callback<Articles>() {
       @Override public void onResponse(Call<Articles> call, Response<Articles> response) {
         dismissHud();
         if (response.isSuccessful()) {
+          setNull();
           SnackBarUtil.showText(PublishActivity.this, "发布成功.");
         } else {
+          setNull();
           SnackBarUtil.showText(PublishActivity.this, "发生错误.");
         }
       }
 
       @Override public void onFailure(Call<Articles> call, Throwable t) {
+        setNull();
         dismissHud();
         SnackBarUtil.showText(PublishActivity.this, t.toString());
       }
     });
+  }
+
+  /**
+   * 置空
+   */
+  public void setNull() {
+    mBuffer = new StringBuffer();
+    mTitleEditText.setText("");
+    mBodyText = "";
   }
 
   /**

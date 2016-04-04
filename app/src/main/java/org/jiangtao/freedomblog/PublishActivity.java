@@ -26,8 +26,10 @@ import jp.wasabeef.richeditor.RichEditor;
 import org.jiangtao.adapter.AccountAdapter;
 import org.jiangtao.model.Account;
 import org.jiangtao.model.Articles;
+import org.jiangtao.model.QiNiuToken;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.service.ArticleService;
+import org.jiangtao.service.QiNiuService;
 import org.jiangtao.utils.AccountManager;
 import org.jiangtao.utils.ImageUtils;
 import org.jiangtao.utils.InitUploadManager;
@@ -58,12 +60,14 @@ public class PublishActivity extends StarterActivity
   private StringBuffer mBuffer = new StringBuffer();
   private String mBodyText;
   private ArticleService mArticleService;
-  private String mToken;
+  private QiNiuService mQiNiuService;
+  private String mUrl;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_publish);
     mArticleService = ApiService.createArticleService();
+    mQiNiuService = ApiService.createQiNiuService();
     setUpAdapter();
     setUpRichEditor();
     ButterKnife.bind(this);
@@ -115,7 +119,6 @@ public class PublishActivity extends StarterActivity
         break;
       case 6:
         //打开相册
-        mToken = QiNiuTokenUtils.getInstance().getToken(this);
         Intent intent = new Intent(Intent.ACTION_PICK,
             android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, OPEN_GALLERY_CODE);
@@ -200,7 +203,9 @@ public class PublishActivity extends StarterActivity
   public void submitArticle(String buffer) {
     showHud("正在上传,请耐心等待..");
     Account account = AccountManager.getInstance().getAccount(this);
-    Call<Articles> call = mArticleService.insertArticle(account.id + "", buffer);
+    Call<Articles> call =
+        mArticleService.insertArticle(account.id + "", buffer, mTitleEditText.getText().toString(),
+            mUrl);
     call.enqueue(new Callback<Articles>() {
       @Override public void onResponse(Call<Articles> call, Response<Articles> response) {
         dismissHud();
@@ -288,7 +293,7 @@ public class PublishActivity extends StarterActivity
       switch (requestCode) {
         case OPEN_GALLERY_CODE:
           String path = ImageUtils.getImagePath(data, this);
-          configSimpleQiNiu(path, mToken);
+          configSimpleQiNiu(path);
           break;
       }
     }
@@ -296,25 +301,42 @@ public class PublishActivity extends StarterActivity
 
   /**
    * 上传,获取七牛key
+   * 插入图片
    */
   // TODO: 4/4/2016 上传时仍然有可能出现直接闪退的情况 
   // TODO: 4/4/2016 造成原因: no token,token 响应不及时 
-  private void configSimpleQiNiu(String path, String token) {
-    File data = new File(path);
-    Log.d(TAG, "configSimpleQiNiu: " + token);
-    InitUploadManager.getInstance()
-        .getmUploadManager()
-        .put(data, null, token, new UpCompletionHandler() {
-          @Override public void complete(String key, ResponseInfo info, JSONObject res) {
-            Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
-            try {
-              mEditor.insertImage(QiNiuTokenUtils.getInstance().spliceUrl(res.getString("key")),
-                  "图片");
-              mBodyText = mBodyText + "<br/>";
-            } catch (JSONException e) {
-              e.printStackTrace();
-            }
-          }
-        }, null);
+  private void configSimpleQiNiu(final String path) {
+    Call<QiNiuToken> call = mQiNiuService.getToken();
+    call.enqueue(new Callback<QiNiuToken>() {
+      @Override public void onResponse(Call<QiNiuToken> call, Response<QiNiuToken> response) {
+        if (response.isSuccessful()) {
+          String token = response.body().uploadToken;
+          Log.d("<<<<<<<<<", "onResponse: " + token);
+          File data = new File(path);
+          Log.d(TAG, "configSimpleQiNiu: " + token);
+          InitUploadManager.getInstance()
+              .getmUploadManager()
+              .put(data, null, token, new UpCompletionHandler() {
+                @Override public void complete(String key, ResponseInfo info, JSONObject res) {
+                  Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
+                  try {
+                    mEditor.insertImage(
+                        QiNiuTokenUtils.getInstance().spliceUrl(res.getString("key")), "图片");
+                    mUrl = QiNiuTokenUtils.getInstance().spliceUrl(res.getString("key"));
+                    mBodyText = mBodyText + "<br/>";
+                  } catch (JSONException e) {
+                    e.printStackTrace();
+                  }
+                }
+              }, null);
+        } else {
+          SnackBarUtil.showText(PublishActivity.this, "获取token错误");
+        }
+      }
+
+      @Override public void onFailure(Call<QiNiuToken> call, Throwable t) {
+        SnackBarUtil.showText(PublishActivity.this, "服务器错误");
+      }
+    });
   }
 }

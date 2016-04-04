@@ -4,13 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-
 import org.jiangtao.freedomblog.ActivityIndex;
 import org.jiangtao.freedomblog.ActivityLogin;
 import org.jiangtao.freedomblog.ActivityRegister;
 import org.jiangtao.freedomblog.ActivityRetrieve;
+import org.jiangtao.freedomblog.DetailActivity;
 import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
+import org.jiangtao.freedomblog.UserSettingsActivity;
 
 /**
  * Created by MrJiang on 2015/12/31.
@@ -64,5 +65,22 @@ public class TurnActivity {
   public static void startPublishActivity(Activity activity) {
     Intent intent = new Intent(activity, PublishActivity.class);
     activity.startActivity(intent);
+  }
+
+  /**
+   * 跳转到详情界面
+   */
+  public static void startDetailActivity(Activity activity, String url) {
+    Intent intent = new Intent(activity, DetailActivity.class);
+    intent.putExtra("url", url);
+    activity.startActivity(intent);
+  }
+
+  /**
+   * 跳转到用户设置界面
+   */
+  public static void turnUserSettingsActivity(Context mContext) {
+    Intent startSettings = new Intent(mContext, UserSettingsActivity.class);
+    mContext.startActivity(startSettings);
   }
 }

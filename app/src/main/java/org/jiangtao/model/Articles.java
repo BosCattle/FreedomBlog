@@ -1,18 +1,34 @@
 package org.jiangtao.model;
 
+import android.net.Uri;
 import android.os.Parcel;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.jiangtao.utils.StaticResources;
 
 /**
  * Created by MrJiang on 4/2/2016.
  * 文章详情
  */
-@JsonIgnoreProperties(ignoreUnknown = true) public class Articles extends Entity {
+@JsonIgnoreProperties(ignoreUnknown = true) public class Articles
+    extends com.smartydroid.android.starter.kit.model.entity.Entity {
 
   public int id;
-  @JsonProperty("account_id") private int accountId;
-  @JsonProperty("content") private int content;
+  @JsonProperty("account_id") public int accountId;
+  @JsonProperty("article_address") public String articleAddress;
+  @JsonProperty("title") public String title;
+  @JsonProperty("image_url") public String imageUrl;
+
+  /**
+   * 获取网址
+   */
+  public String getUrl() {
+    return StaticResources.BASE_URL + articleAddress;
+  }
+
+  public Uri getUri(){
+    return Uri.parse(imageUrl);
+  }
 
   @Override public int describeContents() {
     return 0;
@@ -21,7 +37,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
   @Override public void writeToParcel(Parcel dest, int flags) {
     dest.writeInt(this.id);
     dest.writeInt(this.accountId);
-    dest.writeInt(this.content);
+    dest.writeString(this.articleAddress);
+    dest.writeString(this.title);
+    dest.writeString(this.imageUrl);
   }
 
   public Articles() {
@@ -30,7 +48,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
   protected Articles(Parcel in) {
     this.id = in.readInt();
     this.accountId = in.readInt();
-    this.content = in.readInt();
+    this.articleAddress = in.readString();
+    this.title = in.readString();
+    this.imageUrl = in.readString();
   }
 
   public static final Creator<Articles> CREATOR = new Creator<Articles>() {

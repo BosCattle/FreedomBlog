@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+  <TextView
+      android:id="@+id/user_option_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_size_medium"
+      />
+
+
+  <ImageView
+      android:id="@+id/user_option_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:contentDescription="@string/app_name"
+      android:src="@drawable/ic_account_arrow"
+      />
+
+  <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/user_option_avatar"
+      android:layout_width="@dimen/user_info_avatar_size"
+      android:layout_height="@dimen/user_info_avatar_size"
+      android:layout_marginRight="@dimen/default_padding_tip"
+      android:layout_toLeftOf="@+id/user_option_image"
+      android:layout_toStartOf="@+id/user_option_image"
+      fresco:placeholderImage="@drawable/ic_info_avatar_defult"
+      fresco:placeholderImageScaleType="centerCrop"
+      fresco:roundAsCircle="true"
+      tools:ignore="RtlHardcoded"
+      />
+
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

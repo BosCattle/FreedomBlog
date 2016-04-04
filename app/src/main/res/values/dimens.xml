@@ -29,4 +29,14 @@
   <dimen name="tab_bar_height">56dp</dimen>
   <dimen name="toolbar_height">56dp</dimen>
   <dimen name="text_size_xsmall">12sp</dimen>
+  <!-- home-->
+  <dimen name="home_avatar_size">40dp</dimen>
+  <!-- userInfoActivity-->
+  <dimen name="user_info_avatar_size">60dp</dimen>
+  <dimen name="user_info_detail_padding_right">8dp</dimen>
+  <dimen name="default_padding_tip">10dp</dimen>
+  <!-- setting-->
+  <dimen name="setting_button_padding">16dp</dimen>
+  <dimen name="listPreferredItemHeightSmall">48dp</dimen>
+
 </resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    >
+
+  <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/home_avatar"
+        android:layout_width="@dimen/home_avatar_size"
+        android:layout_height="@dimen/home_avatar_size"
+        android:background="@drawable/placeholder_avatar"
+        fresco:placeholderImage="@drawable/ic_avatar_default"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/home_avatar"
+        android:layout_toRightOf="@+id/home_avatar"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/app_name"
+        />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/header"
+      >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:text="@string/accessibility_date_picker_month"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/home_image"
+        android:layout_alignParentStart="true"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/home_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        fresco:placeholderImage="@drawable/ic_article_image"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+  </RelativeLayout>
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

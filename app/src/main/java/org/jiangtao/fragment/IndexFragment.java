@@ -2,10 +2,17 @@ package org.jiangtao.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import org.jiangtao.freedomblog.R;
+import com.carlosdelachica.easyrecycleradapters.adapter.EasyRecyclerAdapter;
+import com.smartydroid.android.starter.kit.app.StarterKeysFragment;
+import com.smartydroid.android.starter.kit.utilities.RecyclerViewUtils;
+import java.util.ArrayList;
+import org.jiangtao.holder.HomeViewHolder;
+import org.jiangtao.model.Articles;
+import org.jiangtao.service.ApiService;
+import org.jiangtao.service.ArticleService;
+import org.jiangtao.utils.TurnActivity;
+import retrofit2.Call;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,17 +21,37 @@ import org.jiangtao.freedomblog.R;
  * description:主页中的fragment
  * 从网络中取数据填充
  */
-public class IndexFragment extends Fragment {
+public class IndexFragment extends StarterKeysFragment<Articles> {
 
-  private View mView;
+  private ArticleService mArticleService;
 
-  public IndexFragment() {
-
+  @Override public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mArticleService = ApiService.createArticleService();
   }
 
-  @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
-      Bundle savedInstanceState) {
-    mView = inflater.inflate(R.layout.fragment_index, container, false);
-    return mView;
+  @Override public void onViewCreated(View view, Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+    getRecyclerView().addItemDecoration(RecyclerViewUtils.buildItemDecoration(getContext()));
+  }
+
+  @Override public void bindViewHolders(EasyRecyclerAdapter adapter) {
+    adapter.bind(Articles.class, HomeViewHolder.class);
+  }
+
+  @Override
+  public Call<ArrayList<Articles>> paginate(Articles sinceItem, Articles maxItem, int perPage) {
+    String maxId = maxItem == null ? "0" : maxItem.id + "";
+    return mArticleService.getArticles(maxId, null, perPage);
+  }
+
+  @Override public Object getKeyForData(Articles item) {
+    return item.id;
+  }
+
+  @Override public void onItemClick(int position, View view) {
+    super.onItemClick(position, view);
+    Articles articles = (Articles) getAdapter().get(position);
+    TurnActivity.startDetailActivity(getActivity(), articles.getUrl());
   }
 }

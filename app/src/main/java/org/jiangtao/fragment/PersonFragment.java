@@ -11,6 +11,7 @@ import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import java.util.ArrayList;
 import org.jiangtao.adapter.AccountAdapter;
 import org.jiangtao.freedomblog.R;
+import org.jiangtao.utils.TurnActivity;
 import org.jiangtao.utils.build.AccountBuildUtils;
 import org.jiangtao.view.SettingItems;
 
@@ -58,6 +59,21 @@ public class PersonFragment extends StarterFragment implements EasyViewHolder.On
   }
 
   @Override public void onItemClick(int position, View view) {
+    SettingItems settingItems = mSettingItems.get(position);
+    switch (settingItems.mType) {
+      case ITEM_VIEW_HEADER:
+        TurnActivity.turnUserSettingsActivity(getActivity());
+        break;
+      case ITEM_VIEW_COMMENT:
+        break;
+      case ITEM_VIEW_SETTING:
+        TurnActivity.turnSettingsActivity(getActivity());
+        break;
+      case ITEM_VIEW_PUBLISH:
 
+        break;
+      case ITEM_VIEW_COLLECTION:
+        break;
+    }
   }
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+  <TextView
+      android:id="@+id/user_option_body_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_size_medium"
+      />
+
+  <ImageView
+      android:id="@+id/user_option_body_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:contentDescription="@string/app_name"
+      android:src="@drawable/ic_account_arrow"
+      />
+
+  <TextView
+      android:id="@+id/user_option_body_update"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/user_option_body_image"
+      android:layout_toStartOf="@+id/user_option_body_image"
+      android:paddingEnd="@dimen/user_info_detail_padding_right"
+      android:paddingRight="@dimen/user_info_detail_padding_right"
+      android:singleLine="false"
+      android:textColor="@color/black"
+      android:gravity="right|center"
+      android:textSize="@dimen/text_size_medium"
+      tools:ignore="RtlCompat,RtlSymmetry"
+      />
+
+</com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

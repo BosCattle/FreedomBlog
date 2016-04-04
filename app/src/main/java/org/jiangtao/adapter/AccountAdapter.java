@@ -10,9 +10,13 @@ import java.util.ArrayList;
 import org.jiangtao.holder.AccountCellViewHolder;
 import org.jiangtao.holder.AccountItemCellViewHolder;
 import org.jiangtao.holder.CellViewHolder;
+import org.jiangtao.holder.CheckViewHolder;
 import org.jiangtao.holder.EmptyCellViewHolder;
 import org.jiangtao.holder.HeaderCellViewHolder;
 import org.jiangtao.holder.SendCellViewHolder;
+import org.jiangtao.holder.TextSettingsCellViewHolder;
+import org.jiangtao.holder.UserInfoAvatarViewHolder;
+import org.jiangtao.holder.UserInfoDetailViewHolder;
 import org.jiangtao.view.SettingItems;
 
 /**
@@ -27,7 +31,6 @@ public class AccountAdapter extends RecyclerView.Adapter<CellViewHolder> {
   private final Context mContext;
 
   private EasyViewHolder.OnItemClickListener itemClickListener;
-  private int mPosition;
 
   public AccountAdapter(Context context, ArrayList<SettingItems> SettingItemss) {
     this.mContext = context;
@@ -58,6 +61,18 @@ public class AccountAdapter extends RecyclerView.Adapter<CellViewHolder> {
 
       case SettingItems.VIEW_TYPE_ATTRIBUTE:
         cellViewHolder = new SendCellViewHolder(context, parent);
+        break;
+      case SettingItems.VIEW_TYPE_AVATAR:
+        cellViewHolder = new UserInfoAvatarViewHolder(context, parent);
+        break;
+      case SettingItems.VIEW_TYPE_TEXT_DETAIL:
+        cellViewHolder = new UserInfoDetailViewHolder(context, parent);
+        break;
+      case SettingItems.VIEW_TYPE_TEXT:
+        cellViewHolder = new TextSettingsCellViewHolder(context, parent);
+        break;
+      case SettingItems.VIEW_TYPE_CHECK_BUTTON:
+        cellViewHolder = new CheckViewHolder(context, parent);
         break;
     }
     bindListeners(cellViewHolder);

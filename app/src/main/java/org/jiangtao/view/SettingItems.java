@@ -11,6 +11,10 @@ public class SettingItems {
   public static final int VIEW_TYPE_ITEM = 3;
   public static final int VIEW_TYPE_ACCOUNT_HEADER = 4;
   public static final int VIEW_TYPE_ATTRIBUTE = 5;
+  public static final int VIEW_TYPE_AVATAR = 6;
+  public static final int VIEW_TYPE_TEXT_DETAIL = 7;
+  public static final int VIEW_TYPE_TEXT = 8;
+  public static final int VIEW_TYPE_CHECK_BUTTON = 9;
 
   public boolean enabled;
   public int itemViewType;

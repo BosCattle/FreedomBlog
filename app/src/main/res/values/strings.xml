@@ -38,7 +38,7 @@
 
   <string name="hello_blank_fragment">Hello blank fragment</string>
   <string name="title_activity_settings">设置</string>
-  <string name="title_activity_user_settings">设置</string>
+  <string name="title_activity_user_settings">修改信息</string>
   <string name="title_activity_user_index">主页</string>
   <string name="title_activity_sortctivity">Sortctivity</string>
   <!--登陆界面-->
@@ -62,4 +62,6 @@
   <!-- publishActivity-->
   <string name="label_publish">写作</string>
   <string name="action_publish">发布</string>
+  <!-- detailActivity-->
+  <string name="label_detail">详情</string>
 </resources>

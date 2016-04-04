@@ -62,8 +62,11 @@
     </activity>
     <activity
         android:name=".UserSettingsActivity"
-        android:label="@string/title_activity_user_settings"
-        android:theme="@style/AppTheme.NoActionBar"/>
+        android:label="@string/title_activity_user_settings">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ActivityIndex"/>
+    </activity>
     <activity
         android:name=".UserIndexActivity"
         android:label="@string/title_activity_user_index"
@@ -87,10 +90,16 @@
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:theme="@android:style/Theme.Translucent.NoTitleBar"
         android:windowSoftInputMode="stateHidden|adjustResize"/>
-
     <activity
         android:name=".PublishActivity"
         android:label="@string/label_publish">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".ActivityIndex"/>
+    </activity>
+    <activity
+        android:name=".DetailActivity"
+        android:label="@string/label_detail">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".ActivityIndex"/>

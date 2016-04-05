@@ -31,6 +31,7 @@ public class TurnActivity {
    */
   public static void turnLoginActivity(AppCompatActivity mContext) {
     Intent startSettings = new Intent(mContext, ActivityLogin.class);
+    startSettings.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
     mContext.startActivityForResult(startSettings, StaticResources.requestCodeLogin);
   }
 

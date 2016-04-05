@@ -11,6 +11,7 @@ import com.smartydroid.android.starter.kit.app.StarterActivity;
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import java.util.ArrayList;
 import org.jiangtao.adapter.AccountAdapter;
+import org.jiangtao.utils.TurnActivity;
 import org.jiangtao.utils.data.IconData;
 import org.jiangtao.view.SettingItems;
 
@@ -120,6 +121,7 @@ public class SettingsActivity extends StarterActivity
       case FEED_BACK:
         break;
       case LOGOUT_BUTTON:
+        TurnActivity.turnLoginActivity(SettingsActivity.this);
         break;
     }
   }

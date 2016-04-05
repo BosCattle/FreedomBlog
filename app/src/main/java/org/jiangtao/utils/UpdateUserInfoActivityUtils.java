@@ -2,7 +2,7 @@ package org.jiangtao.utils;
 
 import android.content.Context;
 import java.util.ArrayList;
-import org.jiangtao.fragment.UserSettingFragment;
+import org.jiangtao.freedomblog.UserSettingsActivity;
 import org.jiangtao.model.Account;
 import org.jiangtao.utils.data.UserInfo;
 import org.jiangtao.view.SettingItems;
@@ -27,7 +27,7 @@ public final class UpdateUserInfoActivityUtils {
         .build());
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_AVATAR)
         .data(new UserInfo("头像", user.uri()))
-        .type(UserSettingFragment.AVATAR)
+        .type(UserSettingsActivity.AVATAR)
         .enabled(true)
         .build());
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_EMPTY)
@@ -37,17 +37,17 @@ public final class UpdateUserInfoActivityUtils {
         .data(new UserInfo("昵称",
             (user.username != null && user.username.length() != 0) ? user.username : "请输入"))
         .enabled(true)
-        .type(UserSettingFragment.USERNAME)
+        .type(UserSettingsActivity.USERNAME)
         .build());
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_TEXT_DETAIL)
         .data(new UserInfo("年龄", (user.age == null) || (user.age.isEmpty()) ? "请输入" : user.age))
         .enabled(false)
-        .type(UserSettingFragment.PHONE_NUMBER)
+        .type(UserSettingsActivity.PHONE_NUMBER)
         .build());
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_TEXT_DETAIL)
         .data(new UserInfo("性别", (user.sex != null) && (!user.sex.isEmpty()) ? user.sex : "请选择"))
         .enabled(true)
-        .type(UserSettingFragment.SEX)
+        .type(UserSettingsActivity.SEX)
         .build());
     return settingItems;
   }

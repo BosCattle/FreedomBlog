@@ -55,7 +55,8 @@ public class PersonFragment extends StarterFragment implements EasyViewHolder.On
   }
 
   private void setUpView() {
-    mSettingItems = AccountBuildUtils.buildParentViews(getContext());
+    mSettingItems.clear();
+    mSettingItems.addAll(AccountBuildUtils.buildParentViews(getContext()));
   }
 
   @Override public void onItemClick(int position, View view) {
@@ -75,5 +76,12 @@ public class PersonFragment extends StarterFragment implements EasyViewHolder.On
       case ITEM_VIEW_COLLECTION:
         break;
     }
+  }
+
+  @Override public void onResume() {
+    super.onResume();
+    setUpView();
+    setUpAdapter();
+    mAccountAdapter.notifyDataSetChanged();
   }
 }

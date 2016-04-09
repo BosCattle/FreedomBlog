@@ -12,6 +12,7 @@ import org.jiangtao.freedomblog.DetailActivity;
 import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
 import org.jiangtao.freedomblog.UserSettingsActivity;
+import org.jiangtao.model.Articles;
 
 /**
  * Created by MrJiang on 2015/12/31.
@@ -71,9 +72,9 @@ public class TurnActivity {
   /**
    * 跳转到详情界面
    */
-  public static void startDetailActivity(Activity activity, String url) {
+  public static void startDetailActivity(Activity activity, Articles articles) {
     Intent intent = new Intent(activity, DetailActivity.class);
-    intent.putExtra("url", url);
+    intent.putExtra("article", articles);
     activity.startActivity(intent);
   }
 

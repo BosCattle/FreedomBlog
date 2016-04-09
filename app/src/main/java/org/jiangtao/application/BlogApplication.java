@@ -1,12 +1,9 @@
 package org.jiangtao.application;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import cn.smssdk.SMSSDK;
-import com.alibaba.mobileim.YWAPI;
-import com.alibaba.wxlib.util.SysUtil;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import org.jiangtao.utils.StaticResources;
 
@@ -37,20 +34,9 @@ public class BlogApplication extends MultiDexApplication {
     super.onCreate();
     Fresco.initialize(this);
     SMSSDK.initSDK(this, StaticResources.MOB_SMS_KEY, StaticResources.MOB_SMS_SECRET);
-    SysUtil.setApplication(this);
-    if (SysUtil.isTCMSServiceProcess(this)) {
-      return;
-    }
-    if (SysUtil.isMainProcess(this)) {
-      YWAPI.init(this, StaticResources.APP_KEY);
-    }
   }
 
   @Override public void onLowMemory() {
     super.onLowMemory();
-  }
-
-  @Override public void onConfigurationChanged(Configuration newConfig) {
-    super.onConfigurationChanged(newConfig);
   }
 }

@@ -4,7 +4,6 @@ import android.net.Uri;
 import android.os.Parcel;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.jiangtao.utils.StaticResources;
 
 /**
  * Created by MrJiang on 4/2/2016.
@@ -15,16 +14,9 @@ import org.jiangtao.utils.StaticResources;
 
   public int id;
   @JsonProperty("account_id") public int accountId;
-  @JsonProperty("article_address") public String articleAddress;
+  @JsonProperty("content") public String content;
   @JsonProperty("title") public String title;
   @JsonProperty("image_url") public String imageUrl;
-
-  /**
-   * 获取网址
-   */
-  public String getUrl() {
-    return StaticResources.BASE_URL + articleAddress;
-  }
 
   public Uri getUri(){
     return Uri.parse(imageUrl);
@@ -37,7 +29,7 @@ import org.jiangtao.utils.StaticResources;
   @Override public void writeToParcel(Parcel dest, int flags) {
     dest.writeInt(this.id);
     dest.writeInt(this.accountId);
-    dest.writeString(this.articleAddress);
+    dest.writeString(this.content);
     dest.writeString(this.title);
     dest.writeString(this.imageUrl);
   }
@@ -48,7 +40,7 @@ import org.jiangtao.utils.StaticResources;
   protected Articles(Parcel in) {
     this.id = in.readInt();
     this.accountId = in.readInt();
-    this.articleAddress = in.readString();
+    this.content = in.readString();
     this.title = in.readString();
     this.imageUrl = in.readString();
   }

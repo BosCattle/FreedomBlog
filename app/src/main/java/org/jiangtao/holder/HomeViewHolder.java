@@ -25,9 +25,10 @@ public class HomeViewHolder extends EasyViewHolder<Articles> {
 
   public HomeViewHolder(Context context, ViewGroup parent) {
     super(context, parent, R.layout.list_item_home);
-    ButterKnife.bind(this,itemView);
+    ButterKnife.bind(this, itemView);
   }
 
+  // TODO: 4/9/2016 获取文章的参数有问题
   @Override public void bindTo(Articles value) {
     try {
       mTitle.setText(value.title);

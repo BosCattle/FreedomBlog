@@ -16,7 +16,6 @@ public class AttentionFragment extends Fragment {
 
 
     public AttentionFragment() {
-        // Required empty public constructor
     }
 
 

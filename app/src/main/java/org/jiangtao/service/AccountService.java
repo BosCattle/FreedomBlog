@@ -19,6 +19,24 @@ public interface AccountService {
   /**
    * 登录
    */
-  @FormUrlEncoded @POST("/auth/login") Call<Account>
-  login(@Field("phone") String phone, @Field("password") String password);
+  @FormUrlEncoded @POST("/auth/login") Call<Account> login(@Field("phone") String phone,
+      @Field("password") String password);
+
+  /**
+   * 修改昵称
+   */
+  @FormUrlEncoded @POST("/auth/revise/username") Call<Account> reviseUserName(
+      @Field("username") String username, @Field("id") int id);
+
+  /**
+   * 修改性别
+   */
+  @FormUrlEncoded @POST("/auth/revise/sex") Call<Account> reviseSex(@Field("sex") String sex,
+      @Field("id") int id);
+
+  /**
+   * 修改性别
+   */
+  @FormUrlEncoded @POST("/auth/revise/age") Call<Account> reviseAge(@Field("age") String age,
+      @Field("id") int id);
 }

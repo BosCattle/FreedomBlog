@@ -52,6 +52,6 @@ public class IndexFragment extends StarterKeysFragment<Articles> {
   @Override public void onItemClick(int position, View view) {
     super.onItemClick(position, view);
     Articles articles = (Articles) getAdapter().get(position);
-    TurnActivity.startDetailActivity(getActivity(), articles.getUrl());
+    TurnActivity.startDetailActivity(getActivity(), articles);
   }
 }

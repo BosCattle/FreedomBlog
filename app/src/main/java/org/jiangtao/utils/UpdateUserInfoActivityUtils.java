@@ -15,13 +15,12 @@ import org.jiangtao.view.SettingItems;
  */
 public final class UpdateUserInfoActivityUtils {
 
-  private static ArrayList<SettingItems> settingItems = new ArrayList<>();
-
   public UpdateUserInfoActivityUtils() {
   }
 
   public static ArrayList<SettingItems> buildUserViews(Context context) {
     Account user = AccountManager.getInstance().getAccount(context);
+    ArrayList<SettingItems> settingItems = new ArrayList<>();
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_EMPTY)
         .enabled(false)
         .build());
@@ -41,13 +40,23 @@ public final class UpdateUserInfoActivityUtils {
         .build());
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_TEXT_DETAIL)
         .data(new UserInfo("年龄", (user.age == null) || (user.age.isEmpty()) ? "请输入" : user.age))
-        .enabled(false)
-        .type(UserSettingsActivity.PHONE_NUMBER)
+        .enabled(true)
+        .type(UserSettingsActivity.AGE)
         .build());
     settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_TEXT_DETAIL)
         .data(new UserInfo("性别", (user.sex != null) && (!user.sex.isEmpty()) ? user.sex : "请选择"))
         .enabled(true)
         .type(UserSettingsActivity.SEX)
+        .build());
+    settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_TEXT_DETAIL)
+        .data(new UserInfo("加入时间",
+            (user.starTime != null) && (!user.starTime.isEmpty()) ? user.starTime : ""))
+        .enabled(false)
+        .build());
+    settingItems.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_TEXT_DETAIL)
+        .data(
+            new UserInfo("手机号", (user.phone != null) && (!user.phone.isEmpty()) ? user.phone : ""))
+        .enabled(false)
         .build());
     return settingItems;
   }

@@ -186,26 +186,17 @@ public class PublishActivity extends StarterActivity
     if (item.getItemId() == R.id.menu_publish) {
       // TODO: 4/2/2016 点击将生成的内容发送到服务器
       if (isTitleNull()) {
-        mBuffer.append("<!DOCTYPE html><html><head>");
-        mBuffer.append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-        mBuffer.append("<title>")
-            .append(mTitleEditText.getText().toString())
-            .append("</title></head>");
-        mBuffer.append("<body>").append(mBodyText).append("</body></html>\n");
-        Log.d(TAG, "onOptionsItemSelected: " + mBuffer);
-        String buffer = new String(mBuffer);
-        submitArticle(buffer);
+        submitArticle();
       }
     }
     return super.onOptionsItemSelected(item);
   }
 
-  public void submitArticle(String buffer) {
+  public void submitArticle() {
     showHud("正在上传,请耐心等待..");
     Account account = AccountManager.getInstance().getAccount(this);
-    Call<Articles> call =
-        mArticleService.insertArticle(account.id + "", buffer, mTitleEditText.getText().toString(),
-            mUrl);
+    Call<Articles> call = mArticleService.insertArticle(account.id + "", mBodyText,
+        mTitleEditText.getText().toString(), mUrl);
     call.enqueue(new Callback<Articles>() {
       @Override public void onResponse(Call<Articles> call, Response<Articles> response) {
         dismissHud();
@@ -320,9 +311,10 @@ public class PublishActivity extends StarterActivity
                 @Override public void complete(String key, ResponseInfo info, JSONObject res) {
                   Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
                   try {
-                    mEditor.insertImage(
-                        QiNiuTokenUtils.getInstance().spliceUrl(res.getString("key")), "图片");
-                    mUrl = QiNiuTokenUtils.getInstance().spliceUrl(res.getString("key"));
+                    mEditor.insertImage(QiNiuTokenUtils.getInstance()
+                        .spliceUrl(res.getString("key"), PublishActivity.this), "图片");
+                    mUrl = QiNiuTokenUtils.getInstance()
+                        .spliceUrl(res.getString("key"), PublishActivity.this);
                     mBodyText = mBodyText + "<br/>";
                   } catch (JSONException e) {
                     e.printStackTrace();

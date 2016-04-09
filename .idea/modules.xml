@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FreedomBlog.iml" filepath="$PROJECT_DIR$/FreedomBlog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OneSDK/OneSDK.iml" filepath="$PROJECT_DIR$/OneSDK/OneSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-media-picker/android-media-picker.iml" filepath="$PROJECT_DIR$/android-media-picker/android-media-picker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

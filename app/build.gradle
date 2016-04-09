@@ -56,11 +56,10 @@ repositories {
 }
 
 dependencies {
-  compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile fileTree(include: ['*.jar'], dir: 'libs')
   testCompile 'junit:junit:4.12'
   compile name: 'SMSSDK-2.0.1', ext: 'aar'
   compile name: 'SMSSDKGUI-2.0.1', ext: 'aar'
-  compile project(':OneSDK')
   compile('com.github.afollestad.material-dialogs:core:0.8.5.7@aar') {
     transitive = true
   }
@@ -77,4 +76,5 @@ dependencies {
   compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
   compile 'com.squareup.retrofit2:retrofit:2.0.1'
   compile 'com.qiniu:qiniu-android-sdk:7.0.10'
+  compile project(':android-media-picker')
 }

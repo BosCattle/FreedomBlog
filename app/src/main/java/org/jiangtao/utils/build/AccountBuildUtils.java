@@ -19,7 +19,6 @@ public final class AccountBuildUtils {
 
     ArrayList<SettingItems> SettingItemss = new ArrayList<>();
     Account account = AccountManager.getInstance().getAccount(context);
-
     SettingItemss.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_EMPTY)
         .enabled(false)
         .build());

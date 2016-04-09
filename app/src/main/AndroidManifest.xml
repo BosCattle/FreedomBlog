@@ -104,6 +104,10 @@
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".ActivityIndex"/>
     </activity>
+    <activity
+        android:name="vn.tungdx.mediapicker.activities.MediaPickerActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/MediaPickerTheme" />
   </application>
 
 </manifest>

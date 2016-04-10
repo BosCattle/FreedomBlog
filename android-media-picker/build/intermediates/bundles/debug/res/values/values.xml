@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="picker_color">#007aff</color>
+    <color name="picker_grid_state_focused">#DC007aff</color>
+    <color name="picker_grid_state_pressed">#DC007aff</color>
+    <color name="picker_imageloading">#252528</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="picker_border_size">3dp</dimen>
+    <dimen name="picker_photo_size">100dp</dimen>
+    <dimen name="picker_photo_spacing">4dp</dimen>
+    <item name="cancel" type="id"/>
+    <item name="container" type="id"/>
+    <item name="crop" type="id"/>
+    <item name="done" type="id"/>
+    <item name="grid" type="id"/>
+    <item name="media_switcher" type="id"/>
+    <item name="no_data" type="id"/>
+    <item name="overlay" type="id"/>
+    <item name="rotate_left" type="id"/>
+    <item name="rotate_right" type="id"/>
+    <item name="save" type="id"/>
+    <item name="take_photo" type="id"/>
+    <item name="take_video" type="id"/>
+    <item name="thumbnail" type="id"/>
+    <plurals name="picker_video_duration_max">
+    <item quantity="one">This video\'s duration larger than %d second.</item>
+    <item quantity="other">This video\'s duration larger than %d seconds.</item>
+  </plurals>
+    <plurals name="picker_video_duration_min">
+    <item quantity="one">This video\'s duration smaller than %d second.</item>
+    <item quantity="other">This video\'s duration smaller than %d seconds.</item>
+  </plurals>
+    <plurals name="picker_video_duration_warning">
+    <item quantity="one">Video\'s duration limit is  %d second.</item>
+    <item quantity="other">Video\'s duration limit is  %d seconds.</item>
+  </plurals>
+    <string name="cancel">取消</string>
+    <string name="ok">OK</string>
+    <string name="picker_done_capital">完成</string>
+    <string name="picker_no_items">No items.</string>
+    <string name="picker_record_video">Record video</string>
+    <string name="picker_switch_media">Switch media</string>
+    <string name="picker_take_photo">Take photo</string>
+    <string name="save">保存</string>
+    <string name="waiting">Waiting…</string>
+    <style name="MediaPickerTheme" parent="Theme.AppCompat">
+    <!-- Support library compatibility -->
+    <item name="windowActionBarOverlay">true</item>
+    <item name="actionMenuTextColor">@color/picker_color</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:divider">@android:color/white</item>
+  </style>
+</resources>

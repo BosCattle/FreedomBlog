@@ -1,1 +1,1 @@
-include ':app', ':android-media-picker'
+include ':app', ':android-media-picker', ':uikit'

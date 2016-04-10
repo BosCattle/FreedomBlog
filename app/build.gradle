@@ -14,7 +14,7 @@ android {
   }
   buildTypes {
     release {
-      minifyEnabled false
+      minifyEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
@@ -77,4 +77,5 @@ dependencies {
   compile 'com.squareup.retrofit2:retrofit:2.0.1'
   compile 'com.qiniu:qiniu-android-sdk:7.0.10'
   compile project(':android-media-picker')
+  compile project(':uikit')
 }

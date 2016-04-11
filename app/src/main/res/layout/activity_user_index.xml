@@ -1,34 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="org.jiangtao.freedomblog.UserIndexActivity">
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".UserDetailActivity"
+    >
 
-    <android.support.design.widget.AppBarLayout
+  <RelativeLayout
+      android:id="@+id/container_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/detail_avatar"
+        android:layout_width="@dimen/account_avatar_size"
+        android:layout_height="@dimen/account_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/placeholder_avatar"
+        fresco:placeholderImage="@drawable/ic_avatar_default"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:roundAsCircle="true"
+        />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/detail_avatar"
+        android:orientation="vertical"
+        >
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+      <TextView
+          android:id="@+id/text_account_username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:lines="1"
+          android:paddingLeft="@dimen/activity_vertical_padding"
+          android:singleLine="true"
+          android:text="@string/placehold_short"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/text_size_large"
+          tools:ignore="RtlSymmetry"
+          />
 
-    </android.support.design.widget.AppBarLayout>
+      <TextView
+          android:id="@+id/text_account"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:lines="1"
+          android:paddingLeft="@dimen/activity_vertical_padding"
+          android:singleLine="true"
+          android:text="@string/placehold_short"
+          android:textSize="@dimen/text_size_14"
+          tools:ignore="RtlSymmetry"
+          />
+    </LinearLayout>
+  </RelativeLayout>
 
-    <include layout="@layout/content_user_index" />
+  <org.jiangtao.widget.RoundedButton
+      android:id="@+id/add_friend"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/container_header"
+      android:layout_marginTop="@dimen/activity_vertical_margin"
+      android:elevation="0dp"
+      android:minHeight="@dimen/md_button_height"
+      android:text="@string/add_friends"
+      />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
-
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

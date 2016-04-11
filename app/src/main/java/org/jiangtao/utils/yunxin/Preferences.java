@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 public class Preferences {
   private static final String KEY_USER_ACCOUNT = "account";
   private static final String KEY_USER_TOKEN = "token";
+  private static Context mContext;
 
   public static void saveUserAccount(String account) {
     saveString(KEY_USER_ACCOUNT, account);
@@ -37,6 +38,9 @@ public class Preferences {
   }
 
   static SharedPreferences getSharedPreferences() {
-    return DemoCache.getContext().getSharedPreferences("Demo", Context.MODE_PRIVATE);
+    if (DemoCache.getContext().getSharedPreferences("Demo", Context.MODE_PRIVATE) != null) {
+      return DemoCache.getContext().getSharedPreferences("Demo", Context.MODE_PRIVATE);
+    }
+    return null;
   }
 }

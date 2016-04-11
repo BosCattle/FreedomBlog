@@ -23,4 +23,9 @@
     <color name="blue_semi_transparent">#805677fc</color>
     <color name="blue_semi_transparent_pressed">#80738ffe</color>
 
+    <color name="btn_disable">#CCCCCC</color>
+
+    <color name="colorButtonDisabled">#CCCCCC</color>
+    <color name="colorButtonNormal">#49C4A0</color>
+
 </resources>

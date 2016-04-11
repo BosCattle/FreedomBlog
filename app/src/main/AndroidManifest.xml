@@ -42,7 +42,6 @@
   <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
   <uses-permission android:name="com.netease.nim.demo.permission.RECEIVE_MSG"/>
 
-
   <application
       android:name="org.jiangtao.application.BlogApplication"
       android:allowBackup="true"
@@ -95,9 +94,8 @@
           android:value=".ActivityIndex"/>
     </activity>
     <activity
-        android:name=".UserIndexActivity"
-        android:label="@string/title_activity_user_index"
-        android:theme="@style/AppTheme.NoActionBar"/>
+        android:name=".UserDetailActivity"
+        android:label="@string/label_user_detail"/>
     <activity
         android:name=".Sortctivity"
         android:label="@string/title_activity_sortctivity"
@@ -128,9 +126,11 @@
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:theme="@android:style/Theme.Translucent.NoTitleBar"
         android:windowSoftInputMode="stateHidden|adjustResize"/>
-    <!--云信-->
-    <!-- APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
-            如果 SDKOptions 中提供了，取 SDKOptions 中的值。 -->
+    <!-- 云信 -->
+    <!--
+         APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
+            如果 SDKOptions 中提供了，取 SDKOptions 中的值。
+        -->
     <meta-data
         android:name="com.netease.nim.appKey"
         android:value="06f26d8564f66c2227fde5119444d71e"/>
@@ -139,13 +139,14 @@
     <service
         android:name="com.netease.nimlib.service.NimService"
         android:process=":core"/>
-
     <service
         android:name="com.netease.nimlib.service.NimService$Aux"
         android:process=":core"/>
 
-    <!-- 云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
-        保持和 NimService 同一进程 -->
+    <!--
+         云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
+        保持和 NimService 同一进程
+        -->
     <receiver
         android:name="com.netease.nimlib.service.NimReceiver"
         android:exported="false"
@@ -184,6 +185,8 @@
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".ActivityIndex"/>
+    </activity>
+    <activity android:name=".ChatActivity">
     </activity>
   </application>
 

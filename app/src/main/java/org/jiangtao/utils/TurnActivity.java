@@ -11,6 +11,7 @@ import org.jiangtao.freedomblog.ActivityRetrieve;
 import org.jiangtao.freedomblog.DetailActivity;
 import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
+import org.jiangtao.freedomblog.UserDetailActivity;
 import org.jiangtao.freedomblog.UserSettingsActivity;
 import org.jiangtao.model.Articles;
 
@@ -83,6 +84,11 @@ public class TurnActivity {
    */
   public static void turnUserSettingsActivity(Context mContext) {
     Intent startSettings = new Intent(mContext, UserSettingsActivity.class);
+    mContext.startActivity(startSettings);
+  }
+
+  public static void startUserDetailActivity(Context mContext) {
+    Intent startSettings = new Intent(mContext, UserDetailActivity.class);
     mContext.startActivity(startSettings);
   }
 }

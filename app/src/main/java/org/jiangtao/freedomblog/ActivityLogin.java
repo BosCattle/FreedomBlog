@@ -1,6 +1,7 @@
 package org.jiangtao.freedomblog;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -40,6 +41,8 @@ import retrofit2.Response;
  */
 public class ActivityLogin extends StarterActivity implements View.OnClickListener {
   private static final String TAG = ActivityLogin.class.getSimpleName();
+  private static final String KICK_OUT = "KICK_OUT";
+
   @Bind(R.id.register_blog) TextView mRegisterBlogTextView;
   @Bind(R.id.button_login) TextView mLoginButton;
   @Bind(R.id.text_forget) TextView mForgetText;
@@ -189,5 +192,12 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
       e.printStackTrace();
     }
     return null;
+  }
+
+  public static void start(Context context, boolean kickOut) {
+    Intent intent = new Intent(context, ActivityLogin.class);
+    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+    intent.putExtra(KICK_OUT, kickOut);
+    context.startActivity(intent);
   }
 }

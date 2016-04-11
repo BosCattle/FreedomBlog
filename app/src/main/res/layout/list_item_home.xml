@@ -4,11 +4,10 @@
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
     android:background="@android:color/white"
     android:foreground="?attr/selectableItemBackground"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_horizontal_margin"
     >
 
   <RelativeLayout
@@ -45,29 +44,67 @@
       android:layout_below="@+id/header"
       >
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:maxLines="3"
-        android:singleLine="false"
-        android:text="@string/accessibility_date_picker_month"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:layout_toLeftOf="@+id/home_image"
-        android:layout_alignParentStart="true"
-        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_vertical_padding"
+        android:layout_toRightOf="@+id/home_image"
+        >
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:maxLines="3"
+          android:singleLine="false"
+          android:text="@string/accessibility_date_picker_month"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          />
 
+      <TextView
+          android:id="@+id/content"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:maxLines="3"
+          android:singleLine="false"
+          android:text="@string/accessibility_date_picker_month"
+          />
+
+      <TextView
+          android:id="@+id/time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_gravity="left"
+          android:maxLines="3"
+          android:singleLine="false"
+          android:text="@string/accessibility_date_picker_month"
+          />
+
+      <TextView
+          android:id="@+id/read_num"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="right"
+          android:maxLines="3"
+          android:singleLine="false"
+          android:text="@string/accessibility_date_picker_month"
+          />
+    </RelativeLayout>
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/home_image"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="120dp"
-        android:layout_alignParentEnd="true"
-        fresco:placeholderImage="@drawable/ic_article_image"
-        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        fresco:placeholderImage="@drawable/ic_article_image"
         />
 
   </RelativeLayout>

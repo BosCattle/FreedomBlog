@@ -24,6 +24,7 @@ import org.jiangtao.fragment.PersonFragment;
 import org.jiangtao.fragment.PromptFragment;
 import org.jiangtao.fragment.SendFragment;
 import org.jiangtao.utils.TurnActivity;
+import org.jiangtao.utils.yunxin.LogoutHelper;
 
 public class ActivityIndex extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
@@ -51,13 +52,11 @@ public class ActivityIndex extends AppCompatActivity
     mTabHost.addTab(
         createTabSpec(TAB_MESSAGE, R.string.index_comment, R.drawable.selector_tab_messge),
         PromptFragment.class, null);
-    mTabHost.addTab(
-        createTabSpec(TAB_EDUCATION, R.string.index_fragment_pupopmenu, R.drawable.selector_tab_education),
-        SendFragment.class, null);
+    mTabHost.addTab(createTabSpec(TAB_EDUCATION, R.string.index_fragment_pupopmenu,
+        R.drawable.selector_tab_education), SendFragment.class, null);
     mTabHost.addTab(createTabSpec(TAB_CLASS_CIRCLE, R.string.index_attention,
         R.drawable.selector_tab_class_circle), AttentionFragment.class, null);
-    mTabHost.addTab(
-        createTabSpec(TAB_ACCOUNT, R.string.index_me, R.drawable.selector_tab_account),
+    mTabHost.addTab(createTabSpec(TAB_ACCOUNT, R.string.index_me, R.drawable.selector_tab_account),
         PersonFragment.class, null);
   }
 
@@ -131,7 +130,7 @@ public class ActivityIndex extends AppCompatActivity
     } else if (id == R.id.nav_about) {
 
     } else if (id == R.id.nav_exit) {
-
+      onLogout();
     }
 
     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -146,5 +145,15 @@ public class ActivityIndex extends AppCompatActivity
   @Override public void onClick(View v) {
     switch (v.getId()) {
     }
+  }
+
+  // 注销
+  private void onLogout() {
+    // 清理缓存&注销监听
+    LogoutHelper.logout();
+
+    // 启动登录
+    ActivityLogin.start(this, true);
+    finish();
   }
 }

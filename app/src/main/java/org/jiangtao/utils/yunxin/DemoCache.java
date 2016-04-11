@@ -41,6 +41,6 @@ public class DemoCache {
     }
 
     public static void setContext(Context context) {
-        DemoCache.context = context.getApplicationContext();
+        DemoCache.context = context;
     }
 }

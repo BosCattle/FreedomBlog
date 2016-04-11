@@ -6,6 +6,7 @@
     <color name="picker_imageloading">#252528</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_padding">8dp</dimen>
     <dimen name="picker_border_size">3dp</dimen>
     <dimen name="picker_photo_size">100dp</dimen>
     <dimen name="picker_photo_spacing">4dp</dimen>

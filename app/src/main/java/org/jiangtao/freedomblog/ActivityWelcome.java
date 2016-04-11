@@ -25,7 +25,7 @@ public class ActivityWelcome extends AppCompatActivity {
 
   private void openAlphaAnimation() {
     aa = new AlphaAnimation(0.5f, 1.0f);
-    aa.setDuration(800);
+    aa.setDuration(200);
     view.startAnimation(aa);
     aa.setAnimationListener(new Animation.AnimationListener() {
       @Override public void onAnimationEnd(Animation arg0) {

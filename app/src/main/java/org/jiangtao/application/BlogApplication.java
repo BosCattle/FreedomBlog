@@ -49,7 +49,10 @@ public class BlogApplication extends MultiDexApplication {
     Fresco.initialize(this);
     SMSSDK.initSDK(this, StaticResources.MOB_SMS_KEY, StaticResources.MOB_SMS_SECRET);
     // SDK初始化（启动后台服务，若已经存在用户登录信息， SDK 将完成自动登录）
-    NIMClient.init(this, loginInfo(), options());
+    if (mApp != null) {
+      DemoCache.setContext(getApplicationContext());
+      NIMClient.init(this, loginInfo(), options());
+    }
   }
 
   @Override public void onLowMemory() {

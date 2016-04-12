@@ -13,6 +13,7 @@ import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
 import org.jiangtao.freedomblog.UserDetailActivity;
 import org.jiangtao.freedomblog.UserSettingsActivity;
+import org.jiangtao.model.Account;
 import org.jiangtao.model.Articles;
 
 /**
@@ -87,8 +88,9 @@ public class TurnActivity {
     mContext.startActivity(startSettings);
   }
 
-  public static void startUserDetailActivity(Context mContext) {
+  public static void startUserDetailActivity(Context mContext,Account account) {
     Intent startSettings = new Intent(mContext, UserDetailActivity.class);
+    startSettings.putExtra("account",account);
     mContext.startActivity(startSettings);
   }
 }

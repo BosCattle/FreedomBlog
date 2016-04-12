@@ -1,6 +1,5 @@
 package org.jiangtao.model;
 
-import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Parcel;
 import android.text.TextUtils;
@@ -10,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Created by MrJiang on 2016/3/19.
  */
-@SuppressLint("ParcelCreator") @JsonIgnoreProperties(ignoreUnknown = true) public class Account
+@JsonIgnoreProperties(ignoreUnknown = true) public class Account
     extends Entity {
   public int id;
   public String phone;
@@ -21,39 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
   public String age;
   public String sex;
   @JsonProperty("start_time") public String starTime;
-
-  @Override public int describeContents() {
-    return 0;
-  }
-
-  @Override public void writeToParcel(Parcel dest, int flags) {
-
-    dest.writeInt(id);
-    dest.writeString(phone);
-    dest.writeString(username);
-    dest.writeString(password);
-    dest.writeString(token);
-    dest.writeString(imageUrl);
-    dest.writeString(age);
-    dest.writeString(sex);
-    dest.writeString(starTime);
-  }
-
-  public Account() {
-
-  }
-
-  public Account(Parcel in) {
-    this.id = in.readInt();
-    this.phone = in.readString();
-    this.username = in.readString();
-    this.password = in.readString();
-    this.token = in.readString();
-    this.imageUrl = in.readString();
-    this.age = in.readString();
-    this.sex = in.readString();
-    this.starTime = in.readString();
-  }
 
   @Override public String toString() {
     return "Account{" +
@@ -78,4 +44,45 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
     return null;
   }
+
+  @Override public int describeContents() {
+    return 0;
+  }
+
+  @Override public void writeToParcel(Parcel dest, int flags) {
+    dest.writeInt(this.id);
+    dest.writeString(this.phone);
+    dest.writeString(this.username);
+    dest.writeString(this.password);
+    dest.writeString(this.token);
+    dest.writeString(this.imageUrl);
+    dest.writeString(this.age);
+    dest.writeString(this.sex);
+    dest.writeString(this.starTime);
+  }
+
+  public Account() {
+  }
+
+  protected Account(Parcel in) {
+    this.id = in.readInt();
+    this.phone = in.readString();
+    this.username = in.readString();
+    this.password = in.readString();
+    this.token = in.readString();
+    this.imageUrl = in.readString();
+    this.age = in.readString();
+    this.sex = in.readString();
+    this.starTime = in.readString();
+  }
+
+  public static final Creator<Account> CREATOR = new Creator<Account>() {
+    @Override public Account createFromParcel(Parcel source) {
+      return new Account(source);
+    }
+
+    @Override public Account[] newArray(int size) {
+      return new Account[size];
+    }
+  };
 }

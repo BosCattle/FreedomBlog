@@ -14,11 +14,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
   public int id;
   @JsonProperty("account_id") public int accountId;
+  public Account accounts;
   @JsonProperty("content") public String content;
   @JsonProperty("title") public String title;
   @JsonProperty("image_url") public String imageUrl;
 
-  public Uri getUri(){
+  public Uri getUri() {
     return Uri.parse(imageUrl);
   }
 
@@ -29,6 +30,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
   @Override public void writeToParcel(Parcel dest, int flags) {
     dest.writeInt(this.id);
     dest.writeInt(this.accountId);
+    dest.writeParcelable(this.accounts, flags);
     dest.writeString(this.content);
     dest.writeString(this.title);
     dest.writeString(this.imageUrl);
@@ -40,6 +42,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
   protected Articles(Parcel in) {
     this.id = in.readInt();
     this.accountId = in.readInt();
+    this.accounts = in.readParcelable(Account.class.getClassLoader());
     this.content = in.readString();
     this.title = in.readString();
     this.imageUrl = in.readString();

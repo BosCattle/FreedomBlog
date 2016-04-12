@@ -85,7 +85,7 @@ public class UserPreferences {
             e.printStackTrace();
         }
         editor.putString(key, jsonObject.toString());
-        editor.commit();
+        editor.apply();
     }
 
     private static boolean getBoolean(String key, boolean value) {

@@ -59,15 +59,18 @@
     </LinearLayout>
   </RelativeLayout>
 
-  <org.jiangtao.widget.RoundedButton
+  <Button
       android:id="@+id/add_friend"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_below="@+id/container_header"
       android:layout_marginTop="@dimen/activity_vertical_margin"
+      android:background="@color/red"
       android:elevation="0dp"
       android:minHeight="@dimen/md_button_height"
       android:text="@string/add_friends"
+      android:textColor="@color/white"
+      style="@style/ButtonCompat"
       />
 
 </RelativeLayout>

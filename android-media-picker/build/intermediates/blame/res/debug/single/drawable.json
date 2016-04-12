@@ -4,12 +4,12 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\picker_actionbar_translucent.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\src\\main\\res\\drawable\\picker_actionbar_translucent.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\picker_actionbar_translucent.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\src\\main\\res\\drawable\\picker_actionbar_translucent.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
@@ -36,12 +36,12 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
@@ -68,12 +68,12 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\picker_photogrid_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\src\\main\\res\\drawable\\picker_photogrid_selector.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\picker_photogrid_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\src\\main\\res\\drawable\\picker_photogrid_selector.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",

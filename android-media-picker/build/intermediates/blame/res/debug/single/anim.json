@@ -32,11 +32,11 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\anim\\abc_slide_in_bottom.xml"
     }
 ]

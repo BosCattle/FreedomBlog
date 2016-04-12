@@ -1,9 +1,5 @@
 [
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text_holo.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\color\\abc_search_url_text_holo.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\color\\abc_secondary_text_material_dark.xml"
     },

@@ -22,12 +22,12 @@ public final class R {
 		public static final int white_translucent = 0x7f0a0043;
 	}
 	public static final class dimen {
-		public static final int border_thickness = 0x7f070046;
-		public static final int corner_length = 0x7f070047;
-		public static final int corner_thickness = 0x7f070048;
-		public static final int guideline_thickness = 0x7f07004b;
-		public static final int snap_radius = 0x7f070054;
-		public static final int target_radius = 0x7f070055;
+		public static final int border_thickness = 0x7f070047;
+		public static final int corner_length = 0x7f070048;
+		public static final int corner_thickness = 0x7f070049;
+		public static final int guideline_thickness = 0x7f07004c;
+		public static final int snap_radius = 0x7f070055;
+		public static final int target_radius = 0x7f070056;
 	}
 	public static final class id {
 		public static final int off = 0x7f0b0027;

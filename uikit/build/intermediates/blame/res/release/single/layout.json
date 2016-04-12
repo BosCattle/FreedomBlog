@@ -12,16 +12,16 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_contact_select_area_item.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_zbra_loading_progress_bar.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_zbra_loading_progress_bar.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_popup_menu_list_item.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_popup_menu_list_item.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_zbra_loading_progress_bar.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_zbra_loading_progress_bar.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_message_item_text.xml",
@@ -60,10 +60,6 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_easy_alert_dialog_default_layout.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_easy_alert_dialog_default_layout.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_advanced_team_create_announce.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_advanced_team_create_announce.xml"
     },
@@ -72,16 +68,16 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_message_item_video.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_easy_alert_dialog_default_layout.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_easy_alert_dialog_default_layout.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_pick_image_activity.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_pick_image_activity.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_decor_include.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_decor_include.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_message_item.xml",
@@ -136,12 +132,12 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_easy_alert_dialog_bottom_button.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_action_bar_right_clickable_tv.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_action_bar_right_clickable_tv.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_message_item_location.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_message_item_location.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_action_bar_right_clickable_tv.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_action_bar_right_clickable_tv.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_preview_image_from_local_activity.xml",
@@ -152,10 +148,6 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_picker_photo_grid_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_tab.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_tab.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_read_recipt_layout.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_read_recipt_layout.xml"
     },
@@ -164,32 +156,32 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_time_text_view_layout.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_contact_text_item.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_contact_text_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_advanced_team_info_divider_item.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_advanced_team_info_divider_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_contacts_item.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_contacts_item.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_contacts_item.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_contacts_item.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_team_info_divider_item.xml",
@@ -210,10 +202,6 @@
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_watch_picture_activity.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_watch_picture_activity.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_tabbar.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_tabbar.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
@@ -244,20 +232,16 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_emoji_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_message_item_picture.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_message_item_picture.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_contacts_count_item.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_contacts_count_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_watch_snapchat_activity.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_watch_snapchat_activity.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_message_item_picture.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_message_item_picture.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_decor_overlay.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_decor_overlay.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_watch_snapchat_activity.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_watch_snapchat_activity.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
@@ -284,16 +268,12 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_picker_album_activity.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_include.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_activity_chooser_view_include.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_advanced_team_member_info_layout.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_advanced_team_member_info_layout.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_advanced_team_member_info_layout.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_advanced_team_member_info_layout.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -304,10 +284,6 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_message_activity.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_home.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_home.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_cancel_action.xml"
     },
@@ -316,16 +292,16 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\pull_to_refresh_header_horizontal.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_listview_refresh.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_listview_refresh.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_popup_menu_layout.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_popup_menu_layout.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_team_info_activity.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_team_info_activity.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_listview_refresh.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_listview_refresh.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_emoji_layout.xml",
@@ -344,12 +320,12 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_capture_video_activity.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\image_layout_multi_touch.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\image_layout_multi_touch.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_contacts.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_contacts.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\image_layout_multi_touch.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\image_layout_multi_touch.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_watch_video_activity.xml",
@@ -392,12 +368,12 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_menu_dialog_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_preview_image_layout_multi_touch.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_preview_image_layout_multi_touch.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_action_bar_custom_view.xml",
@@ -436,10 +412,6 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_mode_close_item.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_message_item_name_layout.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_message_item_name_layout.xml"
     },
@@ -476,24 +448,24 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_advanced_team_nickname_activity.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_advanced_team_nickname_activity.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_preview_image_from_camera_activity.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_preview_image_from_camera_activity.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\nim_picker_image_preview_activity.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\layout\\nim_picker_image_preview_activity.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",

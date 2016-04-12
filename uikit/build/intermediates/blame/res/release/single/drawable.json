@@ -1,5 +1,9 @@
 [
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -8,20 +12,32 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_audio_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_ab_holo.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_tab_indicator_ab_holo.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_bg_edittext_rectangle_normal.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_bg_edittext_rectangle_normal.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_cameras_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_cameras_selector.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_semitransparency_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_semitransparency_selector.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_progress_bar_foreground.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_progress_bar_foreground.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_cameras_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_cameras_selector.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_sticker_button_background_normal_layer_list.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_sticker_button_background_normal_layer_list.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_button_bottom_add_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_add_selector.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_g_image_preview_white_btn_selecter.xml",
@@ -36,76 +52,44 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_team_member_delete_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_searchview_holo_dark.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_holo_dark.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_emoji_item_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_emoji_item_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_ab_holo_light.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_spinner_ab_holo_light.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_bg_edittext_rectangle_normal.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_bg_edittext_rectangle_normal.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_semitransparency_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_semitransparency_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_sticker_button_background_normal_layer_list.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_sticker_button_background_normal_layer_list.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_button_bottom_add_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_add_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_ab_holo_dark.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_spinner_ab_holo_dark.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_portrait_mask_round.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_portrait_mask_round.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_portrait_mask_round.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_portrait_mask_round.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_item_right_selector.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_item_right_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_audio_animation_list_right.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_audio_animation_list_right.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_cancel_record_red_bg.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_cancel_record_red_bg.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_audio_animation_list_right.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_audio_animation_list_right.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_emoji_item_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_emoji_item_selector.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_button_bottom_text_selector.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_text_selector.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
@@ -118,10 +102,6 @@
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_holo_light.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_ic_clear_holo_light.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
@@ -160,10 +140,6 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_search_dropdown_dark.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_search_dropdown_dark.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_contact_list_item_selecter.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_contact_list_item_selecter.xml"
     },
@@ -190,10 +166,6 @@
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_easy_edit_text_dialog_bg.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_easy_edit_text_dialog_bg.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_searchview_right_holo_dark.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_right_holo_dark.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_full_material.xml",
@@ -224,20 +196,20 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_play_btn_select.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_view_bottom.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_view_bottom.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_audio_animation_list_left.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_audio_animation_list_left.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_progress_bar_background.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_progress_bar_background.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_view_bottom.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_view_bottom.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_bg_edittext_rectangle_focused.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_bg_edittext_rectangle_focused.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_progress_bar_background.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_progress_bar_background.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_bg_edittext_rectangle.xml",
@@ -252,68 +224,16 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_team_create_btn_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_searchview_right_holo_light.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_right_holo_light.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_searchview_holo_light.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_holo_light.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_sticker_button_background_pressed_layer_list.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_sticker_button_background_pressed_layer_list.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_nim_action_bar_button_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_nim_action_bar_button_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_plus_video_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_plus_video_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_red_round_button_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_red_round_button_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_ic_clear.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_actionbar_black_bg.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_actionbar_black_bg.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_search_dropdown_light.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_search_dropdown_light.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_portrait_mask_square.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_portrait_mask_square.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_button_bottom_send_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_send_selector.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_sticker_button_background_pressed_layer_list.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_sticker_button_background_pressed_layer_list.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
@@ -324,6 +244,14 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_video_play_icon_selector.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_nim_action_bar_button_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_nim_action_bar_button_selector.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_plus_video_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_plus_video_selector.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_plus_location_selector.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_plus_location_selector.xml"
     },
@@ -332,8 +260,16 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_popup_menu_item_selector.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_red_round_button_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_red_round_button_selector.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_gray_edit_text_bg.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_gray_edit_text_bg.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_align_bottom_green_btn_selector.xml",
@@ -348,11 +284,31 @@
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_bottom_divider_match_parent_selector.xml"
     },
     {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_actionbar_black_bg.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_actionbar_black_bg.xml"
+    },
+    {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\indicator_bg_top.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_button_bottom_emoji_selector.xml",
         "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_emoji_selector.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_message_button_bottom_send_selector.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_message_button_bottom_send_selector.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\nim_portrait_mask_square.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\res\\drawable\\nim_portrait_mask_square.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
     }
 ]

@@ -22,6 +22,9 @@ public class HomeViewHolder extends EasyViewHolder<Articles> {
   @Bind(R.id.header) RelativeLayout header;
   @Bind(R.id.title) TextView mTitle;
   @Bind(R.id.home_image) SimpleDraweeView mHomeImage;
+  @Bind(R.id.content) TextView mContent;
+  @Bind(R.id.time) TextView mTime;
+  @Bind(R.id.read_num) TextView mReadNum;
 
   public HomeViewHolder(Context context, ViewGroup parent) {
     super(context, parent, R.layout.list_item_home);
@@ -33,6 +36,9 @@ public class HomeViewHolder extends EasyViewHolder<Articles> {
     try {
       mTitle.setText(value.title);
       mHomeImage.setImageURI(value.getUri());
+      mHomeAvatar.setImageURI(value.accounts.uri());
+      mUsername.setText(value.accounts.username);
+      mContent.setText(value.content);
     } catch (Exception e) {
       e.printStackTrace();
     }

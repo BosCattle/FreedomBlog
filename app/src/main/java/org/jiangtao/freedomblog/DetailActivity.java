@@ -13,6 +13,7 @@ import butterknife.OnClick;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.smartydroid.android.starter.kit.app.StarterActivity;
 import jp.wasabeef.richeditor.RichEditor;
+import org.jiangtao.model.Account;
 import org.jiangtao.model.Articles;
 import org.jiangtao.utils.TurnActivity;
 
@@ -44,7 +45,8 @@ public class DetailActivity extends StarterActivity {
   @OnClick(R.id.avatar) public void onClick(View v) {
     switch (v.getId()) {
       case R.id.avatar:
-        TurnActivity.startUserDetailActivity(DetailActivity.this);
+        Account account = mArticles.accounts;
+        TurnActivity.startUserDetailActivity(DetailActivity.this, account);
         break;
     }
   }

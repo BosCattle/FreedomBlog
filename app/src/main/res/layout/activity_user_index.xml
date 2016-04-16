@@ -53,7 +53,7 @@
           android:paddingLeft="@dimen/activity_vertical_padding"
           android:singleLine="true"
           android:text="@string/placehold_short"
-          android:textSize="@dimen/text_size_14"
+          android:textSize="@dimen/text_size_medium"
           tools:ignore="RtlSymmetry"
           />
     </LinearLayout>
@@ -70,7 +70,6 @@
       android:minHeight="@dimen/md_button_height"
       android:text="@string/add_friends"
       android:textColor="@color/white"
-      style="@style/ButtonCompat"
       />
 
 </RelativeLayout>

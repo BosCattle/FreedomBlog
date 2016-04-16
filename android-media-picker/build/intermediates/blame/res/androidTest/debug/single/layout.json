@@ -120,12 +120,12 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\bundles\\debug\\res\\layout\\list_item_mediapicker.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -144,16 +144,16 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_media.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",

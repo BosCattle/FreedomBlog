@@ -38,5 +38,6 @@
   <!-- setting-->
   <dimen name="setting_button_padding">16dp</dimen>
   <dimen name="listPreferredItemHeightSmall">48dp</dimen>
+  <string name="text_size_14">14sp</string>
 
 </resources>

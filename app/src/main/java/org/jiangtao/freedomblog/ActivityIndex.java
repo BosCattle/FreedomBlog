@@ -24,7 +24,6 @@ import org.jiangtao.fragment.PersonFragment;
 import org.jiangtao.fragment.PromptFragment;
 import org.jiangtao.fragment.SendFragment;
 import org.jiangtao.utils.TurnActivity;
-import org.jiangtao.utils.yunxin.LogoutHelper;
 
 public class ActivityIndex extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
@@ -150,7 +149,6 @@ public class ActivityIndex extends AppCompatActivity
   // 注销
   private void onLogout() {
     // 清理缓存&注销监听
-    LogoutHelper.logout();
 
     // 启动登录
     ActivityLogin.start(this, true);

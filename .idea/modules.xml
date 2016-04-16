@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/FreedomBlog.iml" filepath="$PROJECT_DIR$/FreedomBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-media-picker/android-media-picker.iml" filepath="$PROJECT_DIR$/android-media-picker/android-media-picker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/uikit/uikit.iml" filepath="$PROJECT_DIR$/uikit/uikit.iml" />
     </modules>
   </component>
 </project>

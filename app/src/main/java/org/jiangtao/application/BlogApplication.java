@@ -18,7 +18,6 @@ import org.jiangtao.freedomblog.ActivityIndex;
 import org.jiangtao.freedomblog.R;
 import org.jiangtao.utils.DisplayUtils;
 import org.jiangtao.utils.StaticResources;
-import org.jiangtao.utils.yunxin.DemoCache;
 import org.jiangtao.utils.yunxin.Preferences;
 
 /**
@@ -50,7 +49,6 @@ public class BlogApplication extends MultiDexApplication {
     SMSSDK.initSDK(this, StaticResources.MOB_SMS_KEY, StaticResources.MOB_SMS_SECRET);
     // SDK初始化（启动后台服务，若已经存在用户登录信息， SDK 将完成自动登录）
     if (mApp != null) {
-      DemoCache.setContext(getApplicationContext());
       NIMClient.init(this, loginInfo(), options());
     }
   }
@@ -123,7 +121,6 @@ public class BlogApplication extends MultiDexApplication {
     String token = Preferences.getUserToken();
 
     if (!TextUtils.isEmpty(account) && !TextUtils.isEmpty(token)) {
-      DemoCache.setAccount(account.toLowerCase());
       return new LoginInfo(account, token);
     } else {
       return null;

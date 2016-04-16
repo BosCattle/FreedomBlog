@@ -20,5 +20,5 @@ public final class StaticResources {
   /**
    * 网址
    */
-  public static final String BASE_URL = "http://192.168.199.227:8080/";
+  public static final String BASE_URL = "http://192.168.199.228:8080/";
 }

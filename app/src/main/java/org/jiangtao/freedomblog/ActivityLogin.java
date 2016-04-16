@@ -13,8 +13,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import com.netease.nim.uikit.cache.DataCacheManager;
-import com.netease.nim.uikit.common.util.string.MD5;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.RequestCallback;
 import com.netease.nimlib.sdk.auth.AuthService;
@@ -27,9 +25,7 @@ import org.jiangtao.service.ApiService;
 import org.jiangtao.utils.AccountManager;
 import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
-import org.jiangtao.utils.yunxin.DemoCache;
 import org.jiangtao.utils.yunxin.Preferences;
-import org.jiangtao.utils.yunxin.UserPreferences;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -133,18 +129,8 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
         @Override public void onSuccess(LoginInfo loginInfo) {
           //保存IM账号信息
           dismissHud();
-          DemoCache.setAccount(account);
           saveLoginInfo(account, token);
-          // 初始化消息提醒
-          NIMClient.toggleNotification(UserPreferences.getNotificationToggle());
-
-          // 初始化免打扰
-          if (UserPreferences.getStatusConfig() == null) {
-            UserPreferences.setStatusConfig(DemoCache.getNotificationConfig());
-          }
-          NIMClient.updateStatusBarNotificationConfig(UserPreferences.getStatusConfig());
           // 构建缓存
-          DataCacheManager.buildDataCacheAsync();
           TurnActivity.startIndexActivity(ActivityLogin.this);
         }
 
@@ -175,7 +161,8 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
     boolean isDemo = "45c6af3c98409b18a84451215d0bdd6e".equals(appKey)
         || "fe416640c8e8a72734219e1847ad2547".equals(appKey);
 
-    return isDemo ? MD5.getStringMD5(password) : password;
+    //return isDemo ? MD5.getStringMD5(password) : password;
+    return null;
   }
 
   /**

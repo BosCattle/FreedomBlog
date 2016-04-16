@@ -38,9 +38,6 @@ public class Preferences {
   }
 
   static SharedPreferences getSharedPreferences() {
-    if (DemoCache.getContext().getSharedPreferences("Demo", Context.MODE_PRIVATE) != null) {
-      return DemoCache.getContext().getSharedPreferences("Demo", Context.MODE_PRIVATE);
-    }
     return null;
   }
 }

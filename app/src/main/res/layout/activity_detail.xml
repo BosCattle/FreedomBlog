@@ -46,7 +46,6 @@
         android:text="@string/attentions"
         android:textSize="@dimen/inline_padding"
         tools:ignore="RelativeOverlap"
-        style="@style/ButtonCompat"
         />
 
   </RelativeLayout>

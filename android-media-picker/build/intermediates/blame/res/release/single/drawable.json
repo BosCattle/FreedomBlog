@@ -8,12 +8,12 @@
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
-        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
         "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",

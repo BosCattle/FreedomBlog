@@ -16,11 +16,13 @@ import butterknife.ButterKnife;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 import java.sql.Date;
-import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
+import org.jiangtao.model.RongYun;
 import org.jiangtao.service.AccountService;
-import org.jiangtao.utils.AccountManager;
 import org.jiangtao.service.ApiService;
+import org.jiangtao.service.RongYunService;
+import org.jiangtao.utils.AccountManager;
+import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -47,6 +49,7 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
   private String passwordText;
   private String validateText;
   private EventHandler mEventHandler;
+  private RongYunService mRongYunService;
   private Handler mHandler = new Handler() {
     @Override public void handleMessage(Message msg) {
       super.handleMessage(msg);
@@ -60,6 +63,7 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
     ButterKnife.bind(this);
     initSMSSDK();
     mAccountService = ApiService.createAccountService();
+    mRongYunService = ApiService.createRongYunService();
   }
 
   /**
@@ -126,9 +130,25 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
                   java.util.Date date = new java.util.Date();
                   Date date1 = new Date(date.getTime());
                   Log.d("--->", date1.toString() + "你好");
-                  AccountManager.getInstance()
-                      .saveTime(BlogApplication.getInstance().getApplicationContext(), date1);
-                  TurnActivity.startIndexActivity(ActivityRegister.this);
+                  //AccountManager.getInstance()
+                  //    .saveTime(BlogApplication.getInstance().getApplicationContext(), date1);
+                  Call<RongYun> call1 =
+                      mRongYunService.register(phoneText, phoneText, passwordText);
+                  call1.enqueue(new Callback<RongYun>() {
+                    @Override
+                    public void onResponse(Call<RongYun> call, Response<RongYun> response) {
+                      if (response.isSuccessful()) {
+                        SnackBarUtil.showText(ActivityRegister.this, response.body().token);
+                        TurnActivity.startIndexActivity(ActivityRegister.this);
+                      } else {
+                        SnackBarUtil.showText(ActivityRegister.this, "fail");
+                      }
+                    }
+
+                    @Override public void onFailure(Call<RongYun> call, Throwable t) {
+                      SnackBarUtil.showText(ActivityRegister.this, "error:"+t.toString());
+                    }
+                  });
                 }
               } else {
                 Snackbar.make(mRelativelayout, "手机号已经存在", Snackbar.LENGTH_SHORT).show();

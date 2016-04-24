@@ -18,10 +18,10 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import io.rong.imkit.fragment.ConversationListFragment;
 import org.jiangtao.fragment.AttentionFragment;
 import org.jiangtao.fragment.IndexFragment;
 import org.jiangtao.fragment.PersonFragment;
-import org.jiangtao.fragment.PromptFragment;
 import org.jiangtao.fragment.SendFragment;
 import org.jiangtao.utils.TurnActivity;
 
@@ -50,7 +50,7 @@ public class ActivityIndex extends AppCompatActivity
         IndexFragment.class, null);
     mTabHost.addTab(
         createTabSpec(TAB_MESSAGE, R.string.index_comment, R.drawable.selector_tab_messge),
-        PromptFragment.class, null);
+        ConversationListFragment.class, null);
     mTabHost.addTab(createTabSpec(TAB_EDUCATION, R.string.index_fragment_pupopmenu,
         R.drawable.selector_tab_education), SendFragment.class, null);
     mTabHost.addTab(createTabSpec(TAB_CLASS_CIRCLE, R.string.index_attention,
@@ -151,7 +151,6 @@ public class ActivityIndex extends AppCompatActivity
     // 清理缓存&注销监听
 
     // 启动登录
-    ActivityLogin.start(this, true);
     finish();
   }
 }

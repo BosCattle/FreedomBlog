@@ -22,6 +22,10 @@ public class ApiService {
     return retrofit().create(QiNiuService.class);
   }
 
+  public static RongYunService createRongYunService() {
+    return retrofit().create(RongYunService.class);
+  }
+
   private static Retrofit retrofit() {
     return StarterNetwork.get().retrofit();
   }

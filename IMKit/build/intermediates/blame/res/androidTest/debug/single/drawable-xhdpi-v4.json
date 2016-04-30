@@ -124,12 +124,12 @@
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_bg_text_hover.9.png"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f437.png",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f437.png"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f629.png",
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f629.png"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f437.png",
+        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f437.png"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ic_volume_8.png",
@@ -436,12 +436,12 @@
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u263a.png"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_bar_more.png",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_bar_more.png"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_receive_voice_one.png",
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_receive_voice_one.png"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_bar_more.png",
+        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_bar_more.png"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_checkbox_pressed.png",
@@ -980,12 +980,12 @@
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_voice_sent_play2.png"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f622.png",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f622.png"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_notification_network_available.png",
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_notification_network_available.png"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f622.png",
+        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\u1f622.png"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_btn_send_normal.9.png",

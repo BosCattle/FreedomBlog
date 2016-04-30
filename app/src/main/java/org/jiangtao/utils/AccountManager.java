@@ -90,8 +90,7 @@ public class AccountManager {
     SharedPreferences shared = context.getSharedPreferences("intervals", Context.MODE_PRIVATE);
     Gson gson = new Gson();
     String object = shared.getString("time", "null");
-    java.util.Date date = gson.fromJson(object, java.util.Date.class);
-    return date;
+    return gson.fromJson(object, java.util.Date.class);
   }
 
   /**

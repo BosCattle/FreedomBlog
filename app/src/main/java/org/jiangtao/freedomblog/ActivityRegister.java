@@ -24,6 +24,7 @@ import org.jiangtao.service.RongYunService;
 import org.jiangtao.utils.AccountManager;
 import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
+import org.jiangtao.utils.preferance.RongyunPreference;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -138,22 +139,23 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
                     @Override
                     public void onResponse(Call<RongYun> call, Response<RongYun> response) {
                       if (response.isSuccessful()) {
+                        //保存融云账号
+                        RongyunPreference.saveRongYun(getApplicationContext(), response.body());
                         SnackBarUtil.showText(ActivityRegister.this, response.body().token);
-                        TurnActivity.startIndexActivity(ActivityRegister.this);
+                        TurnActivity.turnLoginActivity(ActivityRegister.this);
                       } else {
                         SnackBarUtil.showText(ActivityRegister.this, "fail");
                       }
                     }
 
                     @Override public void onFailure(Call<RongYun> call, Throwable t) {
-                      SnackBarUtil.showText(ActivityRegister.this, "error:"+t.toString());
+                      SnackBarUtil.showText(ActivityRegister.this, "error:" + t.toString());
                     }
                   });
                 }
               } else {
                 Snackbar.make(mRelativelayout, "手机号已经存在", Snackbar.LENGTH_SHORT).show();
               }
-              Log.d("----->", account.toString());
             }
           }
 

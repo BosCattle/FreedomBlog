@@ -12,9 +12,12 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.facebook.drawee.view.SimpleDraweeView;
+import io.rong.imkit.RongIM;
 import org.jiangtao.model.Account;
 
 public class UserDetailActivity extends BaseActivity {
+
+  public static String TAG = UserDetailActivity.class.getSimpleName();
 
   @Bind(R.id.detail_avatar) SimpleDraweeView mDetailAvatar;
   @Bind(R.id.text_account_username) TextView mTextAccountUsername;
@@ -35,6 +38,7 @@ public class UserDetailActivity extends BaseActivity {
   private void setUpViews() {
     mDetailAvatar.setImageURI(mAccount.uri());
     mTextAccountUsername.setText(mAccount.username);
+    mTextAccount.setText(mAccount.phone);
   }
 
   private void getDetailAccount() {
@@ -55,8 +59,10 @@ public class UserDetailActivity extends BaseActivity {
     return super.onOptionsItemSelected(item);
   }
 
-  @OnClick(R.id.add_friend)
-  public void onClick(View v){
+  @OnClick(R.id.add_friend) public void onClick(View v) {
 
+    if (RongIM.getInstance() != null) {
+      RongIM.getInstance().startPrivateChat(this, mAccount.phone, "又来消息啦");
+    }
   }
 }

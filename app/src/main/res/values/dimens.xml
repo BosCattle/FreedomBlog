@@ -1,43 +1,43 @@
 <resources>
-  <!-- Default screen margins, per the Android Design guidelines. -->
-  <dimen name="nav_header_vertical_spacing">16dp</dimen>
-  <dimen name="nav_header_height">160dp</dimen>
-  <!-- Default screen margins, per the Android Design guidelines. -->
-  <dimen name="activity_horizontal_margin">16dp</dimen>
-  <dimen name="activity_vertical_margin">16dp</dimen>
-  <dimen name="activity_vertical_margin1">10dp</dimen>
-  <dimen name="fab_margin">16dp</dimen>
-  <dimen name="appbar_padding_top">8dp</dimen>
-  <dimen name="head_image_width">90dp</dimen>
-  <dimen name="head_image_height">90dp</dimen>
-  <dimen name="user_name">16sp</dimen>
-  <dimen name="index_text_size">10sp</dimen>
-  <dimen name="recyclerview_horizontal_space">20dp</dimen>
-  <!--index-->
-  <dimen name="collections_margin_left">16dp</dimen>
-  <dimen name="collections_margin_top">10dp</dimen>
-  <dimen name="collections_margin_right">10dp</dimen>
-  <dimen name="collections_text_title_size">18sp</dimen>
-  <dimen name="collections_text_content_size">16sp</dimen>
-  <!-- person fragment-->
-  <dimen name="account_avatar_size">80dp</dimen>
-  <dimen name="text_size_large">20sp</dimen>
-  <dimen name="inline_padding">16dp</dimen>
-  <dimen name="text_size_medium">18sp</dimen>
-  <!-- login-->
-  <dimen name="pading_top">50dp</dimen>
-  <dimen name="tab_bar_height">56dp</dimen>
-  <dimen name="toolbar_height">56dp</dimen>
-  <dimen name="text_size_xsmall">12sp</dimen>
-  <!-- home-->
-  <dimen name="home_avatar_size">40dp</dimen>
-  <!-- userInfoActivity-->
-  <dimen name="user_info_avatar_size">60dp</dimen>
-  <dimen name="user_info_detail_padding_right">8dp</dimen>
-  <dimen name="default_padding_tip">10dp</dimen>
-  <!-- setting-->
-  <dimen name="setting_button_padding">16dp</dimen>
-  <dimen name="listPreferredItemHeightSmall">48dp</dimen>
-  <string name="text_size_14">14sp</string>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="nav_header_vertical_spacing">16dp</dimen>
+	<dimen name="nav_header_height">160dp</dimen>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin1">10dp</dimen>
+	<dimen name="fab_margin">16dp</dimen>
+	<dimen name="appbar_padding_top">8dp</dimen>
+	<dimen name="head_image_width">90dp</dimen>
+	<dimen name="head_image_height">90dp</dimen>
+	<dimen name="user_name">16sp</dimen>
+	<dimen name="index_text_size">10sp</dimen>
+	<dimen name="recyclerview_horizontal_space">20dp</dimen>
+	<!--index-->
+	<dimen name="collections_margin_left">16dp</dimen>
+	<dimen name="collections_margin_top">10dp</dimen>
+	<dimen name="collections_margin_right">10dp</dimen>
+	<dimen name="collections_text_title_size">18sp</dimen>
+	<dimen name="collections_text_content_size">16sp</dimen>
+	<!-- person fragment-->
+	<dimen name="account_avatar_size">80dp</dimen>
+	<dimen name="text_size_large">20sp</dimen>
+	<dimen name="inline_padding">16dp</dimen>
+	<dimen name="text_size_medium">18sp</dimen>
+	<!-- login-->
+	<dimen name="pading_top">50dp</dimen>
+	<dimen name="tab_bar_height">56dp</dimen>
+	<dimen name="toolbar_height">56dp</dimen>
+	<dimen name="text_size_xsmall">12sp</dimen>
+	<!-- home-->
+	<dimen name="home_avatar_size">40dp</dimen>
+	<!-- userInfoActivity-->
+	<dimen name="user_info_avatar_size">60dp</dimen>
+	<dimen name="user_info_detail_padding_right">8dp</dimen>
+	<dimen name="default_padding_tip">10dp</dimen>
+	<!-- setting-->
+	<dimen name="setting_button_padding">16dp</dimen>
+	<dimen name="listPreferredItemHeightSmall">48dp</dimen>
+	<string name="text_size_14">14sp</string>
 
 </resources>

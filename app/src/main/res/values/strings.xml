@@ -1,84 +1,85 @@
 <resources>
-  <string name="label_blog">轻博客</string>
-  <string name="app_name">FreedomBlog</string>
-  <string name="navigation_drawer_open">Open navigation drawer</string>
-  <string name="navigation_drawer_close">Close navigation drawer</string>
-  <string name="action_settings">设置</string>
-  <string name="section_format">Hello World from section: %1$d</string>
-  <!-- 欢迎界面string-->
-  <string name="welcome_image">欢迎界面的图片</string>
-  <!-- 主页string-->
-  <string name="index_actionbar">"主页"</string>
-  <string name="index_index">主页</string>
-  <string name="index_attention">关注</string>
-  <string name="index_me">我的</string>
-  <string name="index_comment">消息</string>
-  <string name="index_fragment_pupopmenu">发布</string>
-  <!-- 侧滑栏string-->
-  <string name="nav_index">主页</string>
-  <string name="nav_sort">分类</string>
-  <string name="group_other">其他</string>
-  <string name="nav_theme">主题</string>
-  <string name="nav_set">设置</string>
-  <string name="nav_about">关于</string>
-  <string name="nav_exit">退出</string>
-  <!-- 个人fragment string-->
-  <string name="person_islogin">登陆/注册</string>
-  <string name="group_attention">关注(0)</string>
-  <string name="group_fans">粉丝(0)</string>
-  <string name="group_book">文章(0)</string>
-  <string name="group_love">喜欢</string>
-  <string name="group_num">0</string>
-  <string name="group_share">分享</string>
-  <string name="group_comment">评论</string>
-  <string name="group_collect">收藏</string>
-  <string name="content_description">个性签名...</string>
-  <string name="placehold_short">用户名</string>
-  <string name="placehold_long">....</string>
+	<string name="label_blog">轻博客</string>
+	<string name="app_name">FreedomBlog</string>
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="action_settings">设置</string>
+	<string name="section_format">Hello World from section: %1$d</string>
+	<!-- 欢迎界面string-->
+	<string name="welcome_image">欢迎界面的图片</string>
+	<!-- 主页string-->
+	<string name="index_actionbar">"主页"</string>
+	<string name="index_index">主页</string>
+	<string name="index_attention">关注</string>
+	<string name="index_me">我的</string>
+	<string name="index_comment">消息</string>
+	<string name="index_fragment_pupopmenu">发布</string>
+	<!-- 侧滑栏string-->
+	<string name="nav_index">主页</string>
+	<string name="nav_sort">分类</string>
+	<string name="group_other">其他</string>
+	<string name="nav_theme">主题</string>
+	<string name="nav_set">设置</string>
+	<string name="nav_about">关于</string>
+	<string name="nav_exit">退出</string>
+	<!-- 个人fragment string-->
+	<string name="person_islogin">登陆/注册</string>
+	<string name="group_attention">关注(0)</string>
+	<string name="group_fans">粉丝(0)</string>
+	<string name="group_book">文章(0)</string>
+	<string name="group_love">喜欢</string>
+	<string name="group_num">0</string>
+	<string name="group_share">分享</string>
+	<string name="group_comment">评论</string>
+	<string name="group_collect">收藏</string>
+	<string name="content_description">个性签名...</string>
+	<string name="placehold_short">用户名</string>
+	<string name="placehold_long">....</string>
 
 
-  <string name="hello_blank_fragment">Hello blank fragment</string>
-  <string name="title_activity_settings">设置</string>
-  <string name="title_activity_user_settings">修改信息</string>
-  <string name="title_activity_user_index">主页</string>
-  <string name="title_activity_sortctivity">Sortctivity</string>
-  <!--登陆界面-->
-  <string name="sub_edittext_username">手机号</string>
-  <string name="sub_edittext_password">密码</string>
-  <string name="button_login">登陆</string>
-  <string name="textview_prompt">使用其他方式登陆</string>
-  <string name="register_blog">注册</string>
-  <!--注册界面 -->
-  <string name="register_edittext_validate">验证码</string>
-  <string name="edittext_email_phonenumber">手机号</string>
-  <string name="button_register">注册</string>
-  <string name="input_type">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@1234567890.</string>
-  <string name="title_activity_about">关于</string>
-  <string name="validate_type">0123456789</string>
-  <string name="forget_password">忘记密码</string>
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="title_activity_settings">设置</string>
+	<string name="title_activity_user_settings">修改信息</string>
+	<string name="title_activity_user_index">主页</string>
+	<string name="title_activity_sortctivity">Sortctivity</string>
+	<!--登陆界面-->
+	<string name="sub_edittext_username">手机号</string>
+	<string name="sub_edittext_password">密码</string>
+	<string name="button_login">登陆</string>
+	<string name="textview_prompt">使用其他方式登陆</string>
+	<string name="register_blog">注册</string>
+	<!--注册界面 -->
+	<string name="register_edittext_validate">验证码</string>
+	<string name="edittext_email_phonenumber">手机号</string>
+	<string name="button_register">注册</string>
+	<string name="input_type">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@1234567890.
+	</string>
+	<string name="title_activity_about">关于</string>
+	<string name="validate_type">0123456789</string>
+	<string name="forget_password">忘记密码</string>
 
-  <!-- sendFragment发布内容界面-->
-  <string name="edit_title">请输入标题</string>
-  <string name="btn_publish">开始写作</string>
-  <!-- publishActivity-->
-  <string name="label_publish">写作</string>
-  <string name="action_publish">发布</string>
-  <!-- detailActivity-->
-  <string name="label_detail">详情</string>
-  <!--选择-->
-  <array name="takes_dialog_items">
-    <item>拍照</item>
-    <item>相册</item>
-  </array>
-  <array name="sex_dialog_items">
-    <item>男</item>
-    <item>女</item>
-  </array>
+	<!-- sendFragment发布内容界面-->
+	<string name="edit_title">请输入标题</string>
+	<string name="btn_publish">开始写作</string>
+	<!-- publishActivity-->
+	<string name="label_publish">写作</string>
+	<string name="action_publish">发布</string>
+	<!-- detailActivity-->
+	<string name="label_detail">详情</string>
+	<!--选择-->
+	<array name="takes_dialog_items">
+		<item>拍照</item>
+		<item>相册</item>
+	</array>
+	<array name="sex_dialog_items">
+		<item>男</item>
+		<item>女</item>
+	</array>
 
-  <!--detailActivity-->
-  <string name="attentions">关注</string>
-  <string name="no_attentions">已关注</string>
-  <string name="add_friends">添加好友</string>
-  <!--userDetailActivity-->
-  <string name="label_user_detail">个人名片</string>
+	<!--detailActivity-->
+	<string name="attentions">关注</string>
+	<string name="no_attentions">已关注</string>
+	<string name="add_friends">发送消息</string>
+	<!--userDetailActivity-->
+	<string name="label_user_detail">个人名片</string>
 </resources>

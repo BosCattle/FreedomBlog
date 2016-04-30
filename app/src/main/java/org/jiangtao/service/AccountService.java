@@ -1,5 +1,6 @@
 package org.jiangtao.service;
 
+import java.util.ArrayList;
 import org.jiangtao.model.Account;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -39,4 +40,9 @@ public interface AccountService {
    */
   @FormUrlEncoded @POST("/auth/revise/age") Call<Account> reviseAge(@Field("age") String age,
       @Field("id") int id);
+
+  /**
+   * 获取所有用户信息
+   */
+  @POST("/auth/allInfo") Call<ArrayList<Account>> getAllAcoount();
 }

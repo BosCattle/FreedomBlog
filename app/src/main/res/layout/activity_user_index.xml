@@ -39,7 +39,6 @@
           android:lines="1"
           android:paddingLeft="@dimen/activity_vertical_padding"
           android:singleLine="true"
-          android:text="@string/placehold_short"
           android:textColor="@color/colorPrimary"
           android:textSize="@dimen/text_size_large"
           tools:ignore="RtlSymmetry"
@@ -52,7 +51,6 @@
           android:lines="1"
           android:paddingLeft="@dimen/activity_vertical_padding"
           android:singleLine="true"
-          android:text="@string/placehold_short"
           android:textSize="@dimen/text_size_medium"
           tools:ignore="RtlSymmetry"
           />

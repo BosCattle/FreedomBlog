@@ -3,6 +3,7 @@ package org.jiangtao.freedomblog;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -10,13 +11,17 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.smartydroid.android.starter.kit.app.StarterActivity;
+import io.rong.imkit.RongIM;
+import io.rong.imlib.RongIMClient;
 import java.util.Date;
+import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
 import org.jiangtao.service.AccountService;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.utils.AccountManager;
 import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
+import org.jiangtao.utils.preferance.RongyunPreference;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -27,8 +32,6 @@ import retrofit2.Response;
  * description:登录界面
  */
 public class ActivityLogin extends StarterActivity implements View.OnClickListener {
-  private static final String TAG = ActivityLogin.class.getSimpleName();
-  private static final String KICK_OUT = "KICK_OUT";
 
   @Bind(R.id.register_blog) TextView mRegisterBlogTextView;
   @Bind(R.id.button_login) TextView mLoginButton;
@@ -87,7 +90,7 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
             AccountManager.getInstance().saveAccount(account, ActivityLogin.this);
             AccountManager.getInstance().saveToken(ActivityLogin.this, account.token);
             AccountManager.getInstance().saveTime(ActivityLogin.this, new Date());
-            doLogin();
+            connect(RongyunPreference.getRongYun(getApplicationContext()).token);
           }
         } else {
           dismissHud();
@@ -108,14 +111,44 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
     }
   }
 
-  /**
-   * 登录云信
-   */
-  public void doLogin() {
-    if (mPhone != null && mPassWord != null && mPhone.length() == 11 && mPassWord.length() >= 6) {
-      final String account = mPhoneEdit.getEditableText().toString().toLowerCase();
-      final String token = mPassWordEdit.getEditableText().toString();
+  private void connect(String token) {
+
+    if (getApplicationInfo().packageName.equals(
+        BlogApplication.getCurProcessName(getApplicationContext()))) {
+
+      /**
+       * IMKit SDK调用第二步,建立与服务器的连接
+       */
+      RongIM.connect(token, new RongIMClient.ConnectCallback() {
+
+        /**
+         * Token 错误，在线上环境下主要是因为 Token 已经过期，您需要向 App Server 重新请求一个新的 Token
+         */
+        @Override public void onTokenIncorrect() {
+          dismissHud();
+          Log.d("LoginActivity", "--onTokenIncorrect");
+        }
+
+        /**
+         * 连接融云成功
+         * @param userid 当前 token
+         */
+        @Override public void onSuccess(String userid) {
+          dismissHud();
+          Log.d("LoginActivity", "--onSuccess" + userid);
+          TurnActivity.startIndexActivity(ActivityLogin.this);
+          finish();
+        }
+
+        /**
+         * 连接融云失败
+         * @param errorCode 错误码，可到官网 查看错误码对应的注释
+         */
+        @Override public void onError(RongIMClient.ErrorCode errorCode) {
+          dismissHud();
+          Log.d("LoginActivity", "--onError" + errorCode);
+        }
+      });
     }
   }
-
 }

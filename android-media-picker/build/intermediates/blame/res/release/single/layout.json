@@ -40,12 +40,12 @@
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
         "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\release\\layout\\fragment_mediapicker_crop.xml",

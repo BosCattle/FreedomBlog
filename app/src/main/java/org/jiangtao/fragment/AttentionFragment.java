@@ -1,29 +1,47 @@
 package org.jiangtao.fragment;
 
-
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.support.annotation.Nullable;
 import android.view.View;
-import android.view.ViewGroup;
-
-import org.jiangtao.freedomblog.R;
+import com.carlosdelachica.easyrecycleradapters.adapter.EasyRecyclerAdapter;
+import com.smartydroid.android.starter.kit.app.StarterKeysFragment;
+import com.smartydroid.android.starter.kit.utilities.RecyclerViewUtils;
+import java.util.ArrayList;
+import org.jiangtao.holder.AttentionsViewHolder;
+import org.jiangtao.model.Account;
+import org.jiangtao.model.Focus;
+import org.jiangtao.service.ApiService;
+import org.jiangtao.service.FocusService;
+import org.jiangtao.utils.AccountManager;
+import retrofit2.Call;
 
 /**
- * A simple {@link Fragment} subclass.
+ * 获取所有关注
  */
-public class AttentionFragment extends Fragment {
+public class AttentionFragment extends StarterKeysFragment<Focus> {
 
+  private FocusService mFocusService;
 
-    public AttentionFragment() {
-    }
+  @Override public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mFocusService = ApiService.createFocusService();
+  }
 
+  @Override public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+    getRecyclerView().addItemDecoration(RecyclerViewUtils.buildItemDecoration(getContext()));
+  }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_attention, container, false);
-    }
+  @Override public Call<ArrayList<Focus>> paginate(Focus sinceItem, Focus maxItem, int perPage) {
+    Account account = AccountManager.getInstance().getAccount(getContext());
+    return mFocusService.allFocus(account.id);
+  }
 
+  @Override public Object getKeyForData(Focus item) {
+    return item != null && item.id != 0 ? item.id : 0;
+  }
+
+  @Override public void bindViewHolders(EasyRecyclerAdapter adapter) {
+    adapter.bind(Focus.class, AttentionsViewHolder.class);
+  }
 }

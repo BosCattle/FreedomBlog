@@ -13,7 +13,7 @@ public interface CommentService {
   /**
    * 插入评论
    */
-  @GET("/comment/insert") Call<ArrayList<Comment>> insertComment(
+  @GET("comment/insert") Call<ArrayList<Comment>> insertComment(
       @Query("article_id") int article_id, @Query("content") String comtent,
       @Query("is_parent") int is_parent, @Query("account_id") int account_id,
       @Query("parent_account_id") int parent_account_id);
@@ -21,5 +21,5 @@ public interface CommentService {
   /**
    * 获取所有的评论
    */
-  @GET("/comment/all") Call<ArrayList<Comment>> getAllComment(@Query("article_id") int article_id);
+  @GET("comment/all") Call<ArrayList<Comment>> getAllComment(@Query("article_id") int article_id);
 }

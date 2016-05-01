@@ -14,35 +14,35 @@ public interface AccountService {
   /**
    * 注册
    */
-  @FormUrlEncoded @POST("/auth/register") Call<Account> register(@Field("phone") String phone,
+  @FormUrlEncoded @POST("auth/register") Call<Account> register(@Field("phone") String phone,
       @Field("password") String password);
 
   /**
    * 登录
    */
-  @FormUrlEncoded @POST("/auth/login") Call<Account> login(@Field("phone") String phone,
+  @FormUrlEncoded @POST("auth/login") Call<Account> login(@Field("phone") String phone,
       @Field("password") String password);
 
   /**
    * 修改昵称
    */
-  @FormUrlEncoded @POST("/auth/revise/username") Call<Account> reviseUserName(
+  @FormUrlEncoded @POST("auth/revise/username") Call<Account> reviseUserName(
       @Field("username") String username, @Field("id") int id);
 
   /**
    * 修改性别
    */
-  @FormUrlEncoded @POST("/auth/revise/sex") Call<Account> reviseSex(@Field("sex") String sex,
+  @FormUrlEncoded @POST("auth/revise/sex") Call<Account> reviseSex(@Field("sex") String sex,
       @Field("id") int id);
 
   /**
    * 修改性别
    */
-  @FormUrlEncoded @POST("/auth/revise/age") Call<Account> reviseAge(@Field("age") String age,
+  @FormUrlEncoded @POST("auth/revise/age") Call<Account> reviseAge(@Field("age") String age,
       @Field("id") int id);
 
   /**
    * 获取所有用户信息
    */
-  @POST("/auth/allInfo") Call<ArrayList<Account>> getAllAcoount();
+  @POST("auth/allInfo") Call<ArrayList<Account>> getAllAcoount();
 }

@@ -17,13 +17,18 @@ public interface ArticleService {
   /**
    * 添加文章
    */
-  @FormUrlEncoded @POST("/article/insert") Call<Articles> insertArticle(
+  @FormUrlEncoded @POST("article/insert") Call<Articles> insertArticle(
       @Field("account_id") String accountId, @Field("content") String content,
       @Field("title") String title, @Field("image_url") String imageUrl);
 
   /**
    * 获取用户上传的所有文章
    */
-  @GET("/article/all") Call<ArrayList<Articles>> getArticles(@Query("max-id") String maxId,
+  @GET("article/all") Call<ArrayList<Articles>> getArticles(@Query("max-id") String maxId,
       @Query("since-id") String sinceId, @Query("page_size") int pageSize);
+
+  /**
+   * 获取用户自己上传的文章
+   */
+  @GET("article/mine") Call<ArrayList<Articles>> getMinePublish(@Query("account_id") Integer id);
 }

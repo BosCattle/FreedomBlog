@@ -16,8 +16,10 @@ import io.rong.imlib.RongIMClient;
 import java.util.Date;
 import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
+import org.jiangtao.model.RongYun;
 import org.jiangtao.service.AccountService;
 import org.jiangtao.service.ApiService;
+import org.jiangtao.service.RongYunService;
 import org.jiangtao.utils.AccountManager;
 import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
@@ -44,6 +46,7 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
   private AccountService mAccountService;
   private String mPhone;
   private String mPassWord;
+  private RongYunService mRongYunService;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -51,6 +54,7 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
     ButterKnife.bind(this);
     setEditTextValue();
     mAccountService = ApiService.createAccountService();
+    mRongYunService = ApiService.createRongYunService();
   }
 
   /**
@@ -90,7 +94,24 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
             AccountManager.getInstance().saveAccount(account, ActivityLogin.this);
             AccountManager.getInstance().saveToken(ActivityLogin.this, account.token);
             AccountManager.getInstance().saveTime(ActivityLogin.this, new Date());
-            connect(RongyunPreference.getRongYun(getApplicationContext()).token);
+            Call<RongYun> call1 =
+                mRongYunService.register(account.phone, account.username, account.imageUrl);
+            call1.enqueue(new Callback<RongYun>() {
+              @Override public void onResponse(Call<RongYun> call, Response<RongYun> response) {
+                if (response.isSuccessful()) {
+                  RongyunPreference.saveRongYun(getApplicationContext(), response.body());
+                  connect(response.body().token);
+                } else {
+                  TurnActivity.turnLoginActivity(ActivityLogin.this);
+                  finish();
+                }
+              }
+
+              @Override public void onFailure(Call<RongYun> call, Throwable t) {
+                TurnActivity.turnLoginActivity(ActivityLogin.this);
+                finish();
+              }
+            });
           }
         } else {
           dismissHud();

@@ -30,6 +30,10 @@ public class ApiService {
     return retrofit().create(CommentService.class);
   }
 
+  public static FocusService createFocusService() {
+    return retrofit().create(FocusService.class);
+  }
+
   private static Retrofit retrofit() {
     return StarterNetwork.get().retrofit();
   }

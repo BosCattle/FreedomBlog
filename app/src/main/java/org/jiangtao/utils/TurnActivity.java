@@ -10,6 +10,7 @@ import org.jiangtao.freedomblog.ActivityRegister;
 import org.jiangtao.freedomblog.ActivityRetrieve;
 import org.jiangtao.freedomblog.DetailActivity;
 import org.jiangtao.freedomblog.PublishActivity;
+import org.jiangtao.freedomblog.PublishMineActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
 import org.jiangtao.freedomblog.UserDetailActivity;
 import org.jiangtao.freedomblog.UserSettingsActivity;
@@ -91,6 +92,15 @@ public class TurnActivity {
   public static void startUserDetailActivity(Context mContext,Account account) {
     Intent startSettings = new Intent(mContext, UserDetailActivity.class);
     startSettings.putExtra("account",account);
+    mContext.startActivity(startSettings);
+  }
+
+  /**
+   * 跳转到我的发布界面
+   * @param mContext
+   */
+  public static void turnPublishMineActivity(Activity mContext) {
+    Intent startSettings = new Intent(mContext, PublishMineActivity.class);
     mContext.startActivity(startSettings);
   }
 }

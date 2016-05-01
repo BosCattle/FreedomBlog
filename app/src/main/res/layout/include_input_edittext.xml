@@ -4,29 +4,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="horizontal"
+		android:background="@color/colorPrimary"
 >
-	<TextView
-			android:id="@+id/send_mge"
-			android:layout_width="80dp"
-			android:layout_height="40dp"
-			android:layout_alignParentRight="true"
-			android:layout_centerVertical="true"
-			android:layout_marginRight="10dp"
-			android:gravity="center"
-			android:text="发送"
-			tools:ignore="RtlHardcoded"/>
 
-	<EditText
-			android:id="@+id/comments_content"
-			android:layout_width="match_parent"
-			android:layout_height="40dp"
-			android:layout_centerVertical="true"
-			android:layout_marginLeft="10dp"
-			android:layout_marginRight="10dp"
-			android:layout_toLeftOf="@+id/send_mge"
-			android:gravity="center|left"
-			android:hint="输入评论内容···"
-			android:paddingLeft="10dp"
-	/>
 
 </RelativeLayout>

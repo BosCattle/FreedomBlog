@@ -11,6 +11,6 @@ import retrofit2.http.POST;
  */
 public interface RongYunService {
 
-  @FormUrlEncoded @POST("/rongyun/token") Call<RongYun> register(@Field("userId") String userId,
+  @FormUrlEncoded @POST("rongyun/token") Call<RongYun> register(@Field("userId") String userId,
       @Field("userName") String userName, @Field("portraitUri") String portraitUri);
 }

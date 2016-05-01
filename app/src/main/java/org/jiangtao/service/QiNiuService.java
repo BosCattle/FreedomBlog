@@ -10,5 +10,5 @@ import retrofit2.http.GET;
  */
 public interface QiNiuService {
 
-  @GET("/qiniu/token") Call<QiNiuToken> getToken();
+  @GET("qiniu/token") Call<QiNiuToken> getToken();
 }

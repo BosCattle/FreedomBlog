@@ -18,9 +18,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
   @JsonProperty("content") public String content;
   @JsonProperty("title") public String title;
   @JsonProperty("image_url") public String imageUrl;
+  @JsonProperty("create_at") public long createAt;
 
   public Uri getUri() {
     return Uri.parse(imageUrl);
+  }
+
+  public Articles() {
   }
 
   @Override public int describeContents() {
@@ -34,9 +38,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
     dest.writeString(this.content);
     dest.writeString(this.title);
     dest.writeString(this.imageUrl);
-  }
-
-  public Articles() {
+    dest.writeLong(this.createAt);
   }
 
   protected Articles(Parcel in) {
@@ -46,6 +48,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
     this.content = in.readString();
     this.title = in.readString();
     this.imageUrl = in.readString();
+    this.createAt = in.readLong();
   }
 
   public static final Creator<Articles> CREATOR = new Creator<Articles>() {

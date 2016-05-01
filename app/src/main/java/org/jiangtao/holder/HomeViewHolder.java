@@ -10,6 +10,7 @@ import com.carlosdelachica.easyrecycleradapters.adapter.EasyViewHolder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import org.jiangtao.freedomblog.R;
 import org.jiangtao.model.Articles;
+import org.jiangtao.utils.DateFormat;
 
 /**
  * Created by MrJiang on 4/4/2016.
@@ -39,6 +40,10 @@ public class HomeViewHolder extends EasyViewHolder<Articles> {
       mHomeAvatar.setImageURI(value.accounts.uri());
       mUsername.setText(value.accounts.username);
       mContent.setText(value.content);
+      mTime.setText(
+          Long.valueOf(value.createAt) != null ? DateFormat.getRelativeTime(value.createAt) : "");
+      mReadNum.setText(
+          Long.valueOf(value.createAt) != null ? DateFormat.getCommonTime(value.createAt) : "");
     } catch (Exception e) {
       e.printStackTrace();
     }

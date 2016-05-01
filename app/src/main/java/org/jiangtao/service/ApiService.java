@@ -26,6 +26,10 @@ public class ApiService {
     return retrofit().create(RongYunService.class);
   }
 
+  public static CommentService createCommentService() {
+    return retrofit().create(CommentService.class);
+  }
+
   private static Retrofit retrofit() {
     return StarterNetwork.get().retrofit();
   }

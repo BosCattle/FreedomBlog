@@ -1,68 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fresco="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:fresco="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+>
 
-  <RelativeLayout
-      android:id="@+id/container_index"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="@dimen/activity_horizontal_margin"
-      android:layout_marginRight="@dimen/activity_horizontal_margin"
-      android:layout_marginTop="@dimen/activity_vertical_margin1"
-      >
+	<RelativeLayout
+			android:id="@+id/container_index"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin"
+			android:layout_marginRight="@dimen/activity_horizontal_margin"
+			android:layout_marginTop="@dimen/activity_vertical_margin1"
+	>
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/avatar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/placeholder_avatar"
-        fresco:placeholderImage="@drawable/ic_avatar_default"
-        fresco:placeholderImageScaleType="centerCrop"
-        fresco:roundAsCircle="true"
-        />
+		<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/avatar"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:layout_alignParentLeft="true"
+				android:background="@drawable/placeholder_avatar"
+				fresco:placeholderImage="@drawable/ic_avatar_default"
+				fresco:placeholderImageScaleType="centerCrop"
+				fresco:roundAsCircle="true"
+		/>
 
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/avatar"
-        android:textSize="@dimen/inline_padding"
-        tools:ignore="SpUsage"
-        />
+		<TextView
+				android:id="@+id/username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/avatar"
+				android:textSize="@dimen/inline_padding"
+				tools:ignore="SpUsage"
+		/>
 
-    <Button
-        android:id="@+id/attentions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:text="@string/attentions"
-        android:textSize="@dimen/inline_padding"
-        tools:ignore="RelativeOverlap"
-        />
+		<Button
+				android:id="@+id/attentions"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:text="@string/attentions"
+				android:textSize="@dimen/inline_padding"
+				tools:ignore="RelativeOverlap"
+		/>
 
-  </RelativeLayout>
+	</RelativeLayout>
 
-  <jp.wasabeef.richeditor.RichEditor
-      android:id="@+id/rich_editor"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/container_index"
-      android:layout_marginTop="@dimen/activity_vertical_margin"
-      />
+	<jp.wasabeef.richeditor.RichEditor
+			android:id="@+id/rich_editor"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/container_index"
+			android:layout_marginTop="@dimen/activity_vertical_margin"
+	/>
 
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/recycler_comment"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/rich_editor"
-      android:layout_marginTop="@dimen/activity_vertical_margin"
-      />
+	<android.support.v7.widget.RecyclerView
+			android:id="@+id/recycler_comment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/rich_editor"
+			android:layout_marginTop="@dimen/activity_vertical_margin"
+	/>
+
+	<include layout="@layout/include_input_edittext"
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:layout_alignParentBottom="true"/>
 </com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

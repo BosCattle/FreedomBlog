@@ -51,13 +51,21 @@
 					android:layout_below="@+id/head"
 					android:layout_marginTop="@dimen/activity_vertical_margin"
 			/>
+			<TextView
+					android:layout_below="@+id/rich_editor"
+					android:id="@+id/comment"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@color/black"
+					android:text="评论"
+					android:layout_marginTop="@dimen/activity_vertical_margin"/>
 
 			<android.support.v7.widget.RecyclerView
 					android:layout_marginBottom="100dp"
 					android:id="@+id/recycler_comment"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:layout_below="@+id/rich_editor"
+					android:layout_below="@+id/comment"
 					android:layout_marginTop="@dimen/activity_vertical_margin"
 			/>
 

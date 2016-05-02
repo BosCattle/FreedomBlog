@@ -110,7 +110,13 @@
 				android:theme="@style/FullscreenTheme"/>
 		<activity
 				android:name=".PersonAttentionActivity"
-				android:theme="@style/AppTheme.NoActionBar"/>
+				android:label="我的关注"
+				android:screenOrientation="portrait"
+				android:windowSoftInputMode="stateHidden|adjustResize">
+			<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value=".ActivityIndex"/>
+		</activity>
 		<activity
 				android:name=".DetailActivity"
 				android:label="@string/label_detail">
@@ -162,6 +168,15 @@
 					android:name="android.support.PARENT_ACTIVITY"
 					android:value=".ActivityIndex"/>
 		</activity>
+		<activity android:name=".UserArticleActivity"
+				android:label="文章"
+				android:screenOrientation="portrait"
+				android:windowSoftInputMode="stateHidden|adjustResize">
+			<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value=".ActivityIndex"/>
+		</activity>
+		<meta-data android:value="7a1cb2a3e1f7f1a596bdd553578c38f5" android:name="BUG_HD_SDK_GENERAL_KEY" />
 	</application>
 
 </manifest>

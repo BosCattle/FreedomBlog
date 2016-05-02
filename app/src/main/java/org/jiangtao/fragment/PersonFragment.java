@@ -66,6 +66,7 @@ public class PersonFragment extends StarterFragment implements EasyViewHolder.On
         TurnActivity.turnUserSettingsActivity(getActivity());
         break;
       case ITEM_VIEW_COMMENT:
+        TurnActivity.turnPersonAttentionActivity(getActivity());
         break;
       case ITEM_VIEW_SETTING:
         TurnActivity.turnSettingsActivity(getActivity());

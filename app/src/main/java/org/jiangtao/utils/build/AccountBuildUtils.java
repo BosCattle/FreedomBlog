@@ -50,7 +50,7 @@ public final class AccountBuildUtils {
         .build());
 
     SettingItemss.add(new SettingItems.Builder().itemViewType(SettingItems.VIEW_TYPE_ITEM)
-        .data(new IconData(R.drawable.ic_account_document, "我的评论"))
+        .data(new IconData(R.drawable.ic_account_document, "我的关注"))
         .enabled(true)
         .type(PersonFragment.ITEM_VIEW_COMMENT)
         .build());

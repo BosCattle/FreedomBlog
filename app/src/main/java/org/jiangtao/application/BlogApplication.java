@@ -6,12 +6,8 @@ import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import cn.smssdk.SMSSDK;
 import com.facebook.drawee.backends.pipeline.Fresco;
+import im.fir.sdk.FIR;
 import io.rong.imkit.RongIM;
-import io.rong.imlib.model.UserInfo;
-import java.util.ArrayList;
-import org.jiangtao.model.Account;
-import org.jiangtao.service.AccountService;
-import org.jiangtao.service.ApiService;
 import org.jiangtao.utils.StaticResources;
 
 /**
@@ -23,9 +19,6 @@ import org.jiangtao.utils.StaticResources;
 // TODO: 5/1/2016 必须写入数据库,在首页中完成
 public class BlogApplication extends MultiDexApplication {
   private static BlogApplication mApp = new BlogApplication();
-  private AccountService mAccountService;
-  private ArrayList<Account> mAccountsLists;
-  private ArrayList<UserInfo> mUserInfoLists;
 
   public static BlogApplication getInstance() {
     if (mApp == null) {
@@ -43,9 +36,7 @@ public class BlogApplication extends MultiDexApplication {
 
   @Override public void onCreate() {
     super.onCreate();
-    mAccountsLists = new ArrayList<>();
-    mUserInfoLists = new ArrayList<>();
-    mAccountService = ApiService.createAccountService();
+    FIR.init(this);
     Fresco.initialize(this);
     SMSSDK.initSDK(this, StaticResources.MOB_SMS_KEY, StaticResources.MOB_SMS_SECRET);
     if (getApplicationInfo().packageName.equals(getCurProcessName(getApplicationContext()))

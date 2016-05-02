@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 import java.sql.Date;
+import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
 import org.jiangtao.model.RongYun;
 import org.jiangtao.service.AccountService;
@@ -54,7 +55,7 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
   private Handler mHandler = new Handler() {
     @Override public void handleMessage(Message msg) {
       super.handleMessage(msg);
-      //returnResult(msg.arg1, msg.arg2, msg.obj);
+      returnResult(msg.arg1, msg.arg2, msg.obj);
     }
   };
 
@@ -131,8 +132,8 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
                   java.util.Date date = new java.util.Date();
                   Date date1 = new Date(date.getTime());
                   Log.d("--->", date1.toString() + "你好");
-                  //AccountManager.getInstance()
-                  //    .saveTime(BlogApplication.getInstance().getApplicationContext(), date1);
+                  AccountManager.getInstance()
+                      .saveTime(BlogApplication.getInstance().getApplicationContext(), date1);
                   Call<RongYun> call1 =
                       mRongYunService.register(phoneText, phoneText, passwordText);
                   call1.enqueue(new Callback<RongYun>() {

@@ -2,6 +2,7 @@ package org.jiangtao.service;
 
 import java.util.ArrayList;
 import org.jiangtao.model.Focus;
+import org.jiangtao.model.IsFocus;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -23,7 +24,19 @@ public interface FocusService {
       @Query("focus_id") Integer focus_id);
 
   /**
-   * 获取所有关注
+   * 获取关注的所有人
    */
   @GET("focus/all") Call<ArrayList<Focus>> allFocus(@Query("account_id") Integer account_id);
+
+  /**
+   * 判断是否关注了某人
+   */
+  @GET("focus/judge") Call<IsFocus> isFocus(@Query("account_id") Integer account_id,
+      @Query("focus_id") Integer focus_id);
+
+  /**
+   * 获取关注我的人
+   */
+  @GET("focus/personal") Call<ArrayList<Focus>> personalFocus(
+      @Query("account_id") Integer account_id);
 }

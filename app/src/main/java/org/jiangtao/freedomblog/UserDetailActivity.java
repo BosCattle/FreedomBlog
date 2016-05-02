@@ -16,6 +16,7 @@ import io.rong.imkit.RongIM;
 import java.util.ArrayList;
 import org.jiangtao.model.Account;
 import org.jiangtao.model.Focus;
+import org.jiangtao.model.IsFocus;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.service.FocusService;
 import org.jiangtao.utils.AccountManager;
@@ -36,14 +37,18 @@ public class UserDetailActivity extends BaseActivity {
   @Bind(R.id.detail_focus) Button mFocus;
   private Account mAccount;
   private FocusService mFocusService;
+  private IsFocus mIsFocus;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_user_index);
     ButterKnife.bind(this);
+    mIsFocus = new IsFocus();
+    mIsFocus.is_focus = true;
     mFocusService = ApiService.createFocusService();
     setDetailActionBar();
     getDetailAccount();
+    isFocus();
     setUpViews();
   }
 
@@ -80,7 +85,11 @@ public class UserDetailActivity extends BaseActivity {
         }
         break;
       case R.id.detail_focus:
-        addFocus();
+        if (mIsFocus.is_focus) {
+          cancelFocus();
+        } else {
+          addFocus();
+        }
         break;
     }
   }
@@ -92,7 +101,7 @@ public class UserDetailActivity extends BaseActivity {
       @Override
       public void onResponse(Call<ArrayList<Focus>> call, Response<ArrayList<Focus>> response) {
         if (response.isSuccessful()) {
-          mFocus.setText("已关注");
+          isFocus();
         } else {
           showErrorMesage();
         }
@@ -111,13 +120,36 @@ public class UserDetailActivity extends BaseActivity {
       @Override
       public void onResponse(Call<ArrayList<Focus>> call, Response<ArrayList<Focus>> response) {
         if (response.isSuccessful()) {
-          mFocus.setText("关注");
+          isFocus();
         } else {
           showErrorMesage();
         }
       }
 
       @Override public void onFailure(Call<ArrayList<Focus>> call, Throwable t) {
+        showErrorMesage();
+      }
+    });
+  }
+
+  public void isFocus() {
+    Account account = AccountManager.getInstance().getAccount(this);
+    Call<IsFocus> focusCall = mFocusService.isFocus(account.id, mAccount.id);
+    focusCall.enqueue(new Callback<IsFocus>() {
+      @Override public void onResponse(Call<IsFocus> call, Response<IsFocus> response) {
+        if (response.isSuccessful()) {
+          mIsFocus = response.body();
+          if (mIsFocus != null && mIsFocus.is_focus) {
+            mFocus.setText("已关注");
+          } else {
+            mFocus.setText("关注");
+          }
+        } else {
+          showErrorMesage();
+        }
+      }
+
+      @Override public void onFailure(Call<IsFocus> call, Throwable t) {
         showErrorMesage();
       }
     });

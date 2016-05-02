@@ -14,13 +14,14 @@ import org.jiangtao.model.Articles;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.service.ArticleService;
 import org.jiangtao.utils.AccountManager;
+import org.jiangtao.utils.TurnActivity;
 import retrofit2.Call;
 
 /**
  * Created by MrJiang on 4/4/2016.
  * 我的发布fragment
  */
-public class PublishMineFragment extends StarterKeysFragment<Articles> {
+public class PublishMineFragment extends StarterKeysFragment<Articles>{
 
   private ArticleService mArticleService;
 
@@ -50,5 +51,11 @@ public class PublishMineFragment extends StarterKeysFragment<Articles> {
 
   @Override public void bindViewHolders(EasyRecyclerAdapter adapter) {
     adapter.bind(Articles.class, HomeViewHolder.class);
+  }
+
+  @Override public void onItemClick(int position, View view) {
+    super.onItemClick(position, view);
+    Articles articles = (Articles) getAdapter().get(position);
+    TurnActivity.startDetailActivity(getActivity(), articles);
   }
 }

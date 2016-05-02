@@ -15,10 +15,9 @@ public final class StaticResources {
    */
   public static final String MOB_SMS_KEY = "f12b9a7318da";
   public static final String MOB_SMS_SECRET = "448e363cde8a960c56917f704cb9e4f4";
-  //OpenIM
-  public static final String APP_KEY = "23331884";
   /**
    * 网址
    */
   public static final String BASE_URL = "http://159.203.129.92:8080/Monkey_war_exploded/";
+  //public static final String BASE_URL = "http://192.168.199.228:8080/";
 }

@@ -44,7 +44,7 @@
 						android:textSize="@dimen/inline_padding"
 				/>
 			</LinearLayout>
-			<jp.wasabeef.richeditor.RichEditor
+			<org.jiangtao.widget.ForBitClickRichEditor
 					android:id="@+id/rich_editor"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"

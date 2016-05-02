@@ -8,10 +8,10 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.carlosdelachica.easyrecycleradapters.adapter.EasyViewHolder;
 import com.facebook.drawee.view.SimpleDraweeView;
-import jp.wasabeef.richeditor.RichEditor;
 import org.jiangtao.freedomblog.R;
 import org.jiangtao.model.Articles;
 import org.jiangtao.utils.DateFormat;
+import org.jiangtao.widget.ForBitClickRichEditor;
 
 /**
  * Created by MrJiang on 4/4/2016.
@@ -24,7 +24,7 @@ public class HomeViewHolder extends EasyViewHolder<Articles> {
   @Bind(R.id.header) RelativeLayout header;
   @Bind(R.id.title) TextView mTitle;
   @Bind(R.id.home_image) SimpleDraweeView mHomeImage;
-  @Bind(R.id.content) RichEditor mContent;
+  @Bind(R.id.content) ForBitClickRichEditor mContent;
   @Bind(R.id.time) TextView mTime;
   @Bind(R.id.read_num) TextView mReadNum;
 
@@ -42,6 +42,7 @@ public class HomeViewHolder extends EasyViewHolder<Articles> {
       mUsername.setText(value.accounts.username);
       mContent.setFocusable(false);
       mContent.setEnabled(false);
+      mContent.clearFocusEditor();
       mContent.setHtml(value.content);
       mTime.setText(
           Long.valueOf(value.createAt) != null ? DateFormat.getRelativeTime(value.createAt) : "");

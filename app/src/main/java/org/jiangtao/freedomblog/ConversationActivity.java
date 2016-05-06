@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import io.rong.imlib.model.Conversation;
 
+/**
+ * 聊天界面
+ */
 public class ConversationActivity extends FragmentActivity {
 
   /**

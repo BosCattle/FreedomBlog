@@ -18,9 +18,7 @@ import static org.jiangtao.utils.ThemeUtils.getThemeAttrColor;
 import static org.jiangtao.utils.ThemeUtils.getThemeAttrDimension;
 
 /**
- * Set background via {@link android.R.attr#background android:background} will be discarded.
- * <p/>
- * Created by KorHsien on 2015/6/25.
+ * 圆形按钮
  */
 public class RoundedButton extends AppCompatButton {
   public RoundedButton(Context context) {

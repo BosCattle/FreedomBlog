@@ -3,6 +3,9 @@ package org.jiangtao.freedomblog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * 找回密码
+ */
 public class ActivityRetrieve extends AppCompatActivity {
 
     @Override

@@ -8,7 +8,7 @@ import jp.wasabeef.richeditor.RichEditor;
 
 /**
  * Created by MrJiang on 5/2/2016.
- * mrJiang
+ * 不能点击的RichEditor
  */
 public class ForBitClickRichEditor extends RichEditor {
   public ForBitClickRichEditor(Context context) {

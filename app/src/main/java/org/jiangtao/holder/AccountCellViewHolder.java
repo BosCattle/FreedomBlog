@@ -11,10 +11,6 @@ import org.jiangtao.freedomblog.R;
 import org.jiangtao.model.Account;
 import org.jiangtao.view.SettingItems;
 
-/**
- * Created by YuGang Yang on March 01, 2016.
- * Copyright 2015-2016 qiji.tech. All rights reserved.
- */
 public class AccountCellViewHolder extends CellViewHolder {
 
   @Bind(R.id.avatar) SimpleDraweeView avatarView;

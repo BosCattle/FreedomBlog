@@ -22,6 +22,9 @@ import org.jiangtao.fragment.IndexFragment;
 import org.jiangtao.fragment.PersonFragment;
 import org.jiangtao.fragment.SendFragment;
 
+/**
+ * 主页
+ */
 public class ActivityIndex extends AppCompatActivity implements View.OnClickListener {
 
   public static final String TAB_HOME = "tag_home_identifier";

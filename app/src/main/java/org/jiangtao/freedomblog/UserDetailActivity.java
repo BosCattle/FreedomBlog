@@ -25,6 +25,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * 点击关注和进行聊天界面
+ */
 public class UserDetailActivity extends BaseActivity {
 
   public static String TAG = UserDetailActivity.class.getSimpleName();

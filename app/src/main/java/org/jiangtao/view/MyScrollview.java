@@ -7,7 +7,7 @@ import android.view.ViewConfiguration;
 import android.widget.ScrollView;
 
 /**
- * Created by Administrator on 2016/4/29.
+ * 包含recyclerview的msqroll
  */
 public class MyScrollview extends ScrollView {
   private int downX;

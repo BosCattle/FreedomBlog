@@ -18,7 +18,7 @@
 				android:layout_marginTop="@dimen/activity_vertical_margin1"
 		>
 
-			<LinearLayout android:id="@+id/head"
+			<RelativeLayout android:id="@+id/head"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_alignParentTop="true"
@@ -28,6 +28,8 @@
 						android:id="@+id/avatar"
 						android:layout_width="60dp"
 						android:layout_height="60dp"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentStart="true"
 						android:layout_gravity="left"
 						android:background="@drawable/placeholder_avatar"
 						fresco:placeholderImage="@drawable/ic_avatar_default"
@@ -40,10 +42,20 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_gravity="center"
-						android:layout_marginLeft="20dp"
+						android:layout_marginLeft="40dp"
+						android:layout_toRightOf="@+id/avatar"
 						android:textSize="@dimen/inline_padding"
 				/>
-			</LinearLayout>
+
+				<ImageView
+						android:id="@+id/collctions"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:src="@mipmap/ic_collection_normal"/>
+			</RelativeLayout>
 			<org.jiangtao.widget.ForBitClickRichEditor
 					android:id="@+id/rich_editor"
 					android:layout_width="match_parent"
@@ -52,20 +64,20 @@
 					android:layout_marginTop="@dimen/activity_vertical_margin"
 			/>
 			<TextView
-					android:layout_below="@+id/rich_editor"
 					android:id="@+id/comment"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:textColor="@color/black"
+					android:layout_below="@+id/rich_editor"
+					android:layout_marginTop="@dimen/activity_vertical_margin"
 					android:text="评论"
-					android:layout_marginTop="@dimen/activity_vertical_margin"/>
+					android:textColor="@color/black"/>
 
 			<android.support.v7.widget.RecyclerView
-					android:layout_marginBottom="100dp"
 					android:id="@+id/recycler_comment"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_below="@+id/comment"
+					android:layout_marginBottom="100dp"
 					android:layout_marginTop="@dimen/activity_vertical_margin"
 			/>
 
@@ -97,10 +109,10 @@
 				android:layout_marginLeft="10dp"
 				android:layout_marginRight="10dp"
 				android:layout_toLeftOf="@+id/send_mge"
+				android:background="@drawable/shape_text"
 				android:gravity="center|left"
 				android:hint="输入评论内容···"
 				android:paddingLeft="10dp"
-				android:background="@drawable/shape_text"
 		/>
 	</RelativeLayout>
 </com.smartydroid.android.starter.kit.widget.ForegroundRelativeLayout>

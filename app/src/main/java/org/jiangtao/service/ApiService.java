@@ -34,6 +34,10 @@ public class ApiService {
     return retrofit().create(FocusService.class);
   }
 
+  public static CollectionsService createCollectionsService() {
+    return retrofit().create(CollectionsService.class);
+  }
+
   private static Retrofit retrofit() {
     return StarterNetwork.get().retrofit();
   }

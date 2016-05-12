@@ -7,6 +7,11 @@ package org.jiangtao.holder;
 import android.content.Context;
 import org.jiangtao.view.cell.EmptyCell;
 
+/**
+ * Empty ViewHolder
+ * 周鑫
+ * 我的个人中心分割行
+ */
 public class EmptyCellViewHolder extends CellViewHolder {
 
   public EmptyCellViewHolder(Context context) {

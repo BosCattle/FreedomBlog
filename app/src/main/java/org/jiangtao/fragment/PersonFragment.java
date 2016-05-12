@@ -16,6 +16,7 @@ import org.jiangtao.utils.build.AccountBuildUtils;
 import org.jiangtao.view.SettingItems;
 
 /**
+ * 周鑫
  * 个人界面
  */
 public class PersonFragment extends StarterFragment implements EasyViewHolder.OnItemClickListener {

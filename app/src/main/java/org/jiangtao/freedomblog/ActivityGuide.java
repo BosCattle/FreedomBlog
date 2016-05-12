@@ -18,6 +18,10 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+/**
+ * 杨杰
+ * 引导页面
+ */
 public class ActivityGuide extends AppCompatActivity {
 
     /**

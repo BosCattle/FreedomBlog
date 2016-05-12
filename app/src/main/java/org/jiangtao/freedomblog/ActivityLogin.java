@@ -30,7 +30,7 @@ import retrofit2.Response;
 
 /**
  * 登录界面
- * author:Kevin
+ * author:周鑫
  * description:登录界面
  */
 public class ActivityLogin extends StarterActivity implements View.OnClickListener {

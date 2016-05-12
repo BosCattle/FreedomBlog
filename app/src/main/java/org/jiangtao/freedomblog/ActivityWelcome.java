@@ -19,6 +19,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * 杨杰
+ * 欢迎界面
+ */
 public class ActivityWelcome extends BaseActivity {
 
   private AlphaAnimation aa;

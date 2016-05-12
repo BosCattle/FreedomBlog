@@ -7,7 +7,8 @@ import org.jiangtao.model.Account;
 import org.json.JSONException;
 
 /**
- * Created by MrJiang on 2016/3/20.
+ * Created by Kevin
+ * on 2016/3/20.
  * 持久化account信息
  * 持续化token信息
  */

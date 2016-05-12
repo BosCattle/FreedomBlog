@@ -6,6 +6,7 @@ import io.rong.imlib.model.Conversation;
 
 /**
  * 聊天界面
+ * 杨杰
  */
 public class ConversationActivity extends FragmentActivity {
 

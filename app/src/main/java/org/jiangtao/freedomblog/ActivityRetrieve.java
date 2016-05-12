@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 /**
  * 找回密码
+ * 周鑫
  */
 public class ActivityRetrieve extends AppCompatActivity {
 

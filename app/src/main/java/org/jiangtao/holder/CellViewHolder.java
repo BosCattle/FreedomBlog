@@ -11,6 +11,10 @@ import android.view.View;
 import com.carlosdelachica.easyrecycleradapters.adapter.EasyViewHolder;
 import org.jiangtao.view.SettingItems;
 
+/**
+ * common ViewHolder
+ * 杨杰
+ */
 public class CellViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
   private Activity mActivity;

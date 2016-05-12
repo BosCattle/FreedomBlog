@@ -16,7 +16,7 @@ import org.jiangtao.utils.data.IconData;
 import org.jiangtao.view.SettingItems;
 
 /**
- * author:Kevin
+ * author:周 鑫
  * description:设置界面
  */
 public class SettingsActivity extends StarterActivity

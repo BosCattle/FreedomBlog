@@ -11,7 +11,7 @@ import org.jiangtao.freedomblog.R;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class SortctivityFragment extends Fragment {
+@Deprecated public class SortctivityFragment extends Fragment {
 
     public SortctivityFragment() {
     }

@@ -20,7 +20,7 @@ import static org.jiangtao.utils.ThemeUtils.getThemeAttrDimension;
 /**
  * 圆形按钮
  */
-public class RoundedButton extends AppCompatButton {
+@Deprecated public class RoundedButton extends AppCompatButton {
   public RoundedButton(Context context) {
     this(context, null);
   }

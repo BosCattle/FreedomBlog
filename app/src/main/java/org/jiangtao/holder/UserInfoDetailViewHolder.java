@@ -11,7 +11,8 @@ import org.jiangtao.utils.data.UserInfo;
 import org.jiangtao.view.SettingItems;
 
 /**
- * Created by MrJiang on 2016/3/12.
+ * Created by 周鑫
+ * on 2016/3/12.
  * 用户信息设置
  */
 public class UserInfoDetailViewHolder extends CellViewHolder {

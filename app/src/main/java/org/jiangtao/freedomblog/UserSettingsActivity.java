@@ -41,6 +41,7 @@ import vn.tungdx.mediapicker.activities.MediaPickerActivity;
 
 /**
  * 设置用户信息
+ * 周鑫
  */
 public class UserSettingsActivity extends StarterActivity
     implements EasyViewHolder.OnItemClickListener, MaterialDialog.ListCallback {

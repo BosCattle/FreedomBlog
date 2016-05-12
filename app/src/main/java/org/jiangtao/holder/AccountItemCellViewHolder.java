@@ -11,6 +11,10 @@ import org.jiangtao.freedomblog.R;
 import org.jiangtao.holder.object.IconData;
 import org.jiangtao.view.SettingItems;
 
+/**
+ * 设置个人资料ViewHolder
+ * 周鑫
+ */
 public class AccountItemCellViewHolder extends CellViewHolder {
 
   @Bind(android.R.id.icon) ImageView mIconView;

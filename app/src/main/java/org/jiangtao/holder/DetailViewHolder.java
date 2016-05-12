@@ -19,7 +19,9 @@ import org.jiangtao.model.Comment;
 import org.jiangtao.utils.AccountManager;
 
 /**
- * Created by MrJiang on 5/1/2016.
+ * Created by 李松柏
+ * on 5/1/2016.
+ * 文章详情ViewHolder
  */
 public class DetailViewHolder extends EasyViewHolder<Comment> {
 

@@ -18,7 +18,8 @@ import org.jiangtao.utils.TurnActivity;
 import retrofit2.Call;
 
 /**
- * Created by MrJiang on 5/2/2016.
+ * Created by 李松柏
+ * on 5/2/2016.
  * 我关注的所有人
  */
 public class PersonalFocusFragment extends StarterKeysFragment<Focus>

@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import org.jiangtao.utils.TurnActivity;
 
 /**
- * author:Kevin
+ * author:周鑫
  * description:关于界面
  */
 public class AboutActivity extends AppCompatActivity {

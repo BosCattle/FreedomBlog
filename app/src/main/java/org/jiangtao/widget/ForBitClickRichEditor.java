@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import jp.wasabeef.richeditor.RichEditor;
 
 /**
- * Created by MrJiang on 5/2/2016.
+ * Created by 李松柏 on 5/2/2016.
  * 不能点击的RichEditor
  */
 public class ForBitClickRichEditor extends RichEditor {

@@ -7,6 +7,7 @@ import org.jiangtao.fragment.UserArticleFragment;
 /**
  * Created by MrJiang on 5/2/2016.
  * 首页文章界面
+ * 李松柏
  */
 public class UserArticleActivity extends SimpleSinglePaneActivity {
   @Override protected Fragment onCreatePane() {

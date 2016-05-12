@@ -7,7 +7,8 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 /**
- * Created by MrJiang on 4/24/2016.
+ * Created by 杨杰
+ * on 4/24/2016.
  */
 public interface RongYunService {
 

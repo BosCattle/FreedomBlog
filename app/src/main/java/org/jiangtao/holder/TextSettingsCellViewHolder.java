@@ -14,6 +14,10 @@ import org.jiangtao.freedomblog.R;
 import org.jiangtao.utils.data.IconData;
 import org.jiangtao.view.SettingItems;
 
+/**
+ * 周鑫
+ * 我的个人中心
+ */
 public class TextSettingsCellViewHolder extends CellViewHolder {
   @Bind(R.id.setting_list_text_item) TextView mTextView;
 

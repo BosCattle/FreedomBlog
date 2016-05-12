@@ -1,6 +1,10 @@
 [
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\mediapicker_main.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\bundles\\debug\\res\\menu\\mediapicker_main.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/menu/mediapicker_main.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/bundles/debug/res/menu/mediapicker_main.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\mediapicker_main.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\bundles\\debug\\res\\menu\\mediapicker_main.xml"
     }
 ]

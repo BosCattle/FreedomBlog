@@ -8,6 +8,11 @@ import android.content.Context;
 import org.jiangtao.view.SettingItems;
 import org.jiangtao.view.cell.HeaderCell;
 
+/**
+ * 头部最大分割
+ * 周鑫
+ * 我的个人中心
+ */
 public class HeaderCellViewHolder extends CellViewHolder {
 
   public HeaderCellViewHolder(Context context) {

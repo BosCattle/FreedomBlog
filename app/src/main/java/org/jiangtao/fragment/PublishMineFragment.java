@@ -18,7 +18,8 @@ import org.jiangtao.utils.TurnActivity;
 import retrofit2.Call;
 
 /**
- * Created by MrJiang on 4/4/2016.
+ * Created by 李松柏
+ * on 4/4/2016.
  * 我的发布fragment
  */
 public class PublishMineFragment extends StarterKeysFragment<Articles>{

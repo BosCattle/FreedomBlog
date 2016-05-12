@@ -15,7 +15,7 @@ import org.jiangtao.freedomblog.R;
  * Creator: MrJiang <br>
  * Date: 2016/3/1 20:46 <br>
  */
-public class PromptFragment extends Fragment {
+@Deprecated public class PromptFragment extends Fragment {
 
   @Override public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

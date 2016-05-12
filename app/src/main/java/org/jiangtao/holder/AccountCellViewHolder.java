@@ -11,6 +11,10 @@ import org.jiangtao.freedomblog.R;
 import org.jiangtao.model.Account;
 import org.jiangtao.view.SettingItems;
 
+/**
+ * 个人中心ViewHolder
+ * 周鑫
+ */
 public class AccountCellViewHolder extends CellViewHolder {
 
   @Bind(R.id.avatar) SimpleDraweeView avatarView;

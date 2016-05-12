@@ -45,6 +45,7 @@ import retrofit2.Response;
 
 /**
  * 发布界面
+ * 李松柏
  */
 public class PublishActivity extends StarterActivity
     implements EasyViewHolder.OnItemClickListener, RichEditor.OnTextChangeListener {

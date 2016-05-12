@@ -15,7 +15,7 @@ import org.jiangtao.view.SettingItems;
 /**
  * Class:UserInfoAvatarViewHolder <br>
  * Description:用户信息界面头像item viewholder <br>
- * Creator: MrJiang <br>
+ * Creator: 周鑫 <br>
  * Date: 2016/3/15 22:41 <br>
  */
 public class UserInfoAvatarViewHolder extends CellViewHolder {

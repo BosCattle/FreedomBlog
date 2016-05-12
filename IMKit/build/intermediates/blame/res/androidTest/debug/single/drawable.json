@@ -1,118 +1,234 @@
 [
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_an_voice_sent.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_an_voice_sent.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_item_list_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_item_list_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_switch_btn.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_switch_btn.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_an_voice_receive.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_an_voice_receive.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_extend.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_extend.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_photo_checkbox.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_photo_checkbox.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_camera.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_camera.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_input.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_btn_input.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_location.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_location.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_preview_checkbox.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_bg_editinput.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_bg_editinput.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_voice.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_voice.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_preview_checkbox.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_preview_checkbox.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_phone.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_phone.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_text.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_text.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_public_service_enter_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
-        "source": "H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_admin_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_admin_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_star_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_star_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_no_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_no_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_public_service_unfollow_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_btn_public_service_unfollow_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ed_public_service_search_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ed_public_service_search_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_bg_menu.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_bg_menu.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_item_top_list_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_item_top_list_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_picture.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_picture.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_bg_item.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_bg_item.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_smiley.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_smiley.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_preview_checkbox.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_yes_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_yes_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_keyboard.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_ic_keyboard.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_voice.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_btn_voice.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_send.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable/rc_btn_send.xml"
     }
 ]

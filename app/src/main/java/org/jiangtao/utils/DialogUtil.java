@@ -5,8 +5,8 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import org.jiangtao.freedomblog.R;
 
 /**
- * Created by YuGang Yang on 03 15, 2016.
- * Copyright 20015-2016 honc.tech. All rights reserved.
+ * 现实对话框
+ * 周鑫
  */
 public class DialogUtil {
 

@@ -23,7 +23,9 @@ import org.jiangtao.fragment.PersonFragment;
 import org.jiangtao.fragment.SendFragment;
 
 /**
+ * 周鑫
  * 主页
+ *
  */
 public class ActivityIndex extends AppCompatActivity implements View.OnClickListener {
 

@@ -15,6 +15,7 @@ import org.jiangtao.utils.StaticResources;
  * Description:单例模式 <br>
  * Creator: MrJiang <br>
  * Date: 2016/3/15 23:43 <br>
+ * 全局的Application
  */
 // TODO: 5/1/2016 必须写入数据库,在首页中完成
 public class BlogApplication extends MultiDexApplication {

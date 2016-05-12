@@ -33,7 +33,7 @@ import retrofit2.Response;
 /**
  * Class:ActivityRegister <br>
  * Description:注册界面 <br>
- * Creator: MrJiang <br>
+ * Creator: 周鑫 <br>
  * Date: 2016/3/20 0:17 <br>
  * 抽出方法
  * 尽量完成接口对接

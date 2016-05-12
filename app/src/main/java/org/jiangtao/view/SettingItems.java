@@ -1,7 +1,7 @@
 package org.jiangtao.view;
 
 /**
- * Created by MrJiang on 2016/3/27.
+ * Created by 周鑫 on 2016/3/27.
  * 用户创建我的界面和设置界面的items
  */
 public class SettingItems {

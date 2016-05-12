@@ -15,6 +15,7 @@ import org.jiangtao.utils.TurnActivity;
 
 /**
  * 开启发布界面
+ * 李松柏
  */
 public class SendFragment extends StarterFragment {
 

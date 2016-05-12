@@ -10,7 +10,7 @@ import org.jiangtao.view.SettingItems;
 /**
  * Class:UpdateUserInfoActivityUtils <br>
  * Description:填充UpdateUserInfoActivity中Recyclerview数据 <br>
- * Creator: MrJiang <br>
+ * Creator: 周鑫 <br>
  * Date: 2016/3/12 15:47 <br>
  */
 public final class UpdateUserInfoActivityUtils {

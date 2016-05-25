@@ -18,6 +18,7 @@ public final class StaticResources {
   /**
    * 网址
    */
-  //public static final String BASE_URL = "http://159.203.129.92:8080/Monkey_war_exploded/";
-  public static final String BASE_URL = "http://192.168.199.227:8080/";
+  public static final String BASE_URL = "http://159.203.129.92:8080/Monkey_war_exploded/";
+  //public static final String BASE_URL = "http://192.168.199.227:8080/";
+  public static final String BASE_URL_FIR = " http://api.fir.im/apps/";
 }

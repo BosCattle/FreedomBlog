@@ -9,10 +9,12 @@ import org.jiangtao.freedomblog.ActivityLogin;
 import org.jiangtao.freedomblog.ActivityRegister;
 import org.jiangtao.freedomblog.ActivityRetrieve;
 import org.jiangtao.freedomblog.DetailActivity;
+import org.jiangtao.freedomblog.FeedbackActivity;
 import org.jiangtao.freedomblog.PersonAttentionActivity;
 import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.PublishMineActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
+import org.jiangtao.freedomblog.SoftImformationActivity;
 import org.jiangtao.freedomblog.UserArticleActivity;
 import org.jiangtao.freedomblog.UserDetailActivity;
 import org.jiangtao.freedomblog.UserSettingsActivity;
@@ -115,12 +117,24 @@ public class TurnActivity {
 
   /**
    * 跳转到别的用户发布的文章
-   * @param mContext
-   * @param id
    */
   public static void turnUserArticleActivity(Activity mContext, int id) {
     Intent startSettings = new Intent(mContext, UserArticleActivity.class);
     startSettings.putExtra("id", id);
+    mContext.startActivity(startSettings);
+  }
+
+  /**
+   * 跳转到意见反馈
+   */
+  public static void turnFeedbackActivity(Activity mContext) {
+    Intent startSettings = new Intent(mContext, FeedbackActivity.class);
+    mContext.startActivity(startSettings);
+  }
+
+
+  public static void turnSoftInformationActivity(Activity mContext) {
+    Intent startSettings = new Intent(mContext, SoftImformationActivity.class);
     mContext.startActivity(startSettings);
   }
 }

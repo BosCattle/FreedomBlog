@@ -31,4 +31,14 @@ public class StarterNetwork {
 
     return mRetrofit;
   }
+
+  public Retrofit retrofit(String sBaseUrl) {
+    if (mRetrofit == null) {
+      Retrofit.Builder builder = newRetrofitBuilder();
+      mRetrofit =
+          builder.baseUrl(sBaseUrl).addConverterFactory(JacksonConverterFactory.create()).build();
+    }
+
+    return mRetrofit;
+  }
 }

@@ -312,10 +312,12 @@ public class PublishActivity extends StarterActivity
                 @Override public void complete(String key, ResponseInfo info, JSONObject res) {
                   Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
                   try {
-                    mEditor.insertImage(QiNiuTokenUtils.getInstance()
-                        .spliceUrl(res.getString("key"), PublishActivity.this), "图片");
-                    mUrl = QiNiuTokenUtils.getInstance()
-                        .spliceUrl(res.getString("key"), PublishActivity.this);
+                    if (res != null) {
+                      mEditor.insertImage(QiNiuTokenUtils.getInstance()
+                          .spliceUrl(res.getString("key"), PublishActivity.this), "图片");
+                      mUrl = QiNiuTokenUtils.getInstance()
+                          .spliceUrl(res.getString("key"), PublishActivity.this);
+                    }
                     mBodyText = mBodyText + "<br/>";
                   } catch (JSONException e) {
                     e.printStackTrace();

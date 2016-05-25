@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\build\\intermediates\\res\\merged\\debug\\menu\\mediapicker_main.xml",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\android-media-picker\\src\\main\\res\\menu\\mediapicker_main.xml"
-    },
-    {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/menu/mediapicker_main.xml",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/src/main/res/menu/mediapicker_main.xml"
     }

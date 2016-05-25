@@ -1,6 +1,7 @@
 package org.jiangtao.service;
 
 import org.jiangtao.utils.StarterNetwork;
+import org.jiangtao.utils.StaticResources;
 import retrofit2.Retrofit;
 
 /**
@@ -38,7 +39,15 @@ public class ApiService {
     return retrofit().create(CollectionsService.class);
   }
 
+  public static VersionCheckService createVersionCheckService() {
+    return retrofitFir().create(VersionCheckService.class);
+  }
+
   private static Retrofit retrofit() {
     return StarterNetwork.get().retrofit();
+  }
+
+  public static Retrofit retrofitFir() {
+    return StarterNetwork.get().retrofit(StaticResources.BASE_URL_FIR);
   }
 }

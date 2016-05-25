@@ -17,6 +17,9 @@ android {
       targetSdkVersion 23
       versionCode 1
       versionName "1.0"
+      buildConfigField 'String', 'APP_ID', "\"57274622748aac378d000017\""
+      buildConfigField 'String', 'API_TOKEN', "\"a66de80ddd6a169a4f368e62aab4e9ab\""
+
     }
     buildTypes {
       release {

@@ -4,10 +4,6 @@
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/rc_group_default_portrait.png"
     },
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_default_portrait.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_default_portrait.png"
-    },
-    {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/rc_ic_bubble_white.9.png",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/rc_ic_bubble_white.9.png"
     },
@@ -18,17 +14,5 @@
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/rc_ic_warning.png",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/IMKit/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/rc_ic_warning.png"
-    },
-    {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_group_default_portrait.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_group_default_portrait.png"
-    },
-    {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_ic_bubble_white.9.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_ic_bubble_white.9.png"
-    },
-    {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_ic_warning.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/H:\\Android\\FreedomBlog\\FreedomBlog\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_ic_warning.png"
     }
 ]

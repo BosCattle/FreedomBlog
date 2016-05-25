@@ -117,8 +117,10 @@ public class SettingsActivity extends StarterActivity
 
         break;
       case SOFTWARE_INFORMATION:
+        TurnActivity.turnSoftInformationActivity(this);
         break;
       case FEED_BACK:
+        TurnActivity.turnFeedbackActivity(this);
         break;
       case LOGOUT_BUTTON:
         TurnActivity.turnLoginActivity(SettingsActivity.this);

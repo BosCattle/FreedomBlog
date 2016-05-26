@@ -38,7 +38,7 @@ import retrofit2.Response;
  * 抽出方法
  * 尽量完成接口对接
  */
-public class ActivityRegister extends AppCompatActivity implements View.OnClickListener {
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
   @Bind(R.id.edittext_email_phonenumber) EditText mPhoneEdit;
   @Bind(R.id.send_validate) TextView mValidateText;
@@ -142,15 +142,15 @@ public class ActivityRegister extends AppCompatActivity implements View.OnClickL
                       if (response.isSuccessful()) {
                         //保存融云账号
                         RongyunPreference.saveRongYun(getApplicationContext(), response.body());
-                        SnackBarUtil.showText(ActivityRegister.this, response.body().token);
-                        TurnActivity.turnLoginActivity(ActivityRegister.this);
+                        SnackBarUtil.showText(RegisterActivity.this, response.body().token);
+                        TurnActivity.turnLoginActivity(RegisterActivity.this);
                       } else {
-                        SnackBarUtil.showText(ActivityRegister.this, "fail");
+                        SnackBarUtil.showText(RegisterActivity.this, "fail");
                       }
                     }
 
                     @Override public void onFailure(Call<RongYun> call, Throwable t) {
-                      SnackBarUtil.showText(ActivityRegister.this, "error:" + t.toString());
+                      SnackBarUtil.showText(RegisterActivity.this, "error:" + t.toString());
                     }
                   });
                 }

@@ -6,17 +6,13 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import io.rong.imkit.RongIM;
-import io.rong.imkit.common.RongConst;
 import io.rong.imlib.RongIMClient;
 import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
-import org.jiangtao.model.FirCheck;
 import org.jiangtao.model.RongYun;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.service.RongYunService;
-import org.jiangtao.service.VersionCheckService;
 import org.jiangtao.utils.AccountManager;
-import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
 import org.jiangtao.utils.preferance.RongyunPreference;
 import retrofit2.Call;
@@ -28,19 +24,17 @@ import retrofit2.Response;
  * 欢迎界面
  */
 // TODO: 16-5-25 端口有问题 
-public class ActivityWelcome extends BaseActivity {
+public class WelcomeActivity extends BaseActivity {
 
   private AlphaAnimation aa;
   private View view;
   private java.util.Date mDate = new java.util.Date();
   private RongYunService mRongYunService;
-  private VersionCheckService mVersionCheckService;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     view = View.inflate(this, R.layout.activity_activity_welcome, null);
     setContentView(view);
-    mVersionCheckService = ApiService.createVersionCheckService();
     mRongYunService = ApiService.createRongYunService();
     // 渐变展示启动屏
     openAlphaAnimation();
@@ -59,21 +53,6 @@ public class ActivityWelcome extends BaseActivity {
       }
 
       @Override public void onAnimationStart(Animation animation) {
-        Call<FirCheck> call =
-            mVersionCheckService.versionCheck(BuildConfig.APP_ID, BuildConfig.API_TOKEN, "android");
-        call.enqueue(new Callback<FirCheck>() {
-          @Override public void onResponse(Call<FirCheck> call, Response<FirCheck> response) {
-            if (response.isSuccessful()) {
-              SnackBarUtil.showText(ActivityWelcome.this, response.body().toString());
-            } else {
-              SnackBarUtil.showText(ActivityWelcome.this, "获取数据失败");
-            }
-          }
-
-          @Override public void onFailure(Call<FirCheck> call, Throwable t) {
-            SnackBarUtil.showText(ActivityWelcome.this, t.toString());
-          }
-        });
       }
     });
   }
@@ -83,7 +62,7 @@ public class ActivityWelcome extends BaseActivity {
     if (account != null && isTimeOut()) {
       getToken();
     } else {
-      TurnActivity.turnLoginActivity(ActivityWelcome.this);
+      TurnActivity.turnLoginActivity(WelcomeActivity.this);
       finish();
     }
   }
@@ -107,13 +86,13 @@ public class ActivityWelcome extends BaseActivity {
           RongyunPreference.saveRongYun(getApplicationContext(), response.body());
           connect(response.body().token);
         } else {
-          TurnActivity.turnLoginActivity(ActivityWelcome.this);
+          TurnActivity.turnLoginActivity(WelcomeActivity.this);
           finish();
         }
       }
 
       @Override public void onFailure(Call<RongYun> call, Throwable t) {
-        TurnActivity.turnLoginActivity(ActivityWelcome.this);
+        TurnActivity.turnLoginActivity(WelcomeActivity.this);
         finish();
       }
     });
@@ -161,7 +140,7 @@ public class ActivityWelcome extends BaseActivity {
          */
         @Override public void onSuccess(String userid) {
           Log.d("LoginActivity", "--onSuccess" + userid);
-          TurnActivity.startIndexActivity(ActivityWelcome.this);
+          TurnActivity.startIndexActivity(WelcomeActivity.this);
           finish();
         }
 

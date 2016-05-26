@@ -28,7 +28,7 @@ import retrofit2.Response;
 /**
  * 点击关注和进行聊天界面
  * 个人详情界面
- * 李松柏
+ * 杨杰
  */
 public class UserDetailActivity extends BaseActivity {
 

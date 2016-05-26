@@ -74,6 +74,9 @@ public class PublishActivity extends StarterActivity
     ButterKnife.bind(this);
   }
 
+  /**
+   * 设置RichEditor的属性
+   */
   private void setUpRichEditor() {
     mEditor.setEditorHeight(500);
     mEditor.setEditorFontSize(16);
@@ -82,6 +85,9 @@ public class PublishActivity extends StarterActivity
     mEditor.setOnTextChangeListener(this);
   }
 
+  /**
+   * 初始化RecyclerView和Adapter并且将adapter设置给RecyclerView
+   */
   protected void setUpAdapter() {
     mSettingItems = new ArrayList<>();
     mSettingItems = SendFragmentUtils.getInstance().buildArticleAttribute();
@@ -98,6 +104,11 @@ public class PublishActivity extends StarterActivity
     mIconRecycler.setAdapter(mAccountAdapter);
   }
 
+  /**
+   * 列表中每一项的点击事件
+   * @param position
+   * @param view
+   */
   @Override public void onItemClick(int position, View view) {
     switch (position) {
       case 0:
@@ -172,17 +183,31 @@ public class PublishActivity extends StarterActivity
     }
   }
 
+  /**
+   * 监听文本改变
+   * @param text
+   */
   @Override public void onTextChange(String text) {
     Log.d("--------->", text);
     mBodyText = text;
   }
 
+  /**
+   * 创建menu
+   * @param menu
+   * @return
+   */
   @Override public boolean onCreateOptionsMenu(Menu menu) {
     MenuInflater inflater = getMenuInflater();
     inflater.inflate(R.menu.menu_publish, menu);
     return super.onCreateOptionsMenu(menu);
   }
 
+  /**
+   * 菜单点击事件
+   * @param item
+   * @return
+   */
   @Override public boolean onOptionsItemSelected(MenuItem item) {
     if (item.getItemId() == R.id.menu_publish) {
       // TODO: 4/2/2016 点击将生成的内容发送到服务器
@@ -193,6 +218,9 @@ public class PublishActivity extends StarterActivity
     return super.onOptionsItemSelected(item);
   }
 
+  /**
+   * 将文章上传到服务器
+   */
   public void submitArticle() {
     showHud("正在上传,请耐心等待..");
     Account account = AccountManager.getInstance().getAccount(this);

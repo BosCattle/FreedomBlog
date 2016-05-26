@@ -33,7 +33,7 @@ import retrofit2.Response;
  * author:周鑫
  * description:登录界面
  */
-public class ActivityLogin extends StarterActivity implements View.OnClickListener {
+public class LoginActivity extends StarterActivity implements View.OnClickListener {
 
   @Bind(R.id.register_blog) TextView mRegisterBlogTextView;
   @Bind(R.id.button_login) TextView mLoginButton;
@@ -71,10 +71,10 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
   @Override public void onClick(View v) {
     switch (v.getId()) {
       case R.id.register_blog:
-        TurnActivity.startRegisterActivity(ActivityLogin.this);
+        TurnActivity.startRegisterActivity(LoginActivity.this);
         break;
       case R.id.text_forget:
-        TurnActivity.startRetrieveActivity(ActivityLogin.this);
+        TurnActivity.startRetrieveActivity(LoginActivity.this);
         break;
       case R.id.button_login:
         submitLogin();
@@ -91,9 +91,9 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
         if (response.isSuccessful()) {
           Account account = response.body();
           if (account != null) {
-            AccountManager.getInstance().saveAccount(account, ActivityLogin.this);
-            AccountManager.getInstance().saveToken(ActivityLogin.this, account.token);
-            AccountManager.getInstance().saveTime(ActivityLogin.this, new Date());
+            AccountManager.getInstance().saveAccount(account, LoginActivity.this);
+            AccountManager.getInstance().saveToken(LoginActivity.this, account.token);
+            AccountManager.getInstance().saveTime(LoginActivity.this, new Date());
             Call<RongYun> call1 =
                 mRongYunService.register(account.phone, account.username, account.imageUrl);
             call1.enqueue(new Callback<RongYun>() {
@@ -102,20 +102,20 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
                   RongyunPreference.saveRongYun(getApplicationContext(), response.body());
                   connect(response.body().token);
                 } else {
-                  TurnActivity.turnLoginActivity(ActivityLogin.this);
+                  TurnActivity.turnLoginActivity(LoginActivity.this);
                   finish();
                 }
               }
 
               @Override public void onFailure(Call<RongYun> call, Throwable t) {
-                TurnActivity.turnLoginActivity(ActivityLogin.this);
+                TurnActivity.turnLoginActivity(LoginActivity.this);
                 finish();
               }
             });
           }
         } else {
           dismissHud();
-          SnackBarUtil.showText(ActivityLogin.this, "轻博客登录失败");
+          SnackBarUtil.showText(LoginActivity.this, "轻博客登录失败");
         }
       }
 
@@ -157,7 +157,7 @@ public class ActivityLogin extends StarterActivity implements View.OnClickListen
         @Override public void onSuccess(String userid) {
           dismissHud();
           Log.d("LoginActivity", "--onSuccess" + userid);
-          TurnActivity.startIndexActivity(ActivityLogin.this);
+          TurnActivity.startIndexActivity(LoginActivity.this);
           finish();
         }
 

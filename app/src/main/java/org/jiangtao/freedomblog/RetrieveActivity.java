@@ -7,7 +7,7 @@ import android.os.Bundle;
  * 找回密码
  * 周鑫
  */
-public class ActivityRetrieve extends AppCompatActivity {
+public class RetrieveActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

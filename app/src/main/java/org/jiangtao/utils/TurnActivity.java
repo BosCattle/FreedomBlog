@@ -4,15 +4,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-import org.jiangtao.freedomblog.ActivityIndex;
-import org.jiangtao.freedomblog.ActivityLogin;
-import org.jiangtao.freedomblog.ActivityRegister;
-import org.jiangtao.freedomblog.ActivityRetrieve;
 import org.jiangtao.freedomblog.DetailActivity;
 import org.jiangtao.freedomblog.FeedbackActivity;
+import org.jiangtao.freedomblog.IndexActivity;
+import org.jiangtao.freedomblog.LoginActivity;
 import org.jiangtao.freedomblog.PersonAttentionActivity;
 import org.jiangtao.freedomblog.PublishActivity;
 import org.jiangtao.freedomblog.PublishMineActivity;
+import org.jiangtao.freedomblog.RegisterActivity;
+import org.jiangtao.freedomblog.RetrieveActivity;
 import org.jiangtao.freedomblog.SettingsActivity;
 import org.jiangtao.freedomblog.SoftImformationActivity;
 import org.jiangtao.freedomblog.UserArticleActivity;
@@ -38,7 +38,7 @@ public class TurnActivity {
    * 跳转到登陆界面
    */
   public static void turnLoginActivity(AppCompatActivity mContext) {
-    Intent startSettings = new Intent(mContext, ActivityLogin.class);
+    Intent startSettings = new Intent(mContext, LoginActivity.class);
     startSettings.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
     mContext.startActivityForResult(startSettings, StaticResources.requestCodeLogin);
   }
@@ -47,7 +47,7 @@ public class TurnActivity {
    * 跳转到主界面
    */
   public static void startIndexActivity(AppCompatActivity activity) {
-    Intent intent = new Intent(activity, ActivityIndex.class);
+    Intent intent = new Intent(activity, IndexActivity.class);
     activity.startActivity(intent);
     activity.finish();
   }
@@ -56,7 +56,7 @@ public class TurnActivity {
    * 跳到找回密码界面
    */
   public static void startRetrieveActivity(AppCompatActivity activity) {
-    Intent intent = new Intent(activity, ActivityRetrieve.class);
+    Intent intent = new Intent(activity, RetrieveActivity.class);
     activity.startActivity(intent);
   }
 
@@ -64,7 +64,7 @@ public class TurnActivity {
    * 跳到注册界面
    */
   public static void startRegisterActivity(AppCompatActivity activity) {
-    Intent intent = new Intent(activity, ActivityRegister.class);
+    Intent intent = new Intent(activity, RegisterActivity.class);
     activity.startActivity(intent);
   }
 

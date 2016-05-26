@@ -44,7 +44,7 @@
       android:largeHeap="true"
       android:theme="@style/AppTheme">
     <activity
-        android:name=".ActivityWelcome"
+        android:name=".WelcomeActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
@@ -53,7 +53,7 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".ActivityIndex"
+        android:name=".IndexActivity"
         android:label="@string/index_actionbar"
         android:launchMode="singleTask"
         android:theme="@style/AppTheme.NoActionBar">
@@ -67,34 +67,34 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".ActivityGuide"
+        android:name=".GuideActivity"
         android:theme="@style/AppTheme.NoActionBar"/>
     <activity
-        android:name=".ActivityLogin"
+        android:name=".LoginActivity"
         android:label="@string/button_login"/>
     <activity
-        android:name=".ActivityRegister"
+        android:name=".RegisterActivity"
         android:label="@string/register_blog">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityLogin"/>
+          android:value=".LoginActivity"/>
     </activity>
     <activity
-        android:name=".ActivityRetrieve"
+        android:name=".RetrieveActivity"
         android:theme="@style/AppTheme.NoActionBar"/>
     <activity
         android:name=".SettingsActivity"
         android:label="@string/title_activity_settings">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <activity
         android:name=".UserSettingsActivity"
         android:label="@string/title_activity_user_settings">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <activity
         android:name=".UserDetailActivity"
@@ -115,14 +115,14 @@
         android:windowSoftInputMode="stateHidden|adjustResize">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <activity
         android:name=".DetailActivity"
         android:label="@string/label_detail">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <activity
         android:name="vn.tungdx.mediapicker.activities.MediaPickerActivity"
@@ -140,7 +140,7 @@
         android:label="@string/label_publish">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <activity
         android:name=".ConversationActivity"
@@ -157,7 +157,7 @@
       </intent-filter>
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
 
     <activity
@@ -167,7 +167,7 @@
         android:windowSoftInputMode="stateHidden|adjustResize">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <activity
         android:name=".UserArticleActivity"
@@ -176,7 +176,7 @@
         android:windowSoftInputMode="stateHidden|adjustResize">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".ActivityIndex"/>
+          android:value=".IndexActivity"/>
     </activity>
     <!--意见反馈-->
     <activity

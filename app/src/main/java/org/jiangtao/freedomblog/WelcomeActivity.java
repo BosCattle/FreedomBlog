@@ -6,17 +6,13 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import io.rong.imkit.RongIM;
-import io.rong.imkit.common.RongConst;
 import io.rong.imlib.RongIMClient;
 import org.jiangtao.application.BlogApplication;
 import org.jiangtao.model.Account;
-import org.jiangtao.model.FirCheck;
 import org.jiangtao.model.RongYun;
 import org.jiangtao.service.ApiService;
 import org.jiangtao.service.RongYunService;
-import org.jiangtao.service.VersionCheckService;
 import org.jiangtao.utils.AccountManager;
-import org.jiangtao.utils.SnackBarUtil;
 import org.jiangtao.utils.TurnActivity;
 import org.jiangtao.utils.preferance.RongyunPreference;
 import retrofit2.Call;
@@ -27,7 +23,7 @@ import retrofit2.Response;
  * 杨杰
  * 欢迎界面
  */
-public class ActivityWelcome extends BaseActivity {
+public class WelcomeActivity extends BaseActivity {
 
   private AlphaAnimation aa;
   private View view;
@@ -65,7 +61,7 @@ public class ActivityWelcome extends BaseActivity {
     if (account != null && isTimeOut()) {
       getToken();
     } else {
-      TurnActivity.turnLoginActivity(ActivityWelcome.this);
+      TurnActivity.turnLoginActivity(WelcomeActivity.this);
       finish();
     }
   }
@@ -89,13 +85,13 @@ public class ActivityWelcome extends BaseActivity {
           RongyunPreference.saveRongYun(getApplicationContext(), response.body());
           connect(response.body().token);
         } else {
-          TurnActivity.turnLoginActivity(ActivityWelcome.this);
+          TurnActivity.turnLoginActivity(WelcomeActivity.this);
           finish();
         }
       }
 
       @Override public void onFailure(Call<RongYun> call, Throwable t) {
-        TurnActivity.turnLoginActivity(ActivityWelcome.this);
+        TurnActivity.turnLoginActivity(WelcomeActivity.this);
         finish();
       }
     });
@@ -143,7 +139,7 @@ public class ActivityWelcome extends BaseActivity {
          */
         @Override public void onSuccess(String userid) {
           Log.d("LoginActivity", "--onSuccess" + userid);
-          TurnActivity.startIndexActivity(ActivityWelcome.this);
+          TurnActivity.startIndexActivity(WelcomeActivity.this);
           finish();
         }
 

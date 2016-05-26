@@ -22,7 +22,7 @@ import android.widget.TextView;
  * 杨杰
  * 引导页面
  */
-public class ActivityGuide extends AppCompatActivity {
+public class GuideActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide

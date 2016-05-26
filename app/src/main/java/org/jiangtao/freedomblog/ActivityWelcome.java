@@ -27,20 +27,17 @@ import retrofit2.Response;
  * 杨杰
  * 欢迎界面
  */
-// TODO: 16-5-25 端口有问题 
 public class ActivityWelcome extends BaseActivity {
 
   private AlphaAnimation aa;
   private View view;
   private java.util.Date mDate = new java.util.Date();
   private RongYunService mRongYunService;
-  private VersionCheckService mVersionCheckService;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     view = View.inflate(this, R.layout.activity_activity_welcome, null);
     setContentView(view);
-    mVersionCheckService = ApiService.createVersionCheckService();
     mRongYunService = ApiService.createRongYunService();
     // 渐变展示启动屏
     openAlphaAnimation();
@@ -59,21 +56,6 @@ public class ActivityWelcome extends BaseActivity {
       }
 
       @Override public void onAnimationStart(Animation animation) {
-        Call<FirCheck> call =
-            mVersionCheckService.versionCheck(BuildConfig.APP_ID, BuildConfig.API_TOKEN, "android");
-        call.enqueue(new Callback<FirCheck>() {
-          @Override public void onResponse(Call<FirCheck> call, Response<FirCheck> response) {
-            if (response.isSuccessful()) {
-              SnackBarUtil.showText(ActivityWelcome.this, response.body().toString());
-            } else {
-              SnackBarUtil.showText(ActivityWelcome.this, "获取数据失败");
-            }
-          }
-
-          @Override public void onFailure(Call<FirCheck> call, Throwable t) {
-            SnackBarUtil.showText(ActivityWelcome.this, t.toString());
-          }
-        });
       }
     });
   }

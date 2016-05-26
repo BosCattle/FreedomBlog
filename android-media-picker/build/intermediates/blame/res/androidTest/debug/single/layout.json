@@ -1,19 +1,19 @@
 [
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_action_menu_layout.xml",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/layout/notification_template_part_chronometer.xml",

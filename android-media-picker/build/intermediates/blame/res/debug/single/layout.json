@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_big_media_narrow.xml"
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",

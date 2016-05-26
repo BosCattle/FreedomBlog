@@ -137,6 +137,9 @@ public class DetailActivity extends StarterActivity
     }
   }
 
+  /**
+   * 获取所有的评论
+   */
   private void getAllComment() {
     Call<ArrayList<Comment>> call = mCommentService.getAllComment(mArticles.id);
     call.enqueue(new Callback<ArrayList<Comment>>() {
@@ -158,12 +161,19 @@ public class DetailActivity extends StarterActivity
     });
   }
 
+  /**
+   * 初始化recyclerView
+   */
   private void setUpRecyclerView() {
     mRecyclerComment.setHasFixedSize(true);
     mRecyclerComment.setLayoutManager(new LinearLayoutManager(this));
     mRecyclerComment.setAdapter(mEasyRecyclerAdapter);
   }
 
+  /**
+   *
+   * 初始化adapter
+   */
   private void setUpAdapter() {
     mEasyRecyclerAdapter = new EasyRecyclerAdapter(this);
     mEasyRecyclerAdapter.bind(Comment.class, DetailViewHolder.class);
@@ -171,12 +181,18 @@ public class DetailActivity extends StarterActivity
     mEasyRecyclerAdapter.appendAll(mComments);
   }
 
+  /**
+   * recyclerView更新数据
+   */
   public void startUpdate() {
     mEasyRecyclerAdapter.clear();
     mEasyRecyclerAdapter.appendAll(mComments);
     mEasyRecyclerAdapter.notifyDataSetChanged();
   }
 
+  /**
+   * 进入该页面第一个完成的初始化操作
+   */
   private void init() {
     Intent intent = getIntent();
     mArticles = intent.getParcelableExtra("article");
@@ -188,12 +204,18 @@ public class DetailActivity extends StarterActivity
     initCollections();
   }
 
+  /**
+   * 初始化用户信息
+   */
   public void initAccount() {
     mParentAccount = new Account();
     mParentAccount.id = 0;
     account = AccountManager.getInstance().getAccount(this);
   }
 
+  /**
+   * 设置页面上显示内容
+   */
   private void setUpView() {
     mRichEditor.setFocusable(false);
     mRichEditor.setEnabled(false);
@@ -202,6 +224,10 @@ public class DetailActivity extends StarterActivity
     mUsername.setText(mArticles.accounts.username);
   }
 
+  /***
+   * 头像,发送按钮，收藏的点击事件和逻辑处理
+   * @param v
+   */
   @OnClick({ R.id.avatar, R.id.send_mge, R.id.collctions }) public void onClick(View v) {
     switch (v.getId()) {
       case R.id.avatar:
@@ -210,9 +236,7 @@ public class DetailActivity extends StarterActivity
         break;
       case R.id.send_mge:
         String text = mCommentsContent.getText().toString();
-        if (text != null) {
-          sendMessage(text);
-        }
+        sendMessage(text);
         break;
       case R.id.collctions:
         if (mCollections != null) {
@@ -224,6 +248,10 @@ public class DetailActivity extends StarterActivity
     }
   }
 
+  /**
+   * 发送评论函数
+   * @param text
+   */
   public void sendMessage(String text) {
     hideSoftInputMethod();
     showHud("正在提交....");
@@ -257,14 +285,28 @@ public class DetailActivity extends StarterActivity
     });
   }
 
+  /**
+   * 显示错误信息
+   */
   public void showErrorMessage() {
     SnackBarUtil.showText(this, "发生了错误");
   }
 
+  /**
+   * 列表点击事件
+   * @param position
+   * @param view
+   */
   @Override public void onItemClick(int position, View view) {
 
   }
 
+  /**
+   * 评论的点击事件
+   * @param status
+   * @param account
+   * @param parentAccount
+   */
   @Override public void sendUser(boolean status, Account account, Account parentAccount) {
     if (status) {
       this.account = account;

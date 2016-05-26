@@ -12,12 +12,12 @@
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ab_picker_camera.png"
     },
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_ic_clear_mtrl_alpha.png",
@@ -88,12 +88,12 @@
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_ic_search_api_mtrl_alpha.png",
@@ -108,12 +108,12 @@
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
         "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/kevin/Android/Project/Personal/FreedomBlog/android-media-picker/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png",

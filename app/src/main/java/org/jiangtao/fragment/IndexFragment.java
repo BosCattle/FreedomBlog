@@ -16,7 +16,7 @@ import retrofit2.Call;
 
 /**
  * A simple {@link Fragment} subclass.
- * author:李松柏
+ * author:
  * class: IndexFragment
  * description:主页中的fragment
  * 从网络中取数据填充

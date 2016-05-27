@@ -32,8 +32,6 @@ import retrofit2.Response;
  */
 public class UserDetailActivity extends BaseActivity {
 
-  public static String TAG = UserDetailActivity.class.getSimpleName();
-
   @Bind(R.id.detail_avatar) SimpleDraweeView mDetailAvatar;
   @Bind(R.id.text_account_username) TextView mTextAccountUsername;
   @Bind(R.id.text_account) TextView mTextAccount;
